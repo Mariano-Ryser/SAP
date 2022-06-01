@@ -9,8 +9,8 @@ console.log("Peticion recibida ")
 res.send("<h1>App!</h1>")
 } )
 
-const PORT = PROCESS.ENV.PORT
-app.listen(4000, () => {
+const PORT = process.env.PORT || 4000
+app.listen(PORT, () => {
     console.log(`servidor escuchando en puerto ${PORT}`)
     
 })
