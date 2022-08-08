@@ -7,14 +7,13 @@ const getProducts = async (req, res) => {
 
 const createProduct = (req, res) => {
     if(!req.body.name){
-        res.status(400).jsonc({
+        res.status(400).json({
             ok:false,
             message:'El campo Nombre del producto es obligatorio'
         })
         return
     }
         const newProduct = new Product(req.body)
-    
          newProduct
              .save()
              .then( result => {

@@ -4,6 +4,7 @@ const express = require('express')
 const dbConnect = require('./db')
 const cors = require('cors')  //Cors permiso para interaccion entre servidores
 const productRouter = require('./routes/product')
+const comentarRouter = require('./routes/comentar')
 
 const app = express()
 
@@ -16,6 +17,7 @@ app.use(cors({origin: true})) //Ejecutando midelwer
  app.use(express.json())
 
  app.use('/api/v1/products', productRouter)
+ app.use('/api/v1/comentars', comentarRouter)
 
 
  //CON ESTO SERVIMOS LOS ARCHIVOS ESTATICOS DE HMTL CSS Y JS DE LA CARPETA PUBLIC!
