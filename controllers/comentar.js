@@ -2,7 +2,8 @@ const Comentar = require('../models/comentar')
 
 const getComentars = async (req, res) => {
     const comentars = await Comentar.find()
-    res.status(200).json({ok:true, data: comentars, count: comentars.length})
+    // res.status(200).json({ok:true, data: comentars, count: comentars.length})
+    res.status(200).json({comentars})
     }
 
 const createComentar = (req, res) => {
