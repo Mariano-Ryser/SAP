@@ -2,7 +2,8 @@ const Product = require('../models/product')
 
 const getProducts = async (req, res) => {
     const products = await Product.find()
-    res.status(200).json({ok:true, data: products, count: products.length})
+    // res.status(200).json({ok:true, data: products, count: products.length})
+    res.status(200).json({products})
     }
 
 const createProduct = (req, res) => {
