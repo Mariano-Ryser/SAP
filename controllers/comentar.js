@@ -1,7 +1,7 @@
 const Comentar = require('../models/comentar')
 
 const getComentars = async (req, res) => {
-    const comentars = await Comentar.find()
+    const comentars = await Comentar.find().sort({_id:-1}) 
     // res.status(200).json({ok:true, data: comentars, count: comentars.length})
     res.status(200).json({comentars})
     }
@@ -17,8 +17,9 @@ const createComentar = (req, res) => {
         const newComentar = new Comentar(req.body)
          newComentar
              .save()
-             .then( result => {
-             res.status(201).json({ok: true})
+             .then( (comentar) => {
+             res.status(201).json({ok: true, comentar})
+             console.log(comentar)
               })
              .catch((err) => console.log(err))
             // next()
