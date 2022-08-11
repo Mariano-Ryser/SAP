@@ -1,5 +1,5 @@
 const mongoose = require('mongoose')
-// const Product = require('../models/product')
+// const Comentar = require('../models/comentar')
 
 
 const dbConnect = (app) => {
@@ -14,8 +14,8 @@ mongoose.connect(
         console.log("Conexion exitosa, mongo db")
 
 
-        //Agregamos a products la propiedad (deleted:false)
-        // Product.updateMany({}, {$set: {deleted: false}}).then(res => console.log({res}))
+        //Agregamos a products o Comentarios la propiedad (deleted:false) con mongoo-
+        // Comentar.updateMany({}, {$set: {deleted: false}}).then(res => console.log({res}))
     })
      .catch((err) => console.log(err))
 }

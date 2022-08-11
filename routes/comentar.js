@@ -5,6 +5,6 @@ const comentarController = require('../controllers/comentar')
 
 routerr.post('/', comentarController.createComentar)
 routerr.get('/', comentarController.getComentars)
-// router.delete('/:id', productController.deleteProducts)
+routerr.delete('/:id', comentarController.deleteComentar)
 
 module.exports = routerr
