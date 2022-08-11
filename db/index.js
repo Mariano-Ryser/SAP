@@ -1,5 +1,5 @@
 const mongoose = require('mongoose')
-const Product = require('../models/product')
+// const Product = require('../models/product')
 
 
 const dbConnect = (app) => {
@@ -12,8 +12,6 @@ mongoose.connect(
             console.log(`servidor escuchando en puerto ${PORT}`)
         })
         console.log("Conexion exitosa, mongo db")
-
-
 
 
         //Agregamos a products la propiedad (deleted:false)
