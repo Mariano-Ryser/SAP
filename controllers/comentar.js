@@ -27,16 +27,18 @@ const createComentar = (req, res) => {
 
  const deleteComentar = async (req, res) =>{
         const { id } = req.params
-
         await Comentar.findByIdAndUpdate(id, {
             deleted: true,
         })
         res.status(200).json({ok:true, message: 'Comentar eliminado con exito!'})
         console.log({ id })
      }
+// const addLike = async (req, res)= {
 
+// }
      module.exports = {
         getComentars,
         createComentar,
-        deleteComentar
+        deleteComentar,
+        // addLike
      }

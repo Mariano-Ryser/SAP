@@ -1,5 +1,4 @@
 const mongoose = require('mongoose')
-// const Comentar = require('../models/comentar')
 
 
 const dbConnect = (app) => {
@@ -7,8 +6,9 @@ const dbConnect = (app) => {
 mongoose.connect(
     `mongodb+srv://MR-2291:${process.env.MONGO_DB_PASS}@cluster0.brhpx.mongodb.net/stock-app?retryWrites=true&w=majority`
     )
-    .then( (result) => {
+    .then((result) => {
         app.listen(PORT, () => {
+           
             console.log(`servidor escuchando en puerto ${PORT}`)
         })
         console.log("Conexion exitosa, mongo db")
@@ -16,8 +16,11 @@ mongoose.connect(
 
         //Agregamos a products o Comentarios la propiedad (deleted:false) con mongoo-
         // Comentar.updateMany({}, {$set: {deleted: false}}).then(res => console.log({res}))
+
+        //Change all deleted Value "true" for deleted "False"
+        //  Comentar.update({deleted: "true"}, {$set: {deleted: "false"}}).then(res => console.log({res}))
     })
-     .catch((err) => console.log(err))
+     .catch((err) => console.log("error error!!",err))
 }
 module.exports = dbConnect
 
@@ -25,4 +28,6 @@ const PORT = process.env.PORT
 
 
 // console.log({module})
+
+
 

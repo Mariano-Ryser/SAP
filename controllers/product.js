@@ -1,9 +1,11 @@
 const Product = require('../models/product')
 
 const getProducts = async (req, res) => {
-    const products = await Product.find({deleted: false}).sort({_id:-1})
+    sort=-1;
+    const products = await Product.find({deleted: false}).sort({_id:`${sort}`})
     // res.status(200).json({ok:true, data: products, count: products.length})
     res.status(200).json({products})
+    
     }
 
 const createProduct = (req, res) => {
