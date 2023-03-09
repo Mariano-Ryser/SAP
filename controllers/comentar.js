@@ -11,7 +11,7 @@ const createComentar = (req, res) => {
     if(!req.body.text){
         res.status(400).json({
             ok:false,
-            message:'El campo comentar del producto es obligatorio'
+            message:'El campo comentar es obligatorio'
         })
         return
     }
