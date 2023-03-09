@@ -593,6 +593,11 @@
   dependencies:
     "function-bind" "^1.1.1"
 
+"helmet@^6.0.1":
+  "integrity" "sha512-8wo+VdQhTMVBMCITYZaGTbE4lvlthelPYSvoyNvk4RECTmrVjMerp9RfUOQXZWLvCcAn1pKj7ZRxK4lI9Alrcw=="
+  "resolved" "https://registry.npmjs.org/helmet/-/helmet-6.0.1.tgz"
+  "version" "6.0.1"
+
 "http-cache-semantics@^4.0.0":
   "integrity" "sha512-carPklcUh7ROWRK7Cv27RPtdhYhUsela/ue5/jKzjegVvXDqM2ILE9Q2BGn9JZJh1g87cp56su/FgQSzcWS8cQ=="
   "resolved" "https://registry.npmjs.org/http-cache-semantics/-/http-cache-semantics-4.1.0.tgz"

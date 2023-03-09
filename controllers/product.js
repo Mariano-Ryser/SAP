@@ -1,8 +1,8 @@
 const Product = require('../models/product')
 
 const getProducts = async (req, res) => {
-    sort=-1;
-    const products = await Product.find({deleted: false}).sort({_id:`${sort}`})
+    sort=1;
+    const products = await (await Product.find({deleted: false}).sort({_id:`${sort}`})).slice(6).reverse()
     // res.status(200).json({ok:true, data: products, count: products.length})
     res.status(200).json({products})
     

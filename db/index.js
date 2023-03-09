@@ -1,6 +1,5 @@
 const mongoose = require('mongoose')
 
-
 const dbConnect = (app) => {
 // // // CONECCION CON LA BASE DE DATOS, MONGO DB MONGOSE!
 mongoose.connect(
@@ -8,17 +7,18 @@ mongoose.connect(
     )
     .then((result) => {
         app.listen(PORT, () => {
-           
             console.log(`servidor escuchando en puerto ${PORT}`)
         })
+        
         console.log("Conexion exitosa, mongo db")
-
-
+        
         //Agregamos a products o Comentarios la propiedad (deleted:false) con mongoo-
-        // Comentar.updateMany({}, {$set: {deleted: false}}).then(res => console.log({res}))
+        // Comentar.updateMany({}, {$set:{deleted: false}}).then(res => console.log({res}))
+        
 
-        //Change all deleted Value "true" for deleted "False"
-        //  Comentar.update({deleted: "true"}, {$set: {deleted: "false"}}).then(res => console.log({res}))
+         // dont use this function!! error in Database Delete please...
+        // Change all deleted Value "true" for deleted "False"   
+        // Comentar.update({deleted: "true"}, {$set: {deleted: "false"}}).then(res => console.log({res})) 
     })
      .catch((err) => console.log("error error!!",err))
 }
@@ -27,7 +27,7 @@ module.exports = dbConnect
 const PORT = process.env.PORT
 
 
-// console.log({module})
+//  console.log({module})
 
 
 
