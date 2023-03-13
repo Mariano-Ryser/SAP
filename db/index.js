@@ -20,7 +20,7 @@ mongoose.connect(
         // Change all deleted Value "true" for deleted "False"   
         // Comentar.update({deleted: "true"}, {$set: {deleted: "false"}}).then(res => console.log({res})) 
     })
-     .catch((err) => console.log("error error!!",err))
+     .catch((err) => console.log("error error!! Posible desconexion de internet!",err))
 }
 module.exports = dbConnect
 

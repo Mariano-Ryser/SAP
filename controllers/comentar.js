@@ -23,7 +23,7 @@ const createComentar = (req, res) => {
              console.log(comentar)
               })
              .catch((err) => console.log(err))
-            // next()
+            
      }
 
  const deleteComentar = async (req, res) =>{
@@ -31,15 +31,13 @@ const createComentar = (req, res) => {
         await Comentar.findByIdAndUpdate(id, {
             deleted: true,
         })
-        res.status(200).json({ok:true, message: 'Comentar eliminado con exito!'})
+        res.status(200).json({ok:true, message: 'Comentario eliminado con exito!'})
         console.log({ id })
      }
-// const addLike = async (req, res)= {
 
-// }
+
      module.exports = {
         getComentars,
         createComentar,
         deleteComentar,
-        // addLike
      }
