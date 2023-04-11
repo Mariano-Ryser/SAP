@@ -8,27 +8,6 @@ const getComentars = async (req, res) => {
     }
 
 const createComentar = (req, res) => {
-    // if(!req.body.titulo){
-    //     res.status(400).json({
-    //         ok:false,
-    //         message:'El campo comentar es obligatorio'
-    //     })
-    //     return
-    // }
-    // if(!req.body.text){
-    //     res.status(400).json({
-    //         ok:false,
-    //         message:'El campo comentar es obligatorio'
-    //     })
-    //     return
-    // }
-    // if(!req.body.author){
-    //     res.status(400).json({
-    //         ok:false,
-    //         message:'El campo comentar es obligatorio'
-    //     })
-    //     return
-    // }
         const newComentar = new Comentar(req.body)
          newComentar
              .save()
@@ -37,7 +16,6 @@ const createComentar = (req, res) => {
              console.log(comentar)
               })
              .catch((err) => console.log(err))
-            
      }
 
  const deleteComentar = async (req, res) =>{
