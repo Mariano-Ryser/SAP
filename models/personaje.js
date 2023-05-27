@@ -13,7 +13,6 @@ const personajeSchema = mongoose.Schema({
     
 { timestamps: true })
 
-
 //ALMACENAMOS EN UNA CONSTANTE EL MODELADO DEL ALMACEN
 const Personaje = mongoose.model('Personaje', personajeSchema,)  
 

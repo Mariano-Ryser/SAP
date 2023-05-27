@@ -14,9 +14,10 @@ dbConnect(app)
 // const path = require('path')  //Para hacer el camino a archivos estaticos
 // const axios = require('axios')  // Para hacer peticiones APIS del lado del servidor
 
-app.use(cors({origin: true})) //Ejecutando midelwer
+//Ejecutando midelwer
 
- app.use(express.json())
+app.use(cors({origin: true})) 
+app.use(express.json())
 
  app.use('/api/v1/products', productRouter)
  app.use('/api/v1/comentars', comentarRouter)
