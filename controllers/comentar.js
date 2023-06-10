@@ -1,7 +1,7 @@
 const Comentar = require('../models/comentar')
 
 const getComentars = async (req, res) => {
-    const comentars = await (await Comentar.find({deleted: false}).sort({_id:1})).slice(-45).reverse()
+    const comentars = await (await Comentar.find({deleted: false}).sort({_id:1})).slice(-65).reverse()
     // Comentar.update({deleted: "true"}, {$set: {deleted: "false"}}).then(res => console.log({res}))
     // res.status(200).json({ok:true, data: comentars, count: comentars.length})
     res.status(200).json({comentars})
@@ -17,6 +17,7 @@ const createComentar = (req, res) => {
               })
              .catch((err) => console.log(err))
      }
+     
  const deleteComentar = async (req, res) =>{
         const { id } = req.params
         await Comentar.findByIdAndUpdate(id, {

@@ -3,7 +3,7 @@ require('dotenv').config() //Variables de entorno
 const express = require('express') 
 const helmet = require('helmet') 
 const dbConnect = require('./db')
-const cors = require('cors')  //Cors permiso para interaccion entre servidores
+const cors = require('cors')  //Cors permiso para interaccion entre servidores (mi frontend)
 const comentarRouter = require('./routes/comentar')
 const productRouter = require('./routes/product')
 const personajeRouter = require('./routes/personaje')
@@ -13,7 +13,7 @@ app.use(helmet())
 dbConnect(app)
 // const path = require('path')  //Para hacer el camino a archivos estaticos
 // const axios = require('axios')  // Para hacer peticiones APIS del lado del servidor
-
+ 
 //Ejecutando midelwer
 
 app.use(cors({origin: true})) 
