@@ -8,14 +8,14 @@ const personajeSchema = mongoose.Schema({
     age: Number, // <-- if(365) + 1
     email: {type: String,required: true},
     city: {type: String,required: true},
+    description: {type: String,required: true},
     deleted: {type: Boolean, default: false},
     },
-    
+
 { timestamps: true })
 
 //ALMACENAMOS EN UNA CONSTANTE EL MODELADO DEL ALMACEN
 const Personaje = mongoose.model('Personaje', personajeSchema,)  
-
 
 //EXPORTACION DE MODULO
 module.exports = Personaje

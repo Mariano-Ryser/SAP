@@ -11,14 +11,13 @@ const createPersonaje = (req, res) => {
     if(!req.body.name){
         res.status(400).json({
             ok:false,
-            message:'El campo es obligatorio forro'
+            message:'El campo es obligatorio forro!'
         })
         return
     }
         const newPersonaje = new Personaje(req.body)
          newPersonaje
-             .save()
-             .then( (personaje) => {
+             .save().then( (personaje) => {
              res.status(201).json({ok: true, personaje})
              console.log(personaje)
               })
