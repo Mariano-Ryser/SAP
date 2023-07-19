@@ -1,11 +1,11 @@
 const Comentar = require('../models/comentar')
 
 
-const fs = require('fs')
+// const fs = require('fs')
 
 
 const getComentars = async (req, res) => {
-    const comentars = await (await Comentar.find({deleted: false}).sort({_id:1})).slice(-65).reverse()
+    const comentars = await (await Comentar.find({deleted: false}).sort({_id:1})).slice(-145).reverse()
     // Comentar.update({deleted: "true"}, {$set: {deleted: "false"}}).then(res => console.log({res}))
     // res.status(200).json({ok:true, data: comentars, count: comentars.length})
     res.status(200).json({comentars})
@@ -20,10 +20,12 @@ const createComentar = (req, res) => {
              console.log(comentar)
              console.log(comentar.titulo)
           
-             fs.appendFile('mensajes.txt', comentar.titulo, (error) =>{
-                if(error) throw error;
-                console.log("Archivo creado correctamente")
-            })
+
+            //  FILE SYSTEM
+            //  fs.appendFile('mensajes.js', comentar.titulo, (error) =>{
+            //     if(error) throw error;
+            //     console.log("Archivo creado correctamente")
+            // })
                
               })
              .catch((err) => console.log(err))
