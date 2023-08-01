@@ -12,7 +12,23 @@ mongoose.connect(
             console.log(`servidor escuchando en puerto ${PORT}`)
         })
         
-        console.log("Conexion exitosa, mongo db")
+        console.log("Conexion mongo db ..")
+        console.log("Fumando pucho...")
+        setTimeout(()=>{
+            console.log("con...")
+            },1200);
+
+        setTimeout(()=>{
+                console.log("con -exion...")
+                },2000);
+
+        setTimeout(()=>{
+                console.log("Conexion exitosa...")
+                },3000);
+                setTimeout(()=>{
+                    console.log("anda fumate un churro")
+                },7000);
+        
         
         //Agregamos a products o Comentarios la propiedad (deleted:false) con mongoo-
         // Comentar.updateMany({}, {$set:{deleted: false}}).then(res => console.log({res}))

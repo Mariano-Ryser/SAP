@@ -5,7 +5,7 @@ const Comentar = require('../models/comentar')
 
 
 const getComentars = async (req, res) => {
-    const comentars = await (await Comentar.find({deleted: false}).sort({_id:1})).slice(-145).reverse()
+    const comentars =  (await Comentar.find({deleted: false}).sort({_id:1})).slice(-145).reverse()
     // Comentar.update({deleted: "true"}, {$set: {deleted: "false"}}).then(res => console.log({res}))
     // res.status(200).json({ok:true, data: comentars, count: comentars.length})
     res.status(200).json({comentars})

@@ -5,9 +5,6 @@ const bcrypt = require('bcrypt')
 const UserSchema = mongoose.Schema({
    firstname:String
 
-
-   
-
 },
 { timestamps: true })
 

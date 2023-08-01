@@ -8,6 +8,8 @@ const comentarRouter = require('./routes/comentar')
 const productRouter = require('./routes/product')
 const personajeRouter = require('./routes/personaje')
 
+const ditto = require('./apis/pokemon/ditto.json') 
+
 const app = express()
 app.use(helmet())
 dbConnect(app)
@@ -22,6 +24,16 @@ app.use(express.json())
  app.use('/api/v1/products', productRouter)
  app.use('/api/v1/comentars', comentarRouter)
  app.use('/api/v1/personajes', personajeRouter)
+
+ app.get('/api/v1/ditto', (req,res) => {
+  res.json(ditto)
+})
+
+ app.get('/', (req,res) => {
+    res.end('<h1>Mi pagina APIII/<h1>')
+  })
+
+
 
 
  //CON ESTO SERVIMOS LOS ARCHIVOS ESTATICOS DE HMTL CSS Y JS DE LA CARPETA PUBLIC!
