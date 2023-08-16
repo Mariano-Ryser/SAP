@@ -12,31 +12,24 @@ mongoose.connect(
             console.log(`servidor escuchando en puerto ${PORT}`)
         })
         
-        console.log("Conexion mongo db ..")
-        console.log("Fumando pucho...")
+     
         setTimeout(()=>{
-            console.log("con...")
+            console.log("conexion exitosa a mongoDB...")
             },1200);
 
         setTimeout(()=>{
-                console.log("con -exion...")
+                console.log("...")
                 },2000);
 
-        setTimeout(()=>{
-                console.log("Conexion exitosa...")
-                },3000);
-                setTimeout(()=>{
-                    console.log("anda fumate un churro")
-                },7000);
-        
+    
         
         //Agregamos a products o Comentarios la propiedad (deleted:false) con mongoo-
-        // Comentar.updateMany({}, {$set:{deleted: false}}).then(res => console.log({res}))
+        //Comentar.updateMany({}, {$set:{deleted: false}}).then(res => console.log({res}))
         
 
          // dont use this function!! error in Database Delete please...
         // Change all deleted Value "true" for deleted "False"   
-        // Comentar.update({deleted: "true"}, {$set: {deleted: "false"}}).then(res => console.log({res})) 
+         //Comentar.update({deleted: "true"}, {$set: {deleted: "false"}}).then(res => console.log({res})) 
     })
      .catch((err) => console.log("error error!! Posible desconexion de internet!",err))
 }

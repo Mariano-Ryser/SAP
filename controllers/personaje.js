@@ -15,7 +15,8 @@ const createPersonaje = (req, res) => {
         })
         return
     }
-        const newPersonaje = new Personaje(req.body)
+
+const newPersonaje = new Personaje(req.body)
          newPersonaje
              .save().then( (personaje) => {
              res.status(201).json({ok: true, personaje})
@@ -40,3 +41,5 @@ const deletePersonaje = async (req, res) =>{
         createPersonaje,
         deletePersonaje
      }
+
+ 

@@ -1,14 +1,17 @@
 const Comentar = require('../models/comentar')
-
+const cors = require('cors')
 
 // const fs = require('fs')
 
 
-const getComentars = async (req, res) => {
-    const comentars =  (await Comentar.find({deleted: false}).sort({_id:1})).slice(-145).reverse()
+const getComentars = async (req, res) => { 
+    console.log("recibo peticion")
+    const comentars =  (await Comentar.find({deleted: false}).sort({_id:1})).reverse()
     // Comentar.update({deleted: "true"}, {$set: {deleted: "false"}}).then(res => console.log({res}))
     // res.status(200).json({ok:true, data: comentars, count: comentars.length})
     res.status(200).json({comentars})
+
+    
 }
 
 const createComentar = (req, res) => {
