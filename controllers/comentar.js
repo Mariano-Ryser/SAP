@@ -18,6 +18,7 @@ async function updateComentariosNegativos(req, res) {
           'sopenco': '(censured)',
           'nabo': '(censured)',
           'mierda': '(censured)',
+          'tonto': '(censured)',
           'mogolico': '(censured)'
           // Agrega más palabras y sus reemplazos aquí si es necesario
         };
