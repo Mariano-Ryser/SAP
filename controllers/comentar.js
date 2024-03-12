@@ -113,9 +113,10 @@ async function updateComentariosNegativos(req, res) {
   
 
 
+
 const getComentars = async (req, res) => { 
   console.log("recibo peticion")
-  const comentars =  (await Comentar.find({deleted: false}).sort({_id: 1})).reverse().slice(0,115);
+  const comentars =  (await Comentar.find({deleted: false}).sort({_id: 1})).reverse().slice(0,155);
   updateComentariosNegativos()
       
         //Aqui Solo seran los textos que empiezen con Ba
