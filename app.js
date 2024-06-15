@@ -1,9 +1,8 @@
 // // // REQUERIMIENTOS Y CONSTANTES
-
-
 const path = require('node:path'); //requiriendo el path de node
 
 require('dotenv').config() //Variables de entorno
+
 const express = require('express') 
 const helmet = require('helmet') 
 const dbConnect = require('./db')
@@ -15,6 +14,10 @@ const personajeRouter = require('./routes/personaje')
 const apisRouter = require('./routes/apis')
 
 // const meteoros = require('./apis/meteoros.json') 
+
+
+
+
 
 
 
@@ -50,6 +53,7 @@ app.get('/', (req,res) => {
 //  app.get('/', (req,res) => {
 //     res.end('<h1>Mi pagina APIII/<h1>')
 //   })
+
 
 
 //la ultima que llega..
