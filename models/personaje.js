@@ -22,6 +22,8 @@ const personajeSchema = mongoose.Schema({
     mana: { type: Number, default: 100, min: 110, max: 200 }, // Mana o puntos de energía mágica
     stamina: { type: Number, default: 100, min: 100, max: 500 },
     
+    // birtDate: { type: Number, required: true, min: 0, max: 120 }, //metodo de  almacenamiento para comparativos??
+
     age: { type: Number, required: true, min: 0, max: 120 },
     email: { type: String, required: true },
     city: { type: String, required: true },
@@ -41,6 +43,12 @@ const personajeSchema = mongoose.Schema({
     inventory: [{ 
         itemName: { type: String, required: true },
         quantity: { type: Number, default: 1, min: 0 }
+    }],
+    guild: [{ 
+        guildName: { type: String, default: "---" },
+        members: { type: String, default: "---" },
+        Upgrades: { type: String, default: "---" },
+        Donations: { type: String, default: "---" },
     }],
     alliances: [{ 
         name: { type: String, required: true },

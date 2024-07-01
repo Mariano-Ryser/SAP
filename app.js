@@ -15,12 +15,6 @@ const apisRouter = require('./routes/apis')
 
 // const meteoros = require('./apis/meteoros.json') 
 
-
-
-
-
-
-
 const app = express()
 app.use(helmet())
 dbConnect(app)
@@ -36,8 +30,6 @@ app.use(express.json())
  app.use('/api/v1/comentars', comentarRouter)
  app.use('/api/v1/personajes', personajeRouter)
  app.use('/api/v1/meteoros', apisRouter)
-
-
 
 //  app.get('/api/v1/meteoros', (req,res) => {
 //   res.json(meteoros)
