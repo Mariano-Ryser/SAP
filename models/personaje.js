@@ -17,45 +17,39 @@ const missionSchema = mongoose.Schema({
 const personajeSchema = mongoose.Schema({
     name: { type: String, required: true },
     surname: { type: String, required: true },
-
-    healt: { type: Number, default: 100, min: 110, max: 200 },
-    mana: { type: Number, default: 100, min: 110, max: 200 }, // Mana o puntos de energía mágica
-    stamina: { type: Number, default: 100, min: 100, max: 500 },
-    
-    // birtDate: { type: Number, required: true, min: 0, max: 120 }, //metodo de  almacenamiento para comparativos??
-
-    age: { type: Number, required: true, min: 0, max: 120 },
+    age: { type: Number, required: false, min: 0, max: 120 },
     email: { type: String, required: true },
     city: { type: String, required: true },
     description: { type: String, required: true },
     deleted: { type: Boolean, default: false },
-    height: { type: Number, required: true, min: 50, max: 250 }, // Altura en cm, valores razonables para humanos
-    weight: { type: Number, required: true, min: 3, max: 300 }, // Peso en kg, valores razonables
-    bloodType: { type: String, enum: ['A', 'B', 'AB', 'O'], required: true },
-    strength: { type: Number, default: 5, min: 0, max: 100 }, // Valores entre 0 y 100
-    agility: { type: Number, default: 5, min: 0, max: 100 },
-    intelligence: { type: Number, default: 5, min: 0, max: 100 },
-    charisma: { type: Number, default: 5, min: 0, max: 100 },
-    dexterity: { type: Number, default: 5, min: 0, max: 100 },
-    luck: { type: Number, default: 5, min: 0, max: 100 },
-    specialAbilities: [{ type: String }],
-    combatSkills: [combatSkillSchema], // Lista de habilidades de combate como subdocumentos
-    inventory: [{ 
-        itemName: { type: String, required: true },
-        quantity: { type: Number, default: 1, min: 0 }
-    }],
-    guild: [{ 
-        guildName: { type: String, default: "---" },
-        members: { type: String, default: "---" },
-        Upgrades: { type: String, default: "---" },
-        Donations: { type: String, default: "---" },
-    }],
-    alliances: [{ 
-        name: { type: String, required: true },
-        description: { type: String }
-    }],
-    missions: [missionSchema], // Lista de misiones como subdocumentos
-    role: { type: String, enum: ['Warrior', 'Mage', 'Archer', 'Rogue', 'Healer'], default: 'Warrior' }, // Rol del personaje en el juego
+    
+    // healt: { type: Number, default: 100, min: 110, max: 200 },
+    // mana: { type: Number, default: 100, min: 110, max: 200 }, // Mana o puntos de energía mágica
+    // stamina: { type: Number, default: 100, min: 100, max: 500 },
+
+    // height: { type: Number, required: true, min: 50, max: 250 }, // Altura en cm, valores razonables para humanos
+    // weight: { type: Number, required: true, min: 3, max: 300 }, // Peso en kg, valores razonables
+    // bloodType: { type: String, enum: ['A', 'B', 'AB', 'O'], required: true },
+    // strength: { type: Number, default: 5, min: 0, max: 100 }, // Valores entre 0 y 100
+    // agility: { type: Number, default: 5, min: 0, max: 100 },
+    // intelligence: { type: Number, default: 5, min: 0, max: 100 },
+    // charisma: { type: Number, default: 5, min: 0, max: 100 },
+    // dexterity: { type: Number, default: 5, min: 0, max: 100 },
+    // luck: { type: Number, default: 5, min: 0, max: 100 },
+    // specialAbilities: [{ type: String }],
+    // combatSkills: [combatSkillSchema], // Lista de habilidades de combate como subdocumentos
+    // inventory: [{ 
+    //     itemName: { type: String, required: true },
+    //     quantity: { type: Number, default: 1, min: 0 }
+    // }],
+    // alliances: [{ 
+    //     name: { type: String, required: true },
+    //     description: { type: String }
+    // }],
+    // missions: [missionSchema], // Lista de misiones como subdocumentos
+    // role: { type: String, enum: ['Warrior', 'Mage', 'Archer', 'Rogue', 'Healer'], default: 'Warrior' }, // Rol del personaje en el juego
+
+
 }, { timestamps: true });
 
 //ALMACENAMOS EN UNA CONSTANTE EL MODELADO DEL ALMACEN

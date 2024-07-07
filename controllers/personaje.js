@@ -5,9 +5,6 @@ const getPersonajes = async (req, res) => {
     const personajes = await Personaje.find({deleted: false}).sort({_id:`${sort}`}) 
     // res.status(200).json({ok:true, data: products, count: products.length})
     res.status(200).json({personajes})
-
-
-
     }
 
 const createPersonaje = (req, res) => {

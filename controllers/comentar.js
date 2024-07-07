@@ -110,50 +110,33 @@ async function updateComentariosNegativos(req, res) {
 //       }
      
 //   }
+  
 
-
-  /// NUMERO DE COMENTARIOS
-// const getComentarsNumber = async(req, res) => {
-//   const comentarsNumberDeleted = ((await Comentar.find({deleted: true})).length)
-//   // console.log(comentarsNumber , comentarsNumberDeleted)
-//   const comentarsNumber = ((await Comentar.find({deleted: false})).length)
-//  console.log("BOX COMENTAR")
-//   console.log("comentarios: " + comentarsNumber )
-//   console.log("comentarios Borrados: " + comentarsNumberDeleted )
-// }
-// getComentarsNumber();
 
 
 const getComentars = async (req, res) => { 
-  
+  console.log("recibo peticion")
+  const comentars =  (await Comentar.find({deleted: false}).sort({_id: 1})).reverse().slice(0,155);
+  updateComentariosNegativos()
+      
+        //Aqui Solo seran los textos que empiezen con Ba
+        // const comentars =  (await Comentar.find({ text: /^Ba/ }))
+        
+        // Aqui son las palabras que empiezen con "A" o con "B" o con "M"
+        // const comentars =  (await Comentar.find({ text: /^[ABM]/ })) 
+        
+        // Aqui son las Textos que en cualquier lugar contengan la palabra "pajarito", el "/i" significa que puede ser con letra grande
+        // const comentars =  (await Comentar.find({ text: /pajarito/i })) 
+        
+        // LLamando a funcion que remplaza palabras..
+      
+        
+    //Comentar.update({deleted: "true"}, {$set: {deleted: "false"}}).then(res => console.log({res}))
+    // res.status(200).json({ok:true, data: comentars, count: comentars.length})
+    res.status(200).json({comentars})
 
-  console.log("recibo peticion");
-  const comentars =  (await Comentar.find({deleted: false}).sort({_id: 1})).reverse().slice(0,6);
+    
 
-  
-
-  // const comentarsNumber = ((await Comentar.find({deleted: false})).length)
-  
-  // console.log(comentarsNumber)
-  // const delCom = (await Comentar.find ({deleted: true}).sort({ createdAd: -1}).limit(1))
-  // console.log(delCom) 
-  
-  // updateComentariosNegativos()
-  
-  //Aqui Solo seran los textos que empiezen con Ba
-  // const comentars =  (await Comentar.find({ text: /^Ba/ }))
-  
-  // Aqui son las palabras que empiezen con "A" o con "B" o con "M"
-  // const comentars =  (await Comentar.find({ text: /^[ABM]/ })) 
-  
-  // Aqui son las Textos que en cualquier lugar contengan la palabra "pajarito", el "/i" significa que puede ser con letra grande
-  // const comentars =  (await Comentar.find({ text: /pajarito/i })) 
-  
-  // LLamando a funcion que remplaza palabras..
-
-  // Comentar.update({deleted: "true"}, {$set: {deleted: "false"}}).then(res => console.log({res}))
-  // res.status(200).json({ok:true, data: comentars, count: comentars.length})
-  res.status(200).json({comentars})
 }
 
 const createComentar = (req, res) => {
