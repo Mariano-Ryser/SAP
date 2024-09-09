@@ -111,9 +111,6 @@ async function updateComentariosNegativos(req, res) {
      
 //   }
   
-
-
-
 const getComentars = async (req, res) => { 
   console.log("recibo peticion")
   const comentars =  (await Comentar.find({deleted: false}).sort({_id: 1})).reverse().slice(0,155);
@@ -134,8 +131,6 @@ const getComentars = async (req, res) => {
     //Comentar.update({deleted: "true"}, {$set: {deleted: "false"}}).then(res => console.log({res}))
     // res.status(200).json({ok:true, data: comentars, count: comentars.length})
     res.status(200).json({comentars})
-
-    
 
 }
 
@@ -172,8 +167,32 @@ const deleteComentar = async (req, res) =>{
         console.log({ id })
      }
 
+     // Controlador para agregar likes
+const likeComentar = async (req, res) => {
+  const { id } = req.params;
+
+  try {
+    // Encuentra el comentario y aumenta los likes en 1
+    const comentarioActualizado = await Comentar.findByIdAndUpdate(
+      id,
+      { $inc: { likes: 1 } },
+      { new: true } // Devuelve el comentario actualizado
+    );
+
+    if (!comentarioActualizado) {
+      return res.status(404).json({ ok: false, message: 'Comentario no encontrado' });
+    }
+
+    res.status(200).json({ ok: true, comentario: comentarioActualizado });
+  } catch (error) {
+    console.error('Error al agregar like:', error);
+    res.status(500).json({ ok: false, message: 'Error al agregar like' });
+  }
+};
+
 module.exports = {
         getComentars,
         createComentar,
         deleteComentar,
+        likeComentar,  // Exportamos el nuevo controlador
      }

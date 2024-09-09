@@ -7,4 +7,7 @@ routerr.get('/', comentarController.getComentars)
 routerr.post('/', comentarController.createComentar)
 routerr.delete('/:id', comentarController.deleteComentar)
 
+// Nueva ruta para incrementar likes
+routerr.patch('/:id/like', comentarController.likeComentar);
+
 module.exports = routerr
