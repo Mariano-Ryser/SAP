@@ -6,8 +6,7 @@ const notiSchema = mongoose.Schema({
     text: { type: String, required: true },
     deleted: { type: Boolean, default: false },
     mesCreacion: { type: String },
-    likes: { type: Number, default: 0 },  // Nuevo campo para contar "Me gusta"
-    likedBy: { type: [String], default: [] }  // Opcional: lista de usuarios que dieron "Me gusta"
+    likes: { type: Number, default: 0 },   
 }, { timestamps: true });
 
 //ALMACENAMOS EN UNA CONSTANTE EL MODELADO DEL ALMACEN

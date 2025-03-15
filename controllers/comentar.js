@@ -196,3 +196,5 @@ module.exports = {
         deleteComentar,
         likeComentar,  // Exportamos el nuevo controlador
      }
+
+     

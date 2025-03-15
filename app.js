@@ -8,13 +8,14 @@ const dbConnect = require('./db')
 const cors = require('cors')  //Cors permiso para interaccion entre servidores (mi frontend)
 
 const notiRouter = require('./routes/noti')
+const worteRouter = require('./routes/worte');
+
 const comentarRouter = require('./routes/comentar')
 const productRouter = require('./routes/product')
 const personajeRouter = require('./routes/personaje')
 const apisRouter = require('./routes/apis')
 
 // const meteoros = require('./apis/meteoros.json') 
-
 
 const app = express()
 app.use(helmet())
@@ -30,6 +31,7 @@ app.use(express.json())
 
  app.use('/api/v1/products', productRouter)
  app.use('/api/v1/notis', notiRouter)
+ app.use('/api/v1/wortes', worteRouter)
  app.use('/api/v1/comentars', comentarRouter)
  app.use('/api/v1/personajes', personajeRouter)
  app.use('/api/v1/meteoros', apisRouter)
@@ -41,6 +43,9 @@ app.use(express.json())
 
 app.get('/', (req,res) => {
   res.sendFile(path.join(__dirname, '/public/index.html'));
+})
+app.get('/home', (req,res) => {
+  res.sendFile(path.join(__dirname, '/public/home.html'));
 })
 
 
