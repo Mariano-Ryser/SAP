@@ -44,19 +44,17 @@ const deleteNoti = async (req, res) =>{
 
 const likeNoti = async (req, res) => {
         const { id } = req.params;
-      
         try {
           // Encuentra el comentario y aumenta los likes en 1
           const notiActualizado = await Noti.findByIdAndUpdate(
             id,
-            { $inc: { likes: 1 } },
+            { $inc: { likes: +1 } },
             { new: true } // Devuelve el comentario actualizado
           );
-      
           if (!notiActualizado) {
             return res.status(404).json({ ok: false, message: 'Noti no encontrado' });
           }
-      
+          console.log(`❤️ Like agregado a la nota "${notiActualizado.titulo}"`);
           res.status(200).json({ ok: true, noti: notiActualizado });
         } catch (error) {
           console.error('Error al agregar like:', error);

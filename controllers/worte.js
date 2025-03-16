@@ -36,12 +36,14 @@ const deleteWorte = async (req, res) =>{
 const likeWorte = async (req, res) => {
   try {
     const { id } = req.params;
-    const updatedWorte = await Worte.findByIdAndUpdate(id, { $inc: { likes: 1 } }, { new: true });
-
+    const updatedWorte = await Worte.findByIdAndUpdate(
+      id,
+      { $inc: { likes: 1 } },
+      { new: true }
+    );
     if (!updatedWorte) {
       return res.status(404).json({ ok: false, message: "Palabra no encontrada" });
     }
-
     console.log(`❤️ Like agregado a la palabra ${updatedWorte.palabra}`);
     res.status(200).json({ ok: true, data: updatedWorte });
   } catch (error) {

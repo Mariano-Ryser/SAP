@@ -14,6 +14,7 @@ const comentarRouter = require('./routes/comentar')
 const productRouter = require('./routes/product')
 const personajeRouter = require('./routes/personaje')
 const apisRouter = require('./routes/apis')
+const preguntaRouter = require("./routes/pregunta");
 
 // const meteoros = require('./apis/meteoros.json') 
 
@@ -29,6 +30,7 @@ dbConnect(app)
 app.use(cors({origin: true})) 
 app.use(express.json())
 
+app.use("/api/v1/preguntas", preguntaRouter);
  app.use('/api/v1/products', productRouter)
  app.use('/api/v1/notis', notiRouter)
  app.use('/api/v1/wortes', worteRouter)
