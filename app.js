@@ -4,17 +4,18 @@ require('dotenv').config() //Variables de entorno
 
 const express = require('express') 
 const helmet = require('helmet') 
-const dbConnect = require('./db')
+const dbConnect = require('./db') //PRIMERO Q TODO
 const cors = require('cors')  //Cors permiso para interaccion entre servidores (mi frontend)
+const apisRouter = require('./routes/apis')
 
+
+const personajeRouter = require('./routes/personaje')
+const comentarRouter = require('./routes/comentar')
 const notiRouter = require('./routes/noti')
 const worteRouter = require('./routes/worte');
-
-const comentarRouter = require('./routes/comentar')
 const productRouter = require('./routes/product')
-const personajeRouter = require('./routes/personaje')
-const apisRouter = require('./routes/apis')
 const preguntaRouter = require("./routes/pregunta");
+const imageRouter = require('./routes/imageRoutes');
 
 // const meteoros = require('./apis/meteoros.json') 
 
@@ -29,7 +30,7 @@ dbConnect(app)
 
 app.use(cors({origin: true})) 
 app.use(express.json())
-
+app.use('/api/v1/images', imageRouter);
 app.use("/api/v1/preguntas", preguntaRouter);
  app.use('/api/v1/products', productRouter)
  app.use('/api/v1/notis', notiRouter)
