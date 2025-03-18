@@ -2,6 +2,7 @@ const Image = require('../models/image'); // Asegúrate de que tienes un modelo 
 const cloudinary = require('../config/cloudinary');
 
 
+
 // SUBIR IMAGEN A CLOUDINARY
 const uploadImage = async (req, res) => {
   try {
@@ -23,7 +24,6 @@ const uploadImage = async (req, res) => {
     res.status(500).json({ message: 'Error al subir imagen' });
   }
 };
-
 // OBTENER IMÁGENES
 const getImages = async (req, res) => {
   try {
@@ -55,5 +55,47 @@ const getImages = async (req, res) => {
   }
 };
 
-module.exports = { uploadImage, getImages };
+const likeImage = async (req, res) => {
+  try {
+    const image = await Image.findByIdAndUpdate(req.params.id, { $inc: { likes: 1 } }, { new: true });
+    res.json(image);
+  } catch (err) {
+    res.status(500).json({ message: 'Error al dar like' });
+  }
+};
+
+const addComment = async (req, res) => {
+  try {
+    const { text } = req.body;
+    const image = await Image.findByIdAndUpdate(
+      req.params.id,
+      { $push: { comments: { text } } },
+      { new: true }
+    );
+    res.json(image);
+  } catch (err) {
+    res.status(500).json({ message: 'Error al agregar comentario' });
+  }
+};
+
+const likeComment = async (req, res) => {
+  const { imageId, commentId } = req.params;
+  try {
+    const image = await Image.findById(imageId);
+    if (!image) return res.status(404).json({ message: 'Imagen no encontrada' });
+
+    const comment = image.comments.id(commentId);
+    if (!comment) return res.status(404).json({ message: 'Comentario no encontrado' });
+
+    comment.likes = (comment.likes || 0) + 1;
+    await image.save();
+
+    res.status(200).json({ success: true, likes: comment.likes });
+  } catch (error) {
+    console.error('Error al dar like al comentario:', error);
+    res.status(500).json({ success: false, message: 'Error del servidor' });
+  }
+};
+
+module.exports = { uploadImage, getImages, likeImage, addComment, likeComment };
 
