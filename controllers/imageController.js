@@ -1,6 +1,7 @@
 const Image = require('../models/image'); // Asegúrate de que tienes un modelo de imagen
 const cloudinary = require('../config/cloudinary');
 
+
 // SUBIR IMAGEN A CLOUDINARY
 const uploadImage = async (req, res) => {
   try {
@@ -8,26 +9,12 @@ const uploadImage = async (req, res) => {
       return res.status(400).json({ message: 'No se ha enviado ninguna imagen' });
     }
 
-    // Subir la imagen a Cloudinary con transformación
-    const result = await cloudinary.uploader.upload(req.file.path, {
-      transformation: [
-        {
-          quality: 'auto', // Auto para calidad adaptativa
-          fetch_format: 'auto', // Para el formato adecuado
-        },
-        {
-          width: 300, // Ancho deseado
-          height: 300, // Alto deseado
-          crop: 'fill', // Asegura que la imagen llene el espacio
-          gravity: 'auto', // Centra la imagen automáticamente
-        }
-      ]
-    });
-     
-    const imageUrl = result.secure_url; // URL optimizada de Cloudinary
+    // req.file.path YA es la URL segura de Cloudinary
+    const imageUrl = req.file.path;
+    const publicId = req.file.filename; // Guarda el public_id por si luego querés borrarla
 
     // Guardar en la base de datos
-    const newImage = new Image({ imageUrl });
+    const newImage = new Image({ imageUrl, publicId });
     await newImage.save();
 
     res.status(201).json({ message: 'Imagen subida con éxito', image: newImage });
@@ -51,7 +38,7 @@ const getImages = async (req, res) => {
       const imageUrl = image.imageUrl;
 
       // Aplicar las transformaciones directamente en la URL
-      const optimizedUrl = cloudinary.url(imageUrl, {
+      const optimizedUrl = cloudinary.url(image.imageUrl, {
         transformation: [
           { quality: 'auto', fetch_format: 'auto' },
           { width: 300, height: 300, crop: 'fill', gravity: 'auto' }

@@ -4,17 +4,12 @@ const getNotis = async (req, res) => {
   console.log("recibo peticion")
   const notis =  (await Noti.find({deleted: false}).sort({_id: 1})).reverse().slice(0,155);
     res.status(200).json({notis})
-
-    
-
 }
 
 const createNoti = (req, res) => {
     const newNoti = new Noti(req.body)
     newNoti
-
-    .save().catch((err) => console.log(err))
-     }
+    .save().catch((err) => console.log(err))}
      
 const deleteNoti = async (req, res) =>{
         const { id } = req.params

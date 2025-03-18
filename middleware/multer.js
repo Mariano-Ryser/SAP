@@ -7,7 +7,7 @@ const storage = new CloudinaryStorage({
   cloudinary: cloudinary,
   params: {
     folder: 'uploads', // Carpeta en Cloudinary
-    format: async () => 'png', // Cambia el formato si necesitas otro (jpg, webp, etc.)
+    // format: async () => 'png', // Cambia el formato si necesitas otro (jpg, webp, etc.)
     public_id: (req, file) => file.originalname.split('.')[0], // Nombre del archivo sin extensión
   },
 });
