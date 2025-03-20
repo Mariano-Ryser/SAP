@@ -42,3 +42,5 @@ const deleteProduct = async (req, res) =>{
         createProduct,
         deleteProduct
      }
+
+     

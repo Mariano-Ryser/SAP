@@ -54,7 +54,7 @@ const getImages = async (req, res) => {
     res.status(500).json({ message: "Error al obtener imágenes" });
   }
 };
-
+// DAR LIKE A UNA IMAGEN
 const likeImage = async (req, res) => {
   try {
     const image = await Image.findByIdAndUpdate(req.params.id, { $inc: { likes: 1 } }, { new: true });
@@ -63,7 +63,7 @@ const likeImage = async (req, res) => {
     res.status(500).json({ message: 'Error al dar like' });
   }
 };
-
+// AGREGAR COMENTARIO A UNA IMAGEN
 const addComment = async (req, res) => {
   try {
     const { text } = req.body;
@@ -77,7 +77,7 @@ const addComment = async (req, res) => {
     res.status(500).json({ message: 'Error al agregar comentario' });
   }
 };
-
+// DAR LIKE A UN COMENTARIO
 const likeComment = async (req, res) => {
   const { imageId, commentId } = req.params;
   try {
@@ -96,6 +96,30 @@ const likeComment = async (req, res) => {
     res.status(500).json({ success: false, message: 'Error del servidor' });
   }
 };
+// ELIMINAR IMAGEN DE CLOUDINARY Y MONGODB
+const deleteImage = async (req, res) => {
+  const { id } = req.params;
 
-module.exports = { uploadImage, getImages, likeImage, addComment, likeComment };
+  try {
+    // Busca la imagen en MongoDB
+    const image = await Image.findById(id);
+    if (!image) {
+      return res.status(404).json({ ok: false, message: 'Imagen no encontrada' });
+    }
+
+    // Elimina la imagen de Cloudinary usando el public_id
+    await cloudinary.uploader.destroy(image.publicId);
+
+    // Elimina la imagen de MongoDB
+    await Image.findByIdAndDelete(id);
+
+    res.status(200).json({ ok: true, message: 'Imagen eliminada con éxito' });
+  } catch (error) {
+    console.error('Error al eliminar la imagen:', error);
+    res.status(500).json({ ok: false, message: 'Error al eliminar la imagen' });
+  }
+};
+
+//Exportar funciones
+module.exports = { uploadImage, getImages, likeImage, addComment, likeComment, deleteImage };
 

@@ -1,12 +1,13 @@
 const Personaje = require('../models/personaje')
 
+//Obtener Personajes
 const getPersonajes = async (req, res) => {
     sort=-1;
     const personajes = await Personaje.find({deleted: false}).sort({_id:`${sort}`}) 
     // res.status(200).json({ok:true, data: products, count: products.length})
     res.status(200).json({personajes})
     }
-
+//Create Personaje
 const createPersonaje = (req, res) => {
     if(!req.body.name){
         res.status(400).json({
@@ -25,7 +26,7 @@ const newPersonaje = new Personaje(req.body)
              .catch((err) => console.log(err))
             // next()
      }
-
+//Delete Personaje
 const deletePersonaje = async (req, res) =>{
     const { id } = req.params
 
@@ -36,6 +37,7 @@ const deletePersonaje = async (req, res) =>{
     console.log({ id })
 }
 
+//Exportar funciones
      module.exports = {
         getPersonajes,
         createPersonaje,

@@ -1,16 +1,18 @@
 const Noti = require('../models/noti')
 
+//Obtener Notis
 const getNotis = async (req, res) => { 
-  console.log("recibo peticion")
-  const notis =  (await Noti.find({deleted: false}).sort({_id: 1})).reverse().slice(0,155);
+  const notis =  (await Noti.find({deleted: false}).sort({_id: 1})).reverse().slice(0,2);
     res.status(200).json({notis})
+    console.log("Notas fetched con Exito !")
 }
-
+//Create Noti
 const createNoti = (req, res) => {
     const newNoti = new Noti(req.body)
     newNoti
     .save().catch((err) => console.log(err))}
-     
+
+//Delete Noti
 const deleteNoti = async (req, res) =>{
         const { id } = req.params
         await Noti.findByIdAndUpdate(id, {
@@ -20,7 +22,7 @@ const deleteNoti = async (req, res) =>{
         res.status(200).json({ok:true, message: 'Notiio eliminado con exito!'})
         console.log({ id })
      }
-
+//Dar like a una nota
 const likeNoti = async (req, res) => {
         const { id } = req.params;
         try {
@@ -41,6 +43,8 @@ const likeNoti = async (req, res) => {
         }
       };
 
+
+//Exportar funciones
 module.exports = {
         getNotis,
         createNoti,

@@ -1,5 +1,6 @@
 const Pregunta = require("../models/pregunta");
 
+// OBTENER PREGUNTAS
 const getPreguntas = async (req, res) => {
   const { categoria, dificultad } = req.query; // Filtros opcionales
   const filtro = {};
@@ -14,7 +15,7 @@ const getPreguntas = async (req, res) => {
     res.status(500).json({ error: "Error al obtener preguntas" });
   }
 };
-
+//Crear Pregunta
 const createPregunta = async (req, res) => {
   try {
     const nuevaPregunta = new Pregunta(req.body);
@@ -24,5 +25,17 @@ const createPregunta = async (req, res) => {
     res.status(500).json({ error: "Error al crear pregunta" });
   }
 };
+
+//Delete Pregunta
+const deletePregunta = async (req, res) =>{
+  const { id } = req.params
+
+  await Pregunta.findByIdAndUpdate(id, {
+      deleted: true,
+  })
+  res.status(200).json({ok:true, message: 'Pregunta eliminada con exito!'})
+  console.log({ id })
+}
+
 
 module.exports = { getPreguntas, createPregunta };
