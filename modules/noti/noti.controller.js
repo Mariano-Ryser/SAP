@@ -9,8 +9,13 @@ const getNotis = async (req, res) => {
 const createNoti = (req, res) => {
     const newNoti = new Noti(req.body)
     newNoti
-    .save().catch((err) => console.log(err))}
-     
+    .save()
+    .then( (noti) => {
+      res.status(201).json({ok: true, noti})
+      console.log(noti)  
+      console.log(noti.titulo)  
+       }).catch((err) => console.log(err))}
+       
 const deleteNoti = async (req, res) =>{
         const { id } = req.params
         await Noti.findByIdAndUpdate(id, {

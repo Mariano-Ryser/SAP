@@ -15,9 +15,7 @@ const createComentar = (req, res) => {
              res.status(201).json({ok: true, comentar})
              console.log(comentar)
              console.log(comentar.titulo)     
-              })
-              
-             .catch((err) => console.log(err))
+              }).catch((err) => console.log(err))
      }  
 const deleteComentar = async (req, res) =>{
         const { id } = req.params
@@ -56,5 +54,3 @@ module.exports = {
         deleteComentar,
         likeComentar,  // Exportamos el nuevo controlador
      }
-
-     

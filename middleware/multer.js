@@ -12,6 +12,6 @@ const storage = new CloudinaryStorage({
   },
 });
 
-const upload = multer({ storage });
+const upload = multer({ storage }); // Puedes cambiar el nombre del campo si lo necesitas
 
 module.exports = upload; // Asegúrate de que esto está exportando `upload`
