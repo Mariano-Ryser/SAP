@@ -1,4 +1,4 @@
-const Worte = require('../models/worte');
+const Worte = require('./worte.model');
 
 // Obtener todas las palabras no eliminadas
 const getWortes = async (req, res) => {

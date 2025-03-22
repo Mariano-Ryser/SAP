@@ -1,4 +1,4 @@
-const Personaje = require('../models/personaje')
+const Personaje = require('./personaje.model')
 
 //Obtener Personajes
 const getPersonajes = async (req, res) => {

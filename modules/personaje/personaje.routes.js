@@ -1,6 +1,6 @@
 const express = require('express')
 const char = express.Router()
-const personajeController = require('../controllers/personaje')
+const personajeController = require('./personaje.controller')
 
 
 char.get('/', personajeController.getPersonajes)

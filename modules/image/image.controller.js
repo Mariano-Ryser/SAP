@@ -1,5 +1,5 @@
-const Image = require('../models/image'); // Asegúrate de que tienes un modelo de imagen
-const cloudinary = require('../config/cloudinary');
+const Image = require('./image.model'); // Asegúrate de que tienes un modelo de imagen
+const cloudinary = require('../../config/cloudinary');
 
 
 

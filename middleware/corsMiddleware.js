@@ -2,16 +2,13 @@
 const cors = require('cors');
 
 const allowedOrigins = process.env.NODE_ENV === 'production' 
-  ? ['https://zeep-front.vercel.app',
+  ? [
+    'https://www.deep-zeep.com',
+     'https://zeep-front.vercel.app',
     // 'https://zeep-back.ejemplo.com',    en el caso de querer agregar mas dominios
     // 'https://zeep-back.ejemplo2.com/',
   ] 
-  : [
-    'http://localhost:3000',
-    // 'http://localhost:3001',   
-    // 'http://localhost:3002',
-  ];
-
+  : ['http://localhost:3000'];
 
 const corsOptions = {
   origin: function (origin, callback) {
@@ -21,9 +18,10 @@ const corsOptions = {
       callback(new Error('Not allowed by CORS'));
     }
   },
-  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-  allowedHeaders: ['Content-Type', 'Authorization'],
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS', 'PATCH'], // Permitir estos métodos
+  allowedHeaders: ['Content-Type', 'Authorization', 'Admin-Access-Key'], // Permitir el encabezado personalizado
   credentials: true,
 };
 
 module.exports = cors(corsOptions);
+

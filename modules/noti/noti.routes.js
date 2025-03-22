@@ -1,6 +1,6 @@
 const express = require('express')
 const routerr = express.Router()
-const notiController = require('../controllers/noti')
+const notiController = require('./noti.controller')
 
 //obtener notificaciones
 routerr.get('/', notiController.getNotis)

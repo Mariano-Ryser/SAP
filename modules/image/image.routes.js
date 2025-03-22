@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
-const upload = require('../middleware/multer'); // IMPORTACIÓN CORRECTA
-const { uploadImage, getImages, likeImage, addComment, likeComment, deleteImage } = require('../controllers/imageController');
+const upload = require('../../middleware/multer'); // IMPORTACIÓN CORRECTA
+const { uploadImage, getImages, likeImage, addComment, likeComment, deleteImage } = require('./image.controller');
 
 // Ruta para obtener imágenes
 router.get('/', getImages);

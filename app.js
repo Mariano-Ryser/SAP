@@ -8,17 +8,18 @@ const dbConnect = require('./db') //PRIMERO Q TODO)
 const corsMiddleware = require('./middleware/corsMiddleware'); // Importar el middleware de CORS
 const rateLimitMiddleware = require('./middleware/rateLimitMiddleware'); // Importar el middleware de rate limiting
 
-const apisRouter = require('./routes/apis')
-const adminRouter = require('./routes/admin'); // Ruta de administración
-const personajeRouter = require('./routes/personaje')
-const comentarRouter = require('./routes/comentar')
-const notiRouter = require('./routes/noti')
-const worteRouter = require('./routes/worte');
-const productRouter = require('./routes/product')
-const preguntaRouter = require("./routes/pregunta");
-const imageRouter = require('./routes/imageRoutes');
 
-// const meteoros = require('./apis/meteoros.json') 
+
+const adminRouter = require('./modules/admin/admin.routes')
+const comentarRouter = require('./modules/comentar/comentar.routes')
+const imageRouter = require('./modules/image/image.routes')
+const notiRouter = require('./modules/noti/noti.routes')
+const personajeRouter = require('./modules/personaje/personaje.routes')
+const preguntaRouter = require('./modules/pregunta/pregunta.routes')
+const productRouter = require('./modules/product/product.routes')
+const worteRouter = require('./modules/worte/worte.routes')
+
+
 
 const app = express()
 
@@ -39,25 +40,21 @@ app.use('/api/v1/admin', adminRouter);
 app.use('/api/v1/images', imageRouter);
 app.use("/api/v1/preguntas", preguntaRouter);
 app.use('/api/v1/products', productRouter)
- app.use('/api/v1/notis', notiRouter)
- app.use('/api/v1/wortes', worteRouter)
- app.use('/api/v1/comentars', comentarRouter)
- app.use('/api/v1/personajes', personajeRouter)
- app.use('/api/v1/meteoros', apisRouter)
+app.use('/api/v1/notis', notiRouter)
+app.use('/api/v1/wortes', worteRouter)
+app.use('/api/v1/comentars', comentarRouter)
+app.use('/api/v1/personajes', personajeRouter)
  
- app.get('/api/v1/meteoros', (req,res) => {
-   res.json(meteoros)
-   console.log(meteoros)
-  })
-  
-  app.get('/', (req,res) => {
+
+ 
+app.get('/', (req,res) => {
     res.sendFile(path.join(__dirname, '/public/index.html'));
   })
-  app.get('/home', (req,res) => {
+  
+app.get('/home', (req,res) => {
     res.sendFile(path.join(__dirname, '/public/home.html'));
   })
   
-
 // Manejo de errores
 app.use((err, req, res, next) => {
   if (err.message === 'Not allowed by CORS') {
@@ -75,6 +72,4 @@ app.use((req,res) => {
 
  //CON ESTO SERVIMOS LOS ARCHIVOS ESTATICOS DE HMTL CSS Y JS DE LA CARPETA PUBLIC!
 // app.use(express.static(path.join(__dirname, 'public'))) 
-
-
 

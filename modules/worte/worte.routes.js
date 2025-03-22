@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const worteController = require('../controllers/worte');
+const worteController = require('./worte.controller');
 
 router.get('/', worteController.getWortes);
 router.post('/', worteController.createWorte);

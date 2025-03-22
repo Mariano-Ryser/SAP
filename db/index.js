@@ -6,19 +6,25 @@ const dbConnect = (app) => {
     mongoose.connect(
         `mongodb+srv://MR-2291:${process.env.MONGO_DB_PASS}@cluster0.brhpx.mongodb.net/stock-app?retryWrites=true&w=majority`
     )
+    
     .then((result) => {
         app.listen(PORT, () => {
-            console.log(`servidor escuchando en puerto ${PORT}`)
-        })
+            console.log(`Servidor corriendo en http://localhost:${PORT}`);
+          }).on('error', (err) => {
+            if (err.code === 'EADDRINUSE') {
+              console.error(`Error: El puerto ${PORT} ya está en uso.`);
+            } else {
+              console.error('Error al iniciar el servidor:', err);
+            }
+          });
         
-     
         setTimeout(()=>{
             console.log("conexion exitosa a mongoDB.../db/index.js")
-            },1200);
+            },800);
 
         setTimeout(()=>{
                 console.log("...")
-                },2000);
+                },100);
 
     
         

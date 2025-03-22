@@ -1,12 +1,20 @@
+// middleware/authAdmin.js
+const jwt = require('jsonwebtoken');
+
 const authAdmin = (req, res, next) => {
-    const adminKey = req.headers['admin-access-key']; // Obtener la clave de los headers
-  
-    // Verificar si la clave coincide con la del entorno
-    if (adminKey && adminKey === process.env.ADMIN_ACCESS_KEY) {
-      next(); // Clave correcta, continuar
-    } else {
-      res.status(403).json({ error: 'Acceso no autorizado. Clave de administrador incorrecta o faltante.' }); // Clave incorrecta, denegar acceso
-    }
-  };
-  
-  module.exports = authAdmin;
+  const token = req.header('Authorization')?.replace('Bearer ', '');
+
+  if (!token) {
+    return res.status(403).json({ error: 'Acceso denegado. Token no proporcionado.' });
+  }
+
+  try {
+    const decoded = jwt.verify(token, process.env.JWT_SECRET);
+    req.user = decoded; // Añade el usuario decodificado a la solicitud
+    next();
+  } catch (error) {
+    res.status(403).json({ error: 'Token inválido o expirado.' });
+  }
+};
+
+module.exports = authAdmin;

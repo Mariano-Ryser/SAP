@@ -93,7 +93,7 @@
       "descubridor": "(NEAT) en el Observatorio de Haleakala, Hawái."
     },
     {"id":"14",
-      "nombre": " 4179 Toutatis) ",
+      "nombre": " 4179 Toutatis ",
       "link": "https://echo.jpl.nasa.gov/asteroids/4179_Toutatis/toutatis.html",
       "descripcion": "Su nombre proviene de la deidad celta Toutatis, el dios del cielo y la guerra. Este asteroide es especialmente interesante debido a su forma inusual y su trayectoria cercana a la Tierra. Toutatis tiene una forma alargada y se cree que está compuesto por dos lóbulos conectados por un cuello estrecho. Sus dimensiones son aproximadamente de 4.6 kilómetros de longitud y 2.4 kilómetros de ancho. Este objeto gira lentamente sobre su eje de rotación en un período de tiempo de aproximadamente 5.4 días.",
       "distancia_tierra": " 1.5 millones de kilómetros de la Tierra, lo cual es aproximadamente cuatro veces la distancia entre la Tierra y la Luna.",
