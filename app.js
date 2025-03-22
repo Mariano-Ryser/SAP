@@ -5,7 +5,7 @@ require('dotenv').config() //Variables de entorno
 const express = require('express') 
 const helmet = require('helmet') 
 const dbConnect = require('./db') //PRIMERO Q TODO)
-const corsMiddleware = require('./middleware/corsMiddleware'); // Importar el middleware de CORS
+// const corsMiddleware = require('./middleware/corsMiddleware'); 
 const rateLimitMiddleware = require('./middleware/rateLimitMiddleware'); // Importar el middleware de rate limiting
 
 
@@ -27,7 +27,7 @@ app.use(helmet())
 dbConnect(app)
 
 // Usar el middleware de CORS
-app.use(corsMiddleware);
+// app.use(corsMiddleware);
 // Aplicar rate limiting a todas las rutas
 app.use(rateLimitMiddleware);
 
