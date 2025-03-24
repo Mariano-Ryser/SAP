@@ -20,8 +20,8 @@ const worteRouter = require('./modules/worte/worte.routes')
 
 
 // Los Cors se maneja desde Azure App Service
-const corsMiddleware = require('./middleware/corsMiddleware'); 
-app.use(corsMiddleware);
+// const corsMiddleware = require('./middleware/corsMiddleware'); 
+// app.use(corsMiddleware);
 
 app.use(helmet())
 dbConnect(app)
