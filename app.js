@@ -1,14 +1,13 @@
 // // // REQUERIMIENTOS Y CONSTANTES
 const path = require('node:path'); //requiriendo el path de node
+const express = require('express') 
 require('dotenv').config() //Variables de entorno
 
-const express = require('express') 
+const app = express()
 const helmet = require('helmet') 
 const dbConnect = require('./db') //PRIMERO Q TODO)
-// const corsMiddleware = require('./middleware/corsMiddleware'); 
+
 const rateLimitMiddleware = require('./middleware/rateLimitMiddleware'); // Importar el middleware de rate limiting
-
-
 
 const adminRouter = require('./modules/admin/admin.routes')
 const comentarRouter = require('./modules/comentar/comentar.routes')
@@ -20,17 +19,15 @@ const productRouter = require('./modules/product/product.routes')
 const worteRouter = require('./modules/worte/worte.routes')
 
 
-
-const app = express()
+// Los Cors se maneja desde Azure App Service
+const corsMiddleware = require('./middleware/corsMiddleware'); 
+app.use(corsMiddleware);
 
 app.use(helmet())
 dbConnect(app)
 
-// Usar el middleware de CORS
-// app.use(corsMiddleware);
 // Aplicar rate limiting a todas las rutas
 app.use(rateLimitMiddleware);
-
 
 //SIEMPRE ARRIBA DE LAS RUTAS express.json() para que pueda leer el body
 app.use(express.json())
@@ -50,10 +47,10 @@ app.use('/api/v1/personajes', personajeRouter)
 app.get('/', (req,res) => {
     res.sendFile(path.join(__dirname, '/public/index.html'));
   })
-  
 app.get('/home', (req,res) => {
     res.sendFile(path.join(__dirname, '/public/home.html'));
   })
+
   
 // Manejo de errores
 app.use((err, req, res, next) => {
@@ -68,8 +65,4 @@ app.use((err, req, res, next) => {
 app.use((req,res) => {
   res.status(404).send('<h1>404</h1>')
 })
-
-
- //CON ESTO SERVIMOS LOS ARCHIVOS ESTATICOS DE HMTL CSS Y JS DE LA CARPETA PUBLIC!
-// app.use(express.static(path.join(__dirname, 'public'))) 
 

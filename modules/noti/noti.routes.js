@@ -1,15 +1,31 @@
 const express = require('express')
-const routerr = express.Router()
+const router = express.Router()
 const notiController = require('./noti.controller')
+const Noti = require('./noti.model')
 
 //obtener notificaciones
-routerr.get('/', notiController.getNotis)
+router.get('/', notiController.getNotis)
 //crear notificacion
-routerr.post('/', notiController.createNoti)
+router.post('/', notiController.createNoti)
 //borrar notificacion
-routerr.delete('/:id', notiController.deleteNoti)
+router.delete('/:id', notiController.deleteNoti)
 //dar like a una notificacion
-routerr.patch('/:id/like', notiController.likeNoti);
+router.patch('/:id/like', notiController.likeNoti);
 
-module.exports = routerr
 
+module.exports = router
+
+
+router.get('/html', async (req, res) => {
+  try {
+    const notis = await Noti.find({}); // Usar el modelo Noti
+    let html = '<h1>Notificaciones</h1><ul>';
+    notis.forEach(noti => {
+      html += `<li><strong>${noti.titulo}</strong>: ${noti.text}</li>`;
+    });
+    html += '</ul>';
+    res.send(html);
+  } catch (error) {
+    res.status(500).send('Error al obtener las notificaciones');
+  }
+});

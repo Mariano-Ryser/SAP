@@ -1,9 +1,33 @@
 const Noti = require('./noti.model')
 
-const getNotis = async (req, res) => { 
-  console.log("recibo peticion")
-  const notis =  (await Noti.find({deleted: false}).sort({_id: 1})).reverse().slice(0,155);
-    res.status(200).json({notis})
+
+const getNotis = async (req, res) => {
+  try {
+    const page = parseInt(req.query.page) || 1;
+    const limit = parseInt(req.query.limit) || 5;
+    const skip = (page - 1) * limit;
+
+    const notis = await Noti.find({deleted: false})
+      .sort({createdAt: -1})
+      .skip(skip)
+      .limit(limit);
+
+    const total = await Noti.countDocuments({deleted: false});
+    const hasMore = total > (page * limit);
+
+    res.status(200).json({
+      notis,
+      pagination: {
+        page,
+        limit,
+        total,
+        hasMore
+      }
+    });
+  } catch (error) {
+    console.error("Error al obtener notificaciones:", error);
+    res.status(500).json({error: "Error al obtener notificaciones"});
+  }
 }
 
 const createNoti = (req, res) => {
@@ -12,10 +36,11 @@ const createNoti = (req, res) => {
     .save()
     .then( (noti) => {
       res.status(201).json({ok: true, noti})
-      console.log(noti)  
-      console.log(noti.titulo)  
-       }).catch((err) => console.log(err))}
-       
+      console.log(noti)
+      console.log(noti.titulo)
+       }).catch((err) => console.log(err))
+      }
+
 const deleteNoti = async (req, res) =>{
         const { id } = req.params
         await Noti.findByIdAndUpdate(id, {
@@ -51,4 +76,4 @@ module.exports = {
         createNoti,
         deleteNoti,
         likeNoti,
-     } 
+     }

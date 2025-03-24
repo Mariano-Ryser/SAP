@@ -15,3 +15,4 @@ const Product = mongoose.model('Product', productSchema,)
 
 //EXPORTACION DE MODULO
 module.exports = Product
+
