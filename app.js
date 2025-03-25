@@ -18,7 +18,6 @@ const preguntaRouter = require('./modules/pregunta/pregunta.routes')
 const productRouter = require('./modules/product/product.routes')
 const worteRouter = require('./modules/worte/worte.routes')
 
-
 // Los Cors se maneja desde Azure App Service
 const corsMiddleware = require('./middleware/corsMiddleware'); 
 app.use(corsMiddleware);
