@@ -28,15 +28,8 @@ const app = express();
 
 // Configurar middlewares
 app.use(corsMiddleware);
-app.use(helmet({
-    contentSecurityPolicy: {
-      directives: {
-        ...helmet.contentSecurityPolicy.getDefaultDirectives(),
-        'img-src': ["'self'", 'data:', 'https://*.cloudinary.com'],
-      },
-    },
-    crossOriginResourcePolicy: { policy: "cross-origin" } // Importante para CORS
-  }));
+app.options('*', corsMiddleware);
+app.use(helmet());
   app.use(express.json());
 app.use(rateLimitMiddleware);
 
