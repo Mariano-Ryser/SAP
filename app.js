@@ -12,7 +12,7 @@ const app = express();
 
 // Importar conexión a DB y middlewares
 import dbConnect from './db/index.js'; // Nota: extensión .js ahora es necesaria
-// import corsMiddleware from './middleware/corsMiddleware.js';
+import corsMiddleware from './middleware/corsMiddleware.js';
 import rateLimitMiddleware from './middleware/rateLimitMiddleware.js';
 
 // Importar routers
@@ -26,8 +26,9 @@ import productRouter from './modules/product/product.routes.js';
 import worteRouter from './modules/worte/worte.routes.js';
 
 // Configurar middlewares
+app.options('*', corsMiddleware);
 app.use(helmet());
-// app.use(corsMiddleware);
+app.use(corsMiddleware);
 app.use(rateLimitMiddleware);
 app.use(express.json());
 
