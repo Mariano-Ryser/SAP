@@ -28,7 +28,6 @@ const app = express();
 
 // Configurar middlewares
 app.use(corsMiddleware);
-app.options('*', corsMiddleware);
 app.use(helmet({
     contentSecurityPolicy: {
       directives: {
