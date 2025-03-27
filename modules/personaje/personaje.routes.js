@@ -1,11 +1,14 @@
-const express = require('express')
-const char = express.Router()
-const personajeController = require('./personaje.controller')
+import express from 'express';
+import { 
+    getPersonajes, 
+    createPersonaje, 
+    deletePersonaje 
+} from './personaje.controller.js';
 
+const router = express.Router();
 
-char.get('/', personajeController.getPersonajes)
-char.post('/', personajeController.createPersonaje)
-char.delete('/:id', personajeController.deletePersonaje)
+router.get('/', getPersonajes);
+router.post('/', createPersonaje);
+router.delete('/:id', deletePersonaje);
 
-
-module.exports = char
+export default router;

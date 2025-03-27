@@ -1,8 +1,14 @@
-const express = require("express");
+import express from 'express';
+import { 
+  getPreguntas, 
+  createPregunta,
+  deletePregunta
+} from './pregunta.controller.js';
+
 const router = express.Router();
-const preguntaController = require("./pregunta.controller");
 
-router.get("/", preguntaController.getPreguntas);
-router.post("/", preguntaController.createPregunta);
+router.get('/', getPreguntas);
+router.post('/', createPregunta);
+router.delete('/:id', deletePregunta);
 
-module.exports = router;
+export default router;

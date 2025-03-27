@@ -1,0 +1,1917 @@
+{
+  palabra: "plausibel",
+  significado: "Plausible",
+  ejemplo1: "Sein Plan klingt sehr plausibel und gut durchdacht. (His plan sounds very plausible and well thought out.)",
+  ejemplo2: "Die Erklärung, die er gegeben hat, war plausibel, aber wir müssen mehr Beweise haben. (The explanation he gave was plausible, but we need more evidence.)",
+  ejemplo3: "Es war nicht plausibel, dass sie die ganze Zeit nichts bemerkt hat. (It was not plausible that she hadn't noticed anything the whole time.)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Schwierigkeit",
+  significado: "Dificultad, problema",
+  ejemplo1: "Die Schwierigkeit des Tests war überraschend. (The difficulty of the exam was surprising)",
+  ejemplo2: "Wir müssen eine Lösung für dieses Problem finden, egal wie groß die Schwierigkeit ist. (We must find a solution to this problem, no matter how great the difficulty is.)",
+  ejemplo3: "Manchmal ist die Schwierigkeit eine Gelegenheit, zu lernen. (Sometimes difficulty is an opportunity to learn)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Verantwortung",
+  significado: "Responsabilidad",
+  ejemplo1: "Jeder hat die Verantwortung für seine Handlungen. (Everyone has responsibility for their actions)",
+  ejemplo2: "Die Verantwortung für das Projekt liegt bei mir. (La responsabilidad del proyecto recae en mí)",
+  ejemplo3: "Verantwortung zu übernehmen ist ein Zeichen von Reife. (Asumir la responsabilidad es un signo de madurez)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Fähigkeit",
+  significado: "Habilidad, capacidad",
+  ejemplo1: "Die Fähigkeit, im Team zu arbeiten, ist wichtig. (La habilidad para trabajar en equipo es importante)",
+  ejemplo2: "Er hat die Fähigkeit, komplexe Probleme zu lösen. (Él tiene la capacidad de resolver problemas complejos)",
+  ejemplo3: "Jeder hat verschiedene Fähigkeiten und Talente. (Cada uno tiene diferentes habilidades y talentos)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Verfügbarkeit",
+  significado: "Disponibilidad",
+  ejemplo1: "Die Verfügbarkeit von Ressourcen ist entscheidend für den Erfolg. (La disponibilidad de recursos es crucial para el éxito)",
+  ejemplo2: "Bitte überprüfen Sie die Verfügbarkeit der Zimmer. (Por favor, verifique la disponibilidad de las habitaciones)",
+  ejemplo3: "Die Verfügbarkeit von Informationen ist wichtig in der heutigen Welt. (La disponibilidad de información es importante en el mundo actual)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Erschöpfung",
+  significado: "Agotamiento, cansancio extremo",
+  ejemplo1: "Nach der langen Reise fühlte ich eine tiefe Erschöpfung. (Después del largo viaje, sentí un profundo agotamiento)",
+  ejemplo2: "Erschöpfung kann zu gesundheitlichen Problemen führen. (El agotamiento puede llevar a problemas de salud)",
+  ejemplo3: "Die ständige Erschöpfung ist ein Zeichen von Überarbeitung. (El agotamiento constante es un signo de sobrecarga de trabajo)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Wachstum",
+  significado: "Crecimiento, desarrollo",
+  ejemplo1: "Das Wachstum des Unternehmens war beeindruckend. (El crecimiento de la empresa fue impresionante)",
+  ejemplo2: "Wachstum erfordert Zeit und Geduld. (El crecimiento requiere tiempo y paciencia)",
+  ejemplo3: "Wir sehen ein Wachstum in den verschiedenen Sektoren. (Vemos un crecimiento en los diferentes sectores)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Ressource",
+  significado: "Recurso",
+  ejemplo1: "Wasser ist eine wertvolle Ressource. (El agua es un recurso valioso)",
+  ejemplo2: "Wir müssen unsere Ressourcen besser nutzen. (Debemos utilizar mejor nuestros recursos)",
+  ejemplo3: "Die Ressource Mensch ist entscheidend für den Erfolg. (El recurso humano es crucial para el éxito)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Erinnerung",
+  significado: "Recuerdo, memoria",
+  ejemplo1: "Die Erinnerung an meine Kindheit ist sehr stark. (El recuerdo de mi infancia es muy fuerte)",
+  ejemplo2: "Er hat eine gute Erinnerung an Gesichter. (Él tiene buena memoria para los rostros)",
+  ejemplo3: "Die Erinnerung an diesen Tag bleibt für immer. (El recuerdo de este día permanecerá para siempre)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Veranlagung",
+  significado: "Tendencia, predisposición",
+  ejemplo1: "Er hat eine künstlerische Veranlagung. (Tiene una predisposición artística)",
+  ejemplo2: "Seine Veranlagung zu Krankheiten ist genetisch bedingt. (Su tendencia a las enfermedades es genética)",
+  ejemplo3: "Ihre Veranlagung für Sprachen macht das Lernen einfacher. (Su predisposición para los idiomas facilita el aprendizaje)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Einsicht",
+  significado: "Perspicacia, comprensión",
+  ejemplo1: "Die Einsicht in die Situation war entscheidend. (La comprensión de la situación fue decisiva)",
+  ejemplo2: "Er zeigte große Einsicht in die Probleme des Unternehmens. (Mostró gran perspicacia sobre los problemas de la empresa)",
+  ejemplo3: "Einsicht kommt oft mit der Erfahrung. (La comprensión a menudo viene con la experiencia)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Beweggrund",
+  significado: "Motivo, razón",
+  ejemplo1: "Sein Beweggrund für die Entscheidung war unklar. (Su motivo para la decisión no estaba claro)",
+  ejemplo2: "Wir müssen den Beweggrund hinter diesem Verhalten verstehen. (Necesitamos entender el motivo detrás de este comportamiento)",
+  ejemplo3: "Der Beweggrund für die Aktion war die Notwendigkeit. (El motivo para la acción fue la necesidad)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Umgebung",
+  significado: "Entorno, ambiente",
+  ejemplo1: "Die Umgebung war sehr ruhig und friedlich. (El entorno era muy tranquilo y pacífico)",
+  ejemplo2: "Eine angenehme Umgebung fördert die Kreativität. (Un ambiente agradable fomenta la creatividad)",
+  ejemplo3: "Die Umgebung beeinflusst unsere Stimmung. (El entorno influye en nuestro estado de ánimo)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Verhandlung",
+  significado: "Negociación",
+  ejemplo1: "Die Verhandlung über den Vertrag dauerte Stunden. (La negociación del contrato duró horas)",
+  ejemplo2: "Gute Verhandlungstechniken sind wichtig. (Las buenas técnicas de negociación son importantes)",
+  ejemplo3: "Die Verhandlung endete mit einem Kompromiss. (La negociación terminó con un compromiso)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Zufall",
+  significado: "Coincidencia, azar",
+  ejemplo1: "Es war purer Zufall, dass wir uns getroffen haben. (Fue pura coincidencia que nos encontráramos)",
+  ejemplo2: "Manchmal spielt der Zufall eine große Rolle im Leben. (A veces, el azar juega un gran papel en la vida)",
+  ejemplo3: "Der Zufall führte zu vielen interessanten Begegnungen. (La coincidencia llevó a muchos encuentros interesantes)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Unabhängigkeit",
+  significado: "Independencia",
+  ejemplo1: "Die Unabhängigkeit des Landes wurde 1990 erklärt. (La independencia del país fue declarada en 1990)",
+  ejemplo2: "Er strebt nach finanzieller Unabhängigkeit. (Él busca la independencia financiera)",
+  ejemplo3: "Unabhängigkeit ist ein wichtiges Ziel für viele Menschen. (La independencia es un objetivo importante para muchas personas)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Wirkung",
+  significado: "Efecto, impacto",
+  ejemplo1: "Die Wirkung des Medikaments war sofort spürbar. (El efecto del medicamento fue inmediato)",
+  ejemplo2: "Die Wirkung der Werbung auf die Kunden ist bedeutend. (El impacto de la publicidad en los clientes es significativo)",
+  ejemplo3: "Die Wirkung der Musik auf die Stimmung ist faszinierend. (El efecto de la música en el estado de ánimo es fascinante)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Gegenteil",
+  significado: "Contrario, opuesto",
+  ejemplo1: "Das Gegenteil von Liebe ist nicht Hass, sondern Gleichgültigkeit. (El contrario del amor no es el odio, sino la indiferencia)",
+  ejemplo2: "In vielen Fällen ist das Gegenteil der Fall. (En muchos casos, es todo lo contrario)",
+  ejemplo3: "Er hat das Gegenteil bewiesen. (Él ha demostrado lo contrario)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Verwunderung",
+  significado: "Asombro, sorpresa",
+  ejemplo1: "Die Verwunderung über die Nachricht war groß. (El asombro por la noticia fue grande)",
+  ejemplo2: "Zu meiner Verwunderung war er bereits dort. (Para mi sorpresa, ya estaba allí)",
+  ejemplo3: "Die Verwunderung über seine Fähigkeiten ist verständlich. (El asombro por sus habilidades es comprensible)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Zustimmung",
+  significado: "Aprobación, consentimiento",
+  ejemplo1: "Ich brauche deine Zustimmung, um weiterzumachen. (Necesito tu aprobación para continuar)",
+  ejemplo2: "Die Zustimmung des Chefs war entscheidend. (La aprobación del jefe fue decisiva)",
+  ejemplo3: "Er gab mir seine Zustimmung zu dem Plan. (Me dio su consentimiento para el plan)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Voraussetzung",
+  significado: "Requisito, condición previa",
+  ejemplo1: "Die Voraussetzung für den Job ist ein abgeschlossenes Studium. (El requisito para el trabajo es un título universitario)",
+  ejemplo2: "Gute Sprachkenntnisse sind eine Voraussetzung für diese Position. (Un buen dominio del idioma es un requisito para este puesto)",
+  ejemplo3: "Eine Voraussetzung für den Erfolg ist harte Arbeit. (Un requisito para el éxito es el trabajo duro)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Betreuung",
+  significado: "Atención, cuidado",
+  ejemplo1: "Die Betreuung der Kinder ist gut organisiert. (El cuidado de los niños está bien organizado)",
+  ejemplo2: "Er braucht rund um die Uhr Betreuung. (Necesita atención las 24 horas)",
+  ejemplo3: "Die Patienten erhalten hier gute Betreuung. (Los pacientes reciben buena atención aquí)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Hartnäckig",
+  significado: "Persistente",
+  ejemplo1: "Sie ist hartnäckig bei der Verfolgung ihrer Ziele. (Ella es persistente en la consecución de sus metas.)",
+  ejemplo2: "Hartnäckige Menschen geben nicht so leicht auf. (Las personas persistentes no se rinden fácilmente.)",
+  ejemplo3: "Er war hartnäckig, bis er eine Antwort bekam. (Él fue persistente hasta obtener una respuesta.)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Missverständnis",
+  significado: "Malentendido",
+  ejemplo1: "Das war alles ein großes Missverständnis. (Todo fue un gran malentendido)",
+  ejemplo2: "Wir hatten ein kleines Missverständnis, aber es ist geklärt. (Tuvimos un pequeño malentendido, pero está resuelto)",
+  ejemplo3: "Missverständnisse können zu großen Problemen führen. (Los malentendidos pueden llevar a grandes problemas)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Ablehnung",
+  significado: "Rechazo, negación",
+  ejemplo1: "Seine Ablehnung des Angebots überraschte mich. (Su rechazo de la oferta me sorprendió)",
+  ejemplo2: "Ich habe seine Ablehnung nicht erwartet. (No esperaba su rechazo)",
+  ejemplo3: "Die Ablehnung des Plans war deutlich. (El rechazo del plan fue claro)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Vermitteln",
+  significado: "Medio, interceder, transmitir",
+  ejemplo1: "Der Lehrer vermittelt den Schülern Wissen. (El profesor transmite conocimientos a los estudiantes)",
+  ejemplo2: "Er versucht, zwischen den Parteien zu vermitteln. (Intenta mediar entre las partes)",
+  ejemplo3: "Dieses Buch vermittelt eine wichtige Botschaft. (Este libro transmite un mensaje importante)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Eindruck",
+  significado: "Impresión",
+  ejemplo1: "Der erste Eindruck war positiv. (La primera impresión fue positiva)",
+  ejemplo2: "Er hinterließ einen bleibenden Eindruck. (Dejó una impresión duradera)",
+  ejemplo3: "Was war dein Eindruck von dem Meeting? (¿Cuál fue tu impresión de la reunión?)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Übereinstimmung",
+  significado: "Concordancia, acuerdo",
+  ejemplo1: "Es herrschte Übereinstimmung zwischen den Parteien. (Hubo acuerdo entre las partes)",
+  ejemplo2: "In vielen Punkten gab es keine Übereinstimmung. (No hubo concordancia en muchos puntos)",
+  ejemplo3: "Wir sind in Übereinstimmung über den Plan. (Estamos de acuerdo con el plan)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Erwartung",
+  significado: "Expectativa, esperanza",
+  ejemplo1: "Die Erwartungen an das Projekt sind hoch. (Las expectativas sobre el proyecto son altas)",
+  ejemplo2: "Er hat meine Erwartungen übertroffen. (Superó mis expectativas)",
+  ejemplo3: "Die Erwartungen wurden leider nicht erfüllt. (Lamentablemente, las expectativas no se cumplieron)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Verpflichtung",
+  significado: "Obligación, compromiso",
+  ejemplo1: "Ich habe eine Verpflichtung, das zu tun. (Tengo la obligación de hacerlo)",
+  ejemplo2: "Er hat viele berufliche Verpflichtungen. (Tiene muchas obligaciones laborales)",
+  ejemplo3: "Es war seine moralische Verpflichtung zu helfen. (Era su obligación moral ayudar)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Rücksicht",
+  significado: "Consideración, respeto",
+  ejemplo1: "Du solltest mehr Rücksicht auf andere nehmen. (Deberías tener más consideración por los demás)",
+  ejemplo2: "Er handelt immer ohne Rücksicht auf die Konsequenzen. (Siempre actúa sin considerar las consecuencias)",
+  ejemplo3: "Rücksicht auf die Umwelt ist heutzutage wichtig. (El respeto por el medio ambiente es importante hoy en día)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Beharren",
+  significado: "Insistir, perseverar",
+  ejemplo1: "Er beharrt auf seiner Meinung. (Insiste en su opinión)",
+  ejemplo2: "Trotz aller Schwierigkeiten beharrte sie auf ihrem Plan. (A pesar de todas las dificultades, insistió en su plan)",
+  ejemplo3: "Sein Beharren führte schließlich zum Erfolg. (Su perseverancia finalmente condujo al éxito)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Auseinandersetzung",
+  significado: "Disputa, confrontación",
+  ejemplo1: "Es gab eine heftige Auseinandersetzung zwischen den beiden. (Hubo una fuerte disputa entre los dos)",
+  ejemplo2: "Die Auseinandersetzung endete friedlich. (La confrontación terminó pacíficamente)",
+  ejemplo3: "Nach der Auseinandersetzung suchten sie nach einer Lösung. (Después de la disputa, buscaron una solución)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Entwurf",
+  significado: "Borrador, proyecto",
+  ejemplo1: "Der Entwurf des neuen Gebäudes ist fertig. (El borrador del nuevo edificio está listo)",
+  ejemplo2: "Sie arbeiten am Entwurf des neuen Gesetzes. (Están trabajando en el borrador de la nueva ley)",
+  ejemplo3: "Der Entwurf des Berichts muss noch überarbeitet werden. (El borrador del informe aún debe revisarse)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Widerstand",
+  significado: "Resistencia, oposición",
+  ejemplo1: "Es gab großen Widerstand gegen die Reformen. (Hubo mucha resistencia contra las reformas)",
+  ejemplo2: "Sein Widerstand war vergeblich. (Su resistencia fue en vano)",
+  ejemplo3: "Der Widerstand der Bevölkerung wurde unterdrückt. (La resistencia de la población fue reprimida)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Beständigkeit",
+  significado: "Constancia, estabilidad",
+  ejemplo1: "Seine Beständigkeit in der Arbeit ist bewundernswert. (Su constancia en el trabajo es admirable)",
+  ejemplo2: "Beständigkeit ist wichtig für langfristigen Erfolg. (La constancia es importante para el éxito a largo plazo)",
+  ejemplo3: "Ihre Beständigkeit in der Forschung führte zu Durchbrüchen. (Su estabilidad en la investigación llevó a avances)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Vorstellung",
+  significado: "Idea, presentación",
+  ejemplo1: "Meine Vorstellung von der Zukunft ist positiv. (Mi idea del futuro es positiva)",
+  ejemplo2: "Die Vorstellung des neuen Produkts war ein Erfolg. (La presentación del nuevo producto fue un éxito)",
+  ejemplo3: "Hast du eine genaue Vorstellung davon, was passieren wird? (¿Tienes una idea clara de lo que sucederá?)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Erfahrung",
+  significado: "Experiencia",
+  ejemplo1: "Er hat viel Erfahrung in seinem Beruf. (Tiene mucha experiencia en su trabajo)",
+  ejemplo2: "Die Reise war eine wertvolle Erfahrung. (El viaje fue una experiencia valiosa)",
+  ejemplo3: "Erfahrung ist oft der beste Lehrer. (La experiencia es a menudo el mejor maestro)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Anpassung",
+  significado: "Adaptación, ajuste",
+  ejemplo1: "Die Anpassung an die neuen Umstände war schwierig. (La adaptación a las nuevas circunstancias fue difícil)",
+  ejemplo2: "Er zeigte eine schnelle Anpassung an die neue Umgebung. (Mostró una rápida adaptación al nuevo entorno)",
+  ejemplo3: "Manchmal erfordert das Leben ständige Anpassungen. (A veces la vida requiere ajustes constantes)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Verständnis",
+  significado: "Comprensión",
+  ejemplo1: "Vielen Dank für dein Verständnis. (Muchas gracias por tu comprensión)",
+  ejemplo2: "Er zeigt großes Verständnis für die Situation. (Muestra mucha comprensión por la situación)",
+  ejemplo3: "Wir müssen mehr Verständnis füreinander haben. (Debemos tener más comprensión mutua)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Entscheidung",
+  significado: "Decisión",
+  ejemplo1: "Es war keine leichte Entscheidung. (No fue una decisión fácil)",
+  ejemplo2: "Die Entscheidung liegt bei dir. (La decisión está en tus manos)",
+  ejemplo3: "Ich bereue meine Entscheidung nicht. (No me arrepiento de mi decisión)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Zufriedenheit",
+  significado: "Satisfacción",
+  ejemplo1: "Die Zufriedenheit der Kunden ist unser Ziel. (La satisfacción de los clientes es nuestro objetivo)",
+  ejemplo2: "Er fand Zufriedenheit in seinem neuen Job. (Encontró satisfacción en su nuevo trabajo)",
+  ejemplo3: "Innere Zufriedenheit ist wichtig für das Wohlbefinden. (La satisfacción interna es importante para el bienestar)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Umständlich",
+  significado: "Complicado, engorroso",
+  ejemplo1: "Der Prozess ist etwas umständlich. (El proceso es un poco complicado)",
+  ejemplo2: "Umständliche Abläufe kosten oft Zeit. (Los procedimientos complicados a menudo cuestan tiempo)",
+  ejemplo3: "Es war umständlich, alle Dokumente zu besorgen. (Fue complicado conseguir todos los documentos)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Berechtigung",
+  significado: "Autorización, Derecho",
+  ejemplo1: "Hast du die Berechtigung, dieses Dokument zu bearbeiten? (¿Tienes la autorización para editar este documento?)",
+  ejemplo2: "Ohne Berechtigung darfst du hier nicht rein. (No puedes entrar aquí sin autorización)",
+  ejemplo3: "Er hat die Berechtigung, die Entscheidung zu treffen. (Él tiene el derecho de tomar la decisión)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Vorurteil",
+  significado: "Prejuicio",
+  ejemplo1: "Vorurteile sind schwer zu überwinden. (Los prejuicios son difíciles de superar)",
+  ejemplo2: "Man sollte ohne Vorurteile auf andere Menschen zugehen. (Deberíamos acercarnos a las personas sin prejuicios)",
+  ejemplo3: "Es gibt viele Vorurteile gegen Fremde. (Existen muchos prejuicios contra los extranjeros)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Bewegung",
+  significado: "Movimiento",
+  ejemplo1: "Regelmäßige Bewegung ist wichtig für die Gesundheit. (El movimiento regular es importante para la salud)",
+  ejemplo2: "Die politische Bewegung gewann an Einfluss. (El movimiento político ganó influencia)",
+  ejemplo3: "Seine Bewegungen waren sehr elegant. (Sus movimientos eran muy elegantes)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Aufrichtigkeit",
+  significado: "Sinceridad, Honestidad",
+  ejemplo1: "Ich schätze seine Aufrichtigkeit sehr. (Valoro mucho su sinceridad)",
+  ejemplo2: "Aufrichtigkeit ist eine wichtige Tugend. (La sinceridad es una virtud importante)",
+  ejemplo3: "Seine Aufrichtigkeit überzeugte mich. (Su honestidad me convenció)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Verlässlichkeit",
+  significado: "Fiabilidad, Confiabilidad",
+  ejemplo1: "Verlässlichkeit ist eine der wichtigsten Eigenschaften. (La fiabilidad es una de las características más importantes)",
+  ejemplo2: "In unserer Freundschaft zählt Verlässlichkeit. (En nuestra amistad, la confiabilidad cuenta mucho)",
+  ejemplo3: "Ich weiß seine Verlässlichkeit zu schätzen. (Aprecio su fiabilidad)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Bedürfnis",
+  significado: "Necesidad",
+  ejemplo1: "Das Bedürfnis nach Ruhe ist bei mir sehr groß. (Tengo una gran necesidad de tranquilidad)",
+  ejemplo2: "Jeder Mensch hat unterschiedliche Bedürfnisse. (Cada persona tiene necesidades diferentes)",
+  ejemplo3: "Sie hat das Bedürfnis, sich auszuruhen. (Tiene la necesidad de descansar)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Verwirrung",
+  significado: "Confusión",
+  ejemplo1: "Die Anweisungen sorgten für Verwirrung. (Las instrucciones causaron confusión)",
+  ejemplo2: "Es herrschte große Verwirrung in der Menge. (Había gran confusión en la multitud)",
+  ejemplo3: "Seine Antwort brachte nur mehr Verwirrung. (Su respuesta solo trajo más confusión)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Gelassenheit",
+  significado: "Serenidad, tranquilidad",
+  ejemplo1: "Er nahm die schlechte Nachricht mit Gelassenheit. (Tomó la mala noticia con serenidad)",
+  ejemplo2: "Gelassenheit ist der Schlüssel zum Erfolg. (La serenidad es la clave del éxito)",
+  ejemplo3: "In schwierigen Situationen hilft mir meine Gelassenheit. (En situaciones difíciles, mi serenidad me ayuda)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Bestätigung",
+  significado: "Confirmación, validación",
+  ejemplo1: "Ich habe die Bestätigung meiner Buchung erhalten. (He recibido la confirmación de mi reserva)",
+  ejemplo2: "Die Bestätigung seiner Theorie dauerte Jahre. (La validación de su teoría tardó años)",
+  ejemplo3: "Er suchte immer nach Bestätigung von anderen. (Siempre buscaba validación de los demás)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Einfluss",
+  significado: "Influencia",
+  ejemplo1: "Sie hat großen Einfluss auf ihre Kollegen. (Ella tiene una gran influencia sobre sus colegas)",
+  ejemplo2: "Der Einfluss der Medien ist unbestreitbar. (La influencia de los medios es innegable)",
+  ejemplo3: "Seine Eltern hatten viel Einfluss auf seine Entscheidung. (Sus padres tuvieron mucha influencia en su decisión)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Gegensatz",
+  significado: "Contraste, contradicción",
+  ejemplo1: "Im Gegensatz zu dir mag ich keinen Kaffee. (En contraste contigo, no me gusta el café)",
+  ejemplo2: "Die beiden Meinungen stehen im völligen Gegensatz. (Las dos opiniones son completamente opuestas)",
+  ejemplo3: "Es gibt einen starken Gegensatz zwischen den Kulturen. (Hay un fuerte contraste entre las culturas)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Veränderung",
+  significado: "Cambio, modificación",
+  ejemplo1: "Veränderungen gehören zum Leben. (Los cambios son parte de la vida)",
+  ejemplo2: "Eine Veränderung im Verhalten war spürbar. (Un cambio en el comportamiento fue perceptible)",
+  ejemplo3: "Die Gesellschaft befindet sich im ständigen Wandel und Veränderung. (La sociedad está en constante cambio y transformación)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Verschwinden",
+  significado: "Desaparecer",
+  ejemplo1: "Das Auto verschwand um die Ecke. (El coche desapareció en la esquina)",
+  ejemplo2: "Meine Schlüssel sind plötzlich verschwunden. (Mis llaves han desaparecido de repente)",
+  ejemplo3: "Der Nebel verschwand nach dem Sonnenaufgang. (La niebla desapareció después del amanecer)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Kritik",
+  significado: "Crítica",
+  ejemplo1: "Seine Arbeit steht oft unter Kritik. (Su trabajo está a menudo bajo crítica)",
+  ejemplo2: "Konstruktive Kritik hilft uns, besser zu werden. (La crítica constructiva nos ayuda a mejorar)",
+  ejemplo3: "Er kann keine Kritik vertragen. (No puede soportar las críticas)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Beteiligung",
+  significado: "Participación",
+  ejemplo1: "Die Beteiligung am Projekt war groß. (La participación en el proyecto fue grande)",
+  ejemplo2: "Er zeigt großes Interesse an einer aktiven Beteiligung. (Muestra gran interés en una participación activa)",
+  ejemplo3: "Ihre Beteiligung an der Diskussion war sehr hilfreich. (Su participación en la discusión fue muy útil)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Aussicht",
+  significado: "Perspectiva, panorama",
+  ejemplo1: "Von hier aus hat man eine wunderschöne Aussicht. (Desde aquí tienes una vista maravillosa)",
+  ejemplo2: "Die Aussicht auf Erfolg motiviert mich. (La perspectiva de éxito me motiva)",
+  ejemplo3: "Die Aussicht auf Besserung ist gering. (La perspectiva de mejora es baja)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Ermutigung",
+  significado: "Ánimo, aliento",
+  ejemplo1: "Ich brauche etwas Ermutigung für meine Entscheidung. (Necesito un poco de ánimo para tomar mi decisión)",
+  ejemplo2: "Dank ihrer Ermutigung habe ich es versucht. (Gracias a su aliento, lo intenté)",
+  ejemplo3: "Ermutigung von Freunden hilft oft sehr. (El ánimo de los amigos a menudo ayuda mucho)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Selbstverständlich",
+  significado: "Por supuesto, evidentemente",
+  ejemplo1: "Es ist selbstverständlich, dass wir helfen. (Es evidente que ayudaremos)",
+  ejemplo2: "Selbstverständlich kannst du kommen. (Por supuesto que puedes venir)",
+  ejemplo3: "Es war für ihn selbstverständlich, das zu tun. (Para él era evidente hacer eso)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Beweggrund",
+  significado: "Motivo, razón",
+  ejemplo1: "Was war dein Beweggrund, diese Entscheidung zu treffen? (¿Cuál fue tu motivo para tomar esta decisión?)",
+  ejemplo2: "Er hatte einen guten Beweggrund für sein Verhalten. (Tenía una buena razón para su comportamiento)",
+  ejemplo3: "Die Beweggründe für seine Tat sind unklar. (Los motivos de su acción no están claros)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Vermögen",
+  significado: "Capacidad, fortuna",
+  ejemplo1: "Er hat ein großes Vermögen gemacht. (Hizo una gran fortuna)",
+  ejemplo2: "Sein Vermögen, Probleme zu lösen, ist beeindruckend. (Su capacidad para resolver problemas es impresionante)",
+  ejemplo3: "Das Vermögen der Familie ist enorm. (La fortuna de la familia es enorme)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Bedeutungslos",
+  significado: "Sin importancia, Insignificante",
+  ejemplo1: "Das Problem war letztendlich bedeutungslos. (El problema fue finalmente insignificante)",
+  ejemplo2: "Seine Worte sind für mich bedeutungslos. (Sus palabras no tienen importancia para mí)",
+  ejemplo3: "Diese Kleinigkeit ist bedeutungslos im großen Ganzen. (Este pequeño detalle es insignificante en el conjunto)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Ehrgeizig",
+  significado: "Ambicioso",
+  ejemplo1: "Sie ist sehr ehrgeizig und möchte viel erreichen. (Es muy ambiciosa y quiere lograr mucho)",
+  ejemplo2: "Ehrgeizige Menschen haben oft Erfolg. (Las personas ambiciosas suelen tener éxito)",
+  ejemplo3: "Sein Ziel ist extrem ehrgeizig. (Su objetivo es extremadamente ambicioso)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Zuverlässigkeit",
+  significado: "Fiabilidad, confiabilidad",
+  ejemplo1: "Die Zuverlässigkeit dieses Autos ist hervorragend. (La fiabilidad de este coche es excelente)",
+  ejemplo2: "In meinem Job ist Zuverlässigkeit entscheidend. (En mi trabajo, la confiabilidad es crucial)",
+  ejemplo3: "Er ist bekannt für seine Zuverlässigkeit. (Es conocido por su confiabilidad)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Auffällig",
+  significado: "Llamativo, Notable",
+  ejemplo1: "Ihr Kleid war sehr auffällig. (Su vestido era muy llamativo)",
+  ejemplo2: "Es ist auffällig, wie oft er das tut. (Es notable con qué frecuencia lo hace)",
+  ejemplo3: "Das Auto hat eine auffällige Farbe. (El coche tiene un color llamativo)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Gewissenhaft",
+  significado: "Concienzudo, Cuidadoso",
+  ejemplo1: "Er arbeitet sehr gewissenhaft. (Trabaja de manera muy concienzuda)",
+  ejemplo2: "Gewissenhafte Menschen machen weniger Fehler. (Las personas concienzudas cometen menos errores)",
+  ejemplo3: "Sie ist eine gewissenhafte Schülerin. (Es una estudiante cuidadosa)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Vernünftig",
+  significado: "Razonable, Sensato",
+  ejemplo1: "Seine Entscheidung war vernünftig. (Su decisión fue razonable)",
+  ejemplo2: "Es ist vernünftig, das Geld zu sparen. (Es sensato ahorrar el dinero)",
+  ejemplo3: "Wir sollten eine vernünftige Lösung finden. (Deberíamos encontrar una solución razonable)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Verzweifelt",
+  significado: "Desesperado",
+  ejemplo1: "Sie war verzweifelt nach der schlechten Nachricht. (Estaba desesperada tras la mala noticia)",
+  ejemplo2: "Er hat verzweifelt nach einer Lösung gesucht. (Buscaba desesperadamente una solución)",
+  ejemplo3: "In verzweifelten Zeiten muss man ruhig bleiben. (En tiempos desesperados hay que mantener la calma)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Gerücht",
+  significado: "Rumor, chisme",
+  ejemplo1: "Es gibt ein Gerücht über sie. (Hay un rumor sobre ella)",
+  ejemplo2: "Die Gerüchte verbreiteten sich schnell. (Los rumores se propagaron rápidamente)",
+  ejemplo3: "Ist das nur ein Gerücht oder stimmt es? (¿Es solo un rumor o es cierto?)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Widerspruch",
+  significado: "Contradicción",
+  ejemplo1: "Seine Aussagen standen im Widerspruch zueinander. (Sus declaraciones se contradecían)",
+  ejemplo2: "Es gab einen Widerspruch in der Erklärung. (Hubo una contradicción en la explicación)",
+  ejemplo3: "Der Plan war voller Widersprüche. (El plan estaba lleno de contradicciones)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Herausragend",
+  significado: "Sobresaliente, excepcional",
+  ejemplo1: "Sie ist eine herausragende Schülerin. (Es una estudiante sobresaliente)",
+  ejemplo2: "Das Konzert war herausragend. (El concierto fue excepcional)",
+  ejemplo3: "Seine Leistungen im Sport sind herausragend. (Sus logros en el deporte son excepcionales)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Anerkennung",
+  significado: "Reconocimiento, Aprecio",
+  ejemplo1: "Er hat viel Anerkennung für seine Arbeit erhalten. (Recibió mucho reconocimiento por su trabajo)",
+  ejemplo2: "Anerkennung ist wichtig für die Motivation. (El reconocimiento es importante para la motivación)",
+  ejemplo3: "Ich schätze die Anerkennung meiner Kollegen sehr. (Valoro mucho el reconocimiento de mis colegas)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Hinterlistig",
+  significado: "Engañoso, Astuto",
+  ejemplo1: "Er hat auf eine hinterlistige Weise gehandelt. (Actuó de manera engañosa)",
+  ejemplo2: "Die Falle war hinterlistig. (La trampa fue astuta)",
+  ejemplo3: "Ihre hinterlistige Art hat viele überrascht. (Su manera engañosa sorprendió a muchos)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Rücksichtslos",
+  significado: "Desconsiderado, Imprudente",
+  ejemplo1: "Sein Verhalten war sehr rücksichtslos. (Su comportamiento fue muy desconsiderado)",
+  ejemplo2: "Rücksichtsloses Fahren kann Unfälle verursachen. (Conducir imprudentemente puede causar accidentes)",
+  ejemplo3: "Er war rücksichtslos gegenüber den Gefühlen anderer. (Fue desconsiderado con los sentimientos de los demás)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Wertschätzen",
+  significado: "Apreciar, Valorar",
+  ejemplo1: "Ich weiß es zu wertschätzen, wenn jemand ehrlich ist. (Aprecio cuando alguien es honesto)",
+  ejemplo2: "Man sollte kleine Gesten wertschätzen. (Deberíamos valorar los pequeños gestos)",
+  ejemplo3: "Ich wertschätze unsere Freundschaft sehr. (Valoro mucho nuestra amistad)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Wahrnehmung",
+  significado: "Percepción",
+  ejemplo1: "Jeder hat eine andere Wahrnehmung der Realität. (Cada persona tiene una percepción diferente de la realidad)",
+  ejemplo2: "Die Wahrnehmung des Geräusches war sehr intensiv. (La percepción del sonido fue muy intensa)",
+  ejemplo3: "Unsere Wahrnehmung beeinflusst unser Handeln. (Nuestra percepción influye en nuestras acciones)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Wasserdicht",
+  significado: "Impermeable",
+  ejemplo1: "Diese Jacke ist wasserdicht. (Esta chaqueta es impermeable)",
+  ejemplo2: "Ich brauche eine wasserdichte Tasche. (Necesito una bolsa impermeable)",
+  ejemplo3: "Sind deine Schuhe wasserdicht? (¿Tus zapatos son impermeables?)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Unverwechselbar",
+  significado: "Inconfundible",
+  ejemplo1: "Sein Stil ist unverwechselbar. (Su estilo es inconfundible)",
+  ejemplo2: "Der Geschmack dieses Gerichts ist unverwechselbar. (El sabor de este plato es inconfundible)",
+  ejemplo3: "Ihre Stimme ist unverwechselbar. (Su voz es inconfundible)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Fortsetzung",
+  significado: "Continuación",
+  ejemplo1: "Die Fortsetzung des Films kommt nächstes Jahr. (La continuación de la película sale el próximo año)",
+  ejemplo2: "Ich freue mich auf die Fortsetzung der Geschichte. (Estoy emocionado por la continuación de la historia)",
+  ejemplo3: "Die Fortsetzung war besser als der erste Teil. (La continuación fue mejor que la primera parte)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Herausforderung",
+  significado: "Desafío",
+  ejemplo1: "Diese Aufgabe ist eine echte Herausforderung. (Esta tarea es un verdadero desafío)",
+  ejemplo2: "Ich liebe Herausforderungen im Beruf. (Me encantan los desafíos en el trabajo)",
+  ejemplo3: "Die größte Herausforderung ist, sich selbst zu überwinden. (El mayor desafío es superarse a uno mismo)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Voraussetzung",
+  significado: "Requisito, Condición previa",
+  ejemplo1: "Eine gute Ausbildung ist die Voraussetzung für diesen Job. (Una buena educación es el requisito para este trabajo)",
+  ejemplo2: "Was sind die Voraussetzungen für das Stipendium? (¿Cuáles son los requisitos para la beca?)",
+  ejemplo3: "Die Voraussetzung für Erfolg ist harte Arbeit. (La condición previa para el éxito es el trabajo duro)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Verantwortung",
+  significado: "Responsabilidad",
+  ejemplo1: "Eltern haben eine große Verantwortung. (Los padres tienen una gran responsabilidad)",
+  ejemplo2: "Ich übernehme die volle Verantwortung. (Asumo toda la responsabilidad)",
+  ejemplo3: "Mit Freiheit kommt auch Verantwortung. (La libertad también trae responsabilidad)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Zuverlässig",
+  significado: "Confiable",
+  ejemplo1: "Er ist ein sehr zuverlässiger Freund. (Es un amigo muy confiable)",
+  ejemplo2: "Unsere Maschine ist zuverlässig und funktioniert einwandfrei. (Nuestra máquina es confiable y funciona perfectamente)",
+  ejemplo3: "Pünktlichkeit ist ein Zeichen für Zuverlässigkeit. (La puntualidad es una señal de confiabilidad)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Leidenschaft",
+  significado: "Pasión",
+  ejemplo1: "Kochen ist seine Leidenschaft. (Cocinar es su pasión)",
+  ejemplo2: "Er spricht mit großer Leidenschaft über Musik. (Habla con gran pasión sobre la música)",
+  ejemplo3: "Ohne Leidenschaft gibt es keinen Erfolg. (Sin pasión, no hay éxito)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Vorsichtig",
+  significado: "Cauteloso, Cuidadoso",
+  ejemplo1: "Sei vorsichtig beim Überqueren der Straße. (Ten cuidado al cruzar la calle)",
+  ejemplo2: "Ich bin vorsichtig mit sensiblen Informationen. (Soy cuidadoso con la información sensible)",
+  ejemplo3: "Er hat das Glas vorsichtig abgestellt. (Colocó el vaso con cuidado)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Enttäuschung",
+  significado: "Decepción",
+  ejemplo1: "Die Niederlage war eine große Enttäuschung. (La derrota fue una gran decepción)",
+  ejemplo2: "Ich will keine Enttäuschungen erleben. (No quiero experimentar decepciones)",
+  ejemplo3: "Nach so viel Arbeit war das Ergebnis eine Enttäuschung. (Después de tanto trabajo, el resultado fue una decepción)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Erfahrung",
+  significado: "Experiencia",
+  ejemplo1: "Er hat viel Erfahrung in diesem Bereich. (Tiene mucha experiencia en este campo)",
+  ejemplo2: "Mit der Zeit wirst du mehr Erfahrung sammeln. (Con el tiempo adquirirás más experiencia)",
+  ejemplo3: "Die Reise war eine unvergessliche Erfahrung. (El viaje fue una experiencia inolvidable)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Verfügbarkeit",
+  significado: "Disponibilidad",
+  ejemplo1: "Die Verfügbarkeit des Produkts ist begrenzt. (La disponibilidad del producto es limitada)",
+  ejemplo2: "Ich habe nächste Woche mehr Verfügbarkeit. (Tendré más disponibilidad la próxima semana)",
+  ejemplo3: "Bitte überprüfen Sie die Verfügbarkeit des Zimmers. (Por favor, verifique la disponibilidad de la habitación)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Unvorhersehbar",
+  significado: "Impredecible",
+  ejemplo1: "Das Wetter ist hier oft unvorhersehbar. (El clima aquí es a menudo impredecible)",
+  ejemplo2: "Die Situation wurde unvorhersehbar kompliziert. (La situación se complicó de manera impredecible)",
+  ejemplo3: "Er hat eine unvorhersehbare Reaktion gezeigt. (Mostró una reacción impredecible)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Bedeutungsvoll",
+  significado: "Significativo",
+  ejemplo1: "Dieses Geschenk ist für mich sehr bedeutungsvoll. (Este regalo es muy significativo para mí)",
+  ejemplo2: "Der Moment war besonders bedeutungsvoll. (El momento fue particularmente significativo)",
+  ejemplo3: "Bedeutungsvolle Gesten sind oft die besten. (Los gestos significativos suelen ser los mejores)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Veränderung",
+  significado: "Cambio",
+  ejemplo1: "Die Veränderung war notwendig. (El cambio era necesario)",
+  ejemplo2: "Wir brauchen eine Veränderung in unserem Lebensstil. (Necesitamos un cambio en nuestro estilo de vida)",
+  ejemplo3: "Das Unternehmen steht vor großen Veränderungen. (La empresa enfrenta grandes cambios)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Vermissen",
+  significado: "Extrañar, echar de menos",
+  ejemplo1: "Ich vermisse meine Familie sehr. (Echo mucho de menos a mi familia)",
+  ejemplo2: "Wir werden dich vermissen, wenn du weg bist. (Te echaremos de menos cuando te vayas)",
+  ejemplo3: "Hast du deinen Hund vermisst? (¿Extrañaste a tu perro?)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Begeistert",
+  significado: "Entusiasmado",
+  ejemplo1: "Ich bin begeistert von der neuen Idee. (Estoy entusiasmado con la nueva idea)",
+  ejemplo2: "Sie war begeistert von ihrem Geschenk. (Ella estaba emocionada con su regalo)",
+  ejemplo3: "Das Publikum war begeistert. (El público estaba entusiasmado)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Missverständnis",
+  significado: "Malentendido",
+  ejemplo1: "Es war nur ein Missverständnis. (Fue solo un malentendido)",
+  ejemplo2: "Wir hatten ein kleines Missverständnis. (Tuvimos un pequeño malentendido)",
+  ejemplo3: "Missverständnisse können leicht passieren. (Los malentendidos pueden ocurrir fácilmente)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Verhandlung",
+  significado: "Negociación",
+  ejemplo1: "Die Verhandlungen waren erfolgreich. (Las negociaciones fueron exitosas)",
+  ejemplo2: "Er ist ein Experte in Verhandlungen. (Es un experto en negociaciones)",
+  ejemplo3: "Die Verhandlung dauerte länger als erwartet. (La negociación duró más de lo esperado)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Umständlich",
+  significado: "Complicado, engorroso",
+  ejemplo1: "Die Registrierung war sehr umständlich. (El registro fue muy engorroso)",
+  ejemplo2: "Es ist ein bisschen umständlich, diesen Prozess zu durchlaufen. (Es un poco complicado pasar por este proceso)",
+  ejemplo3: "Die umständliche Erklärung hat die Sache nur verwirrt. (La explicación complicada solo confundió más la situación)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Unterschiedlich",
+  significado: "Diferente, variado",
+  ejemplo1: "Die Meinungen sind sehr unterschiedlich. (Las opiniones son muy diferentes)",
+  ejemplo2: "Es gibt unterschiedliche Wege, das Problem zu lösen. (Hay diferentes formas de resolver el problema)",
+  ejemplo3: "Wir haben unterschiedliche Ansichten zu diesem Thema. (Tenemos diferentes puntos de vista sobre este tema)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Vertrauen",
+  significado: "Confianza",
+  ejemplo1: "Ich habe volles Vertrauen in dich. (Tengo plena confianza en ti)",
+  ejemplo2: "Vertrauen ist die Basis jeder Beziehung. (La confianza es la base de cualquier relación)",
+  ejemplo3: "Es ist schwer, Vertrauen wieder aufzubauen. (Es difícil reconstruir la confianza)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Vorstellungskraft",
+  significado: "Imaginación, creatividad",
+  ejemplo1: "Seine Vorstellungskraft kennt keine Grenzen. (Su imaginación no tiene límites)",
+  ejemplo2: "Die Vorstellungskraft ist wichtig für Künstler. (La creatividad es importante para los artistas)",
+  ejemplo3: "Wir brauchen mehr Vorstellungskraft in der Planung. (Necesitamos más imaginación en la planificación)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Verknüpfung",
+  significado: "Conexión, Enlace",
+  ejemplo1: "Die Verknüpfung zwischen den Daten ist wichtig. (La conexión entre los datos es importante)",
+  ejemplo2: "Es gab eine interessante Verknüpfung zwischen den beiden Themen. (Hubo una conexión interesante entre los dos temas)",
+  ejemplo3: "Die Verknüpfung von Theorie und Praxis ist entscheidend. (La vinculación de la teoría y la práctica es crucial)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Ergebnis",
+  significado: "Resultado",
+  ejemplo1: "Das Ergebnis der Prüfung war überraschend. (El resultado del examen fue sorprendente)",
+  ejemplo2: "Wir müssen die Ergebnisse der Umfrage analysieren. (Debemos analizar los resultados de la encuesta)",
+  ejemplo3: "Das Ergebnis zeigt, dass wir auf dem richtigen Weg sind. (El resultado muestra que estamos en el camino correcto)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Veränderung",
+  significado: "Cambio, Transformación",
+  ejemplo1: "Die Veränderung der Meinung war deutlich. (El cambio de opinión fue evidente)",
+  ejemplo2: "Wir müssen uns auf Veränderungen im Markt einstellen. (Debemos adaptarnos a los cambios en el mercado)",
+  ejemplo3: "Eine Veränderung kann manchmal positiv sein. (Un cambio puede ser a veces positivo)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Ermutigung",
+  significado: "Ánimo, Aliento",
+  ejemplo1: "Die Ermutigung seiner Freunde half ihm sehr. (El aliento de sus amigos le ayudó mucho)",
+  ejemplo2: "Es braucht viel Ermutigung, um neue Wege zu gehen. (Se necesita mucho ánimo para tomar nuevos caminos)",
+  ejemplo3: "Die Ermutigung durch den Lehrer war entscheidend für ihren Erfolg. (El apoyo del maestro fue decisivo para su éxito)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Widerspruch",
+  significado: "Contradicción, Objeción",
+  ejemplo1: "Es gab einen Widerspruch zwischen seinen Worten und Taten. (Hubo una contradicción entre sus palabras y acciones)",
+  ejemplo2: "Der Widerspruch in seinen Argumenten ist offensichtlich. (La contradicción en sus argumentos es evidente)",
+  ejemplo3: "Wir sollten jeden Widerspruch sorgfältig prüfen. (Debemos examinar cuidadosamente cada objeción)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Zusammenhang",
+  significado: "Contexto, Relación",
+  ejemplo1: "Der Zusammenhang zwischen diesen zwei Themen ist wichtig. (La relación entre estos dos temas es importante)",
+  ejemplo2: "Im Zusammenhang mit der Diskussion haben wir neue Ideen entwickelt. (En el contexto de la discusión, desarrollamos nuevas ideas)",
+  ejemplo3: "Es gibt einen klaren Zusammenhang zwischen Ernährung und Gesundheit. (Hay una clara relación entre la alimentación y la salud)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Anerkennung",
+  significado: "Reconocimiento, Aprobación",
+  ejemplo1: "Die Anerkennung ihrer Leistungen war sehr wichtig für sie. (El reconocimiento de sus logros fue muy importante para ella)",
+  ejemplo2: "Er erhielt die Anerkennung für seine hervorragende Arbeit. (Recibió reconocimiento por su excelente trabajo)",
+  ejemplo3: "Anerkennung motiviert viele Menschen. (El reconocimiento motiva a muchas personas)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Erklärung",
+  significado: "Declaración, Explicación",
+  ejemplo1: "Die Erklärung des Problems war hilfreich. (La explicación del problema fue útil)",
+  ejemplo2: "Wir warten auf eine Erklärung von der Firma. (Estamos esperando una declaración de la empresa)",
+  ejemplo3: "Ihre Erklärung klärte viele Missverständnisse. (Su explicación aclaró muchos malentendidos)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Herausforderung",
+  significado: "Desafío",
+  ejemplo1: "Jede Herausforderung ist eine Chance zu wachsen. (Cada desafío es una oportunidad para crecer)",
+  ejemplo2: "Die größte Herausforderung in meinem Leben war der Umzug. (El mayor desafío de mi vida fue mudarme)",
+  ejemplo3: "Er liebt es, sich Herausforderungen zu stellen. (Le encanta enfrentarse a desafíos)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Beobachtung",
+  significado: "Observación",
+  ejemplo1: "Die Beobachtung der Natur ist entspannend. (La observación de la naturaleza es relajante)",
+  ejemplo2: "Seine Beobachtung half uns, das Problem zu lösen. (Su observación nos ayudó a resolver el problema)",
+  ejemplo3: "Die Beobachtung von Verhaltensweisen kann lehrreich sein. (La observación de comportamientos puede ser instructiva)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Veranlassung",
+  significado: "Motivo, Causa",
+  ejemplo1: "Die Veranlassung für die Versammlung war die Dringlichkeit der Situation. (El motivo para la reunión fue la urgencia de la situación)",
+  ejemplo2: "Ich sehe keinen guten Grund oder Veranlassung dafür. (No veo una buena razón o motivo para ello)",
+  ejemplo3: "Die Veranlassung der Feier war ihr Geburtstag. (El motivo de la celebración fue su cumpleaños)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Einstellung",
+  significado: "Actitud, Enfoque",
+  ejemplo1: "Ihre Einstellung zur Arbeit ist sehr positiv. (Su actitud hacia el trabajo es muy positiva)",
+  ejemplo2: "Eine offene Einstellung kann neue Möglichkeiten schaffen. (Una actitud abierta puede crear nuevas oportunidades)",
+  ejemplo3: "Die Einstellung des Teams muss sich ändern. (La actitud del equipo debe cambiar)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Anpassungsfähigkeit",
+  significado: "Capacidad de adaptación",
+  ejemplo1: "Die Anpassungsfähigkeit ist eine wichtige Fähigkeit im Berufsleben. (La capacidad de adaptación es una habilidad importante en la vida profesional)",
+  ejemplo2: "Seine Anpassungsfähigkeit an neue Situationen beeindruckt mich. (Su capacidad de adaptación a nuevas situaciones me impresiona)",
+  ejemplo3: "In der heutigen Welt ist Anpassungsfähigkeit entscheidend. (En el mundo actual, la capacidad de adaptación es crucial)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Beitrag",
+  significado: "Contribución",
+  ejemplo1: "Ihr Beitrag zum Projekt war entscheidend. (Su contribución al proyecto fue decisiva)",
+  ejemplo2: "Jeder hat einen Beitrag zu leisten. (Cada uno debe hacer una contribución)",
+  ejemplo3: "Der Beitrag der Wissenschaftler war bemerkenswert. (La contribución de los científicos fue notable)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Zulassen",
+  significado: "Permitir, autorizar",
+  ejemplo1: "Die Regeln lassen das nicht zu. (Las reglas no permiten eso)",
+  ejemplo2: "Ich werde nicht zulassen, dass das passiert. (No permitiré que eso suceda)",
+  ejemplo3: "Die Behörde hat das neue Projekt zugelassen. (La autoridad autorizó el nuevo proyecto)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Erleichtern",
+  significado: "Facilitar, Aligerar",
+  ejemplo1: "Die neuen Systeme erleichtern die Arbeit. (Los nuevos sistemas facilitan el trabajo)",
+  ejemplo2: "Eine gute Planung erleichtert den Prozess. (Una buena planificación facilita el proceso)",
+  ejemplo3: "Er hat sich erleichtert, als er die Nachricht hörte. (Se sintió aliviado al escuchar la noticia)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Missbrauchen",
+  significado: "Abusar, Maltratar",
+  ejemplo1: "Er hat seine Macht missbraucht. (Abusó de su poder)",
+  ejemplo2: "Missbrauch von Vertrauen ist unverzeihlich. (El abuso de la confianza es imperdonable)",
+  ejemplo3: "Das Gesetz wurde in diesem Fall missbraucht. (La ley fue mal utilizada en este caso)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Vermeiden",
+  significado: "Evitar",
+  ejemplo1: "Wir sollten unnötige Risiken vermeiden. (Deberíamos evitar riesgos innecesarios)",
+  ejemplo2: "Er versucht Konflikte zu vermeiden. (Intenta evitar conflictos)",
+  ejemplo3: "Vermeide es, zu spät zu kommen. (Evita llegar tarde)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Überschätzen",
+  significado: "Sobreestimar",
+  ejemplo1: "Er überschätzt oft seine Fähigkeiten. (A menudo sobreestima sus habilidades)",
+  ejemplo2: "Die Bedeutung des Ereignisses wurde überschätzt. (La importancia del evento fue sobreestimada)",
+  ejemplo3: "Du solltest das Risiko nicht überschätzen. (No deberías sobreestimar el riesgo)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Beschreiben",
+  significado: "Describir",
+  ejemplo1: "Kannst du den Mann beschreiben? (¿Puedes describir al hombre?)",
+  ejemplo2: "Sie beschreibt die Situation sehr genau. (Ella describe la situación con mucho detalle.)",
+  ejemplo3: "Ich werde das Bild für dich beschreiben. (Voy a describir la imagen para ti.)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Entstehen",
+  significado: "Surgir, Originarse",
+  ejemplo1: "Ein neues Problem ist entstanden. (Ha surgido un nuevo problema.)",
+  ejemplo2: "Wie ist die Idee entstanden? (¿Cómo surgió la idea?)",
+  ejemplo3: "Die Stadt entstand vor über 500 Jahren. (La ciudad se originó hace más de 500 años.)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Entscheiden",
+  significado: "Decidir",
+  ejemplo1: "Hast du schon entschieden, was du machen wirst? (¿Ya decidiste qué vas a hacer?)",
+  ejemplo2: "Wir müssen uns bald entscheiden. (Tenemos que decidir pronto.)",
+  ejemplo3: "Er entscheidet, das Angebot anzunehmen. (Él decide aceptar la oferta.)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Erkennen",
+  significado: "Reconocer, Darse cuenta",
+  ejemplo1: "Ich habe ihn sofort erkannt. (Lo reconocí de inmediato.)",
+  ejemplo2: "Sie erkennt ihren Fehler. (Ella reconoce su error.)",
+  ejemplo3: "Er konnte das Problem nicht erkennen. (Él no pudo darse cuenta del problema.)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Erklären",
+  significado: "Explicar",
+  ejemplo1: "Kannst du mir das bitte erklären? (¿Puedes explicarme eso, por favor?)",
+  ejemplo2: "Der Lehrer erklärt die Aufgabe. (El profesor explica la tarea.)",
+  ejemplo3: "Er hat alles sehr gut erklärt. (Él explicó todo muy bien.)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Erwarten",
+  significado: "Esperar (algo de alguien o algo)",
+  ejemplo1: "Ich erwarte gute Ergebnisse. (Espero buenos resultados.)",
+  ejemplo2: "Erwartest du Gäste? (¿Estás esperando invitados?)",
+  ejemplo3: "Wir erwarten, dass das Problem bald gelöst wird. (Esperamos que el problema se resuelva pronto.)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Genießen",
+  significado: "Disfrutar",
+  ejemplo1: "Ich genieße das gute Wetter. (Disfruto del buen clima.)",
+  ejemplo2: "Hast du den Urlaub genossen? (¿Disfrutaste de las vacaciones?)",
+  ejemplo3: "Sie genießt ihr Leben in vollen Zügen. (Ella disfruta su vida al máximo.)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Hoffen",
+  significado: "Esperar, Tener esperanza",
+  ejemplo1: "Ich hoffe, dass alles gut wird. (Espero que todo salga bien.)",
+  ejemplo2: "Wir hoffen auf besseres Wetter. (Esperamos tener mejor clima.)",
+  ejemplo3: "Hoffst du, den Job zu bekommen? (¿Tienes la esperanza de conseguir el trabajo?)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Klingen",
+  significado: "Sonar",
+  ejemplo1: "Das klingt nach einer guten Idee. (Eso suena a una buena idea.)",
+  ejemplo2: "Ihr Lachen klingt fröhlich. (Su risa suena alegre.)",
+  ejemplo3: "Die Glocke hat um 8 Uhr geklungen. (La campana sonó a las 8 en punto.)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Leiden",
+  significado: "Sufrir, Padecer",
+  ejemplo1: "Er leidet an einer Erkältung. (Él sufre de un resfriado.)",
+  ejemplo2: "Sie leidet unter Stress bei der Arbeit. (Ella padece de estrés en el trabajo.)",
+  ejemplo3: "Viele Menschen leiden unter Armut. (Muchas personas sufren de pobreza.)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Missverstehen",
+  significado: "Malinterpretar",
+  ejemplo1: "Ich glaube, du hast mich missverstanden. (Creo que me malinterpretaste.)",
+  ejemplo2: "Es ist leicht, diese Regel zu missverstehen. (Es fácil malinterpretar esta regla.)",
+  ejemplo3: "Wir haben uns leider missverstanden. (Desafortunadamente, nos malentendimos.)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Sich bemühen",
+  significado: "Esforzarse",
+  ejemplo1: "Ich bemühe mich, Deutsch zu lernen. (Me esfuerzo por aprender alemán.)",
+  ejemplo2: "Er bemüht sich, pünktlich zu sein. (Él se esfuerza por ser puntual.)",
+  ejemplo3: "Wir bemühen uns, das Problem zu lösen. (Nos estamos esforzando por resolver el problema.)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Sich erinnern",
+  significado: "Recordar",
+  ejemplo1: "Ich erinnere mich an meinen ersten Schultag. (Recuerdo mi primer día de escuela.)",
+  ejemplo2: "Kannst du dich an sie erinnern? (¿Puedes recordarla?)",
+  ejemplo3: "Er erinnert sich an das Versprechen. (Él recuerda la promesa.)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Sich irren",
+  significado: "Equivocarse",
+  ejemplo1: "Ich habe mich geirrt, das war die falsche Tür. (Me equivoqué, era la puerta equivocada.)",
+  ejemplo2: "Wenn du denkst, dass er lügt, irrst du dich. (Si crees que él está mintiendo, te equivocas.)",
+  ejemplo3: "Er irrt sich selten in solchen Dingen. (Él rara vez se equivoca en estas cosas.)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Unterscheiden",
+  significado: "Distinguir",
+  ejemplo1: "Kannst du die beiden Bilder unterscheiden? (¿Puedes distinguir las dos imágenes?)",
+  ejemplo2: "Er kann nicht zwischen richtig und falsch unterscheiden. (Él no puede distinguir entre lo correcto y lo incorrecto.)",
+  ejemplo3: "Es ist schwer, die Zwillinge zu unterscheiden. (Es difícil distinguir a los gemelos.)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Vergessen",
+  significado: "Olvidar",
+  ejemplo1: "Ich habe meinen Schlüssel vergessen. (Olvidé mi llave.)",
+  ejemplo2: "Vergiss nicht, das Licht auszumachen. (No olvides apagar la luz.)",
+  ejemplo3: "Er hat seinen Termin vergessen. (Olvidó su cita.)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Verhindern",
+  significado: "Evitar, Impedir",
+  ejemplo1: "Der Unfall konnte nicht verhindert werden. (El accidente no pudo ser evitado.)",
+  ejemplo2: "Er versucht, das Schlimmste zu verhindern. (Él intenta evitar lo peor.)",
+  ejemplo3: "Wir müssen diese Fehler in Zukunft verhindern. (Debemos evitar estos errores en el futuro.)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Verschwinden",
+  significado: "Desaparecer",
+  ejemplo1: "Mein Geldbeutel ist verschwunden. (Mi billetera ha desaparecido.)",
+  ejemplo2: "Er verschwindet immer, wenn es Arbeit gibt. (Él siempre desaparece cuando hay trabajo.)",
+  ejemplo3: "Die Sonne verschwand hinter den Wolken. (El sol desapareció detrás de las nubes.)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Verzeihen",
+  significado: "Perdonar",
+  ejemplo1: "Kannst du mir bitte verzeihen? (¿Puedes perdonarme, por favor?)",
+  ejemplo2: "Sie hat ihm seinen Fehler verziehen. (Ella le perdonó su error.)",
+  ejemplo3: "Es ist schwer, so etwas zu verzeihen. (Es difícil perdonar algo así.)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Widersprechen",
+  significado: "Contradecir",
+  ejemplo1: "Er widerspricht mir ständig. (Él me contradice todo el tiempo.)",
+  ejemplo2: "Du solltest nicht immer widersprechen. (No deberías contradecir siempre.)",
+  ejemplo3: "Es ist schwer, ihm zu widersprechen. (Es difícil contradecirlo.)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Zerstören",
+  significado: "Destruir",
+  ejemplo1: "Der Sturm hat viele Häuser zerstört. (La tormenta destruyó muchas casas.)",
+  ejemplo2: "Er hat alle Beweise zerstört. (Él destruyó todas las pruebas.)",
+  ejemplo3: "Das Feuer hat das ganze Gebäude zerstört. (El fuego destruyó todo el edificio.)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Zwingen",
+  significado: "Obligar",
+  ejemplo1: "Niemand kann dich dazu zwingen. (Nadie puede obligarte a hacer eso.)",
+  ejemplo2: "Er zwang mich, die Wahrheit zu sagen. (Él me obligó a decir la verdad.)",
+  ejemplo3: "Wir sind gezwungen, eine Entscheidung zu treffen. (Estamos obligados a tomar una decisión.)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Befehlen",
+  significado: "Ordenar, Mandar",
+  ejemplo1: "Der König befiehlt seinem Heer zu marschieren. (El rey ordena a su ejército marchar.)",
+  ejemplo2: "Ich kann dir nichts befehlen, du bist frei. (No puedo ordenarte, eres libre.)",
+  ejemplo3: "Sie befiehlt, dass das Zimmer sauber gemacht wird. (Ella ordena que se limpie la habitación.)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Beurteilen",
+  significado: "Juzgar, Evaluar",
+  ejemplo1: "Man sollte Menschen nicht nach ihrem Aussehen beurteilen. (No se debería juzgar a las personas por su apariencia.)",
+  ejemplo2: "Der Lehrer beurteilt die Leistung der Schüler. (El profesor evalúa el rendimiento de los alumnos.)",
+  ejemplo3: "Es ist schwer, die Situation objektiv zu beurteilen. (Es difícil evaluar la situación objetivamente.)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Bewältigen",
+  significado: "Superar, Manejar",
+  ejemplo1: "Er muss viele Aufgaben gleichzeitig bewältigen. (Él tiene que manejar muchas tareas al mismo tiempo.)",
+  ejemplo2: "Wir haben es geschafft, das Problem zu bewältigen. (Logramos superar el problema.)",
+  ejemplo3: "Sie bewältigt die schwierige Situation erstaunlich gut. (Ella maneja la difícil situación sorprendentemente bien.)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Drucken",
+  significado: "Imprimir",
+  ejemplo1: "Kannst du das Dokument für mich drucken? (¿Puedes imprimir el documento para mí?)",
+  ejemplo2: "Die Zeitung wird täglich neu gedruckt. (El periódico se imprime diariamente.)",
+  ejemplo3: "Ich drucke die Präsentation aus. (Estoy imprimiendo la presentación.)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Durchführen",
+  significado: "Realizar, llevar a cabo",
+  ejemplo1: "Die Firma führt das neue Projekt durch. (La empresa está llevando a cabo el nuevo proyecto.)",
+  ejemplo2: "Wir werden den Plan wie geplant durchführen. (Vamos a realizar el plan según lo previsto.)",
+  ejemplo3: "Das Experiment wurde erfolgreich durchgeführt. (El experimento se realizó con éxito.)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Empfehlen",
+  significado: "Recomendar",
+  ejemplo1: "Kannst du mir ein gutes Restaurant empfehlen? (¿Puedes recomendarme un buen restaurante?)",
+  ejemplo2: "Der Arzt empfiehlt, mehr Wasser zu trinken. (El médico recomienda beber más agua.)",
+  ejemplo3: "Ich empfehle dir, dieses Buch zu lesen. (Te recomiendo que leas este libro.)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Erfordern",
+  significado: "Requerir",
+  ejemplo1: "Diese Aufgabe erfordert viel Geduld. (Esta tarea requiere mucha paciencia.)",
+  ejemplo2: "Das Projekt erfordert spezielle Kenntnisse. (El proyecto requiere conocimientos especiales.)",
+  ejemplo3: "Die Situation erfordert schnelle Entscheidungen. (La situación requiere decisiones rápidas.)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Erscheinen",
+  significado: "Aparecer, publicarse",
+  ejemplo1: "Das Buch wird nächste Woche erscheinen. (El libro se publicará la próxima semana.)",
+  ejemplo2: "Er erschien plötzlich auf der Party. (Él apareció de repente en la fiesta.)",
+  ejemplo3: "Das Magazin erscheint monatlich. (La revista se publica mensualmente.)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Feststellen",
+  significado: "Determinar, Notar",
+  ejemplo1: "Der Arzt stellte fest, dass er gesund ist. (El médico determinó que él está sano.)",
+  ejemplo2: "Sie stellte fest, dass ihr Schlüssel fehlte. (Ella notó que le faltaba la llave.)",
+  ejemplo3: "Wir haben festgestellt, dass das Produkt defekt ist. (Hemos determinado que el producto está defectuoso.)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Gelten",
+  significado: "Ser válido, Aplicar",
+  ejemplo1: "Das Angebot gilt nur bis morgen. (La oferta solo es válida hasta mañana.)",
+  ejemplo2: "Die Regeln gelten für alle. (Las reglas aplican a todos.)",
+  ejemplo3: "Dieser Pass gilt nicht mehr. (Este pasaporte ya no es válido.)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Herstellen",
+  significado: "Producir, Fabricar",
+  ejemplo1: "Diese Firma stellt Autos her. (Esta empresa fabrica autos.)",
+  ejemplo2: "Die Medikamente werden im Labor hergestellt. (Los medicamentos se producen en el laboratorio.)",
+  ejemplo3: "Die Firma stellt elektronische Geräte her. (La empresa fabrica dispositivos electrónicos.)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Hinzufügen",
+  significado: "Añadir, Agregar",
+  ejemplo1: "Möchtest du noch etwas hinzufügen? (¿Quieres añadir algo más?)",
+  ejemplo2: "Er hat seiner Rede nichts mehr hinzuzufügen. (No tiene nada más que agregar a su discurso.)",
+  ejemplo3: "Wir müssen dem Vertrag noch eine Klausel hinzufügen. (Debemos añadir una cláusula al contrato.)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Nachdenken",
+  significado: "Reflexionar, Pensar",
+  ejemplo1: "Ich muss über deinen Vorschlag nachdenken. (Tengo que reflexionar sobre tu propuesta.)",
+  ejemplo2: "Er denkt oft über seine Zukunft nach. (Él piensa mucho en su futuro.)",
+  ejemplo3: "Wir sollten über diese Idee nachdenken. (Deberíamos reflexionar sobre esta idea.)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Realisieren",
+  significado: "Darse cuenta, Realizar",
+  ejemplo1: "Sie hat nicht realisiert, dass sie zu spät ist. (Ella no se dio cuenta de que llegaba tarde.)",
+  ejemplo2: "Er realisiert seinen Traum, Musiker zu werden. (Él está cumpliendo su sueño de ser músico.)",
+  ejemplo3: "Es dauerte eine Weile, bis ich die Wahrheit realisierte. (Me llevó un tiempo darme cuenta de la verdad.)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Scheinen",
+  significado: "Parecer, Brillar",
+  ejemplo1: "Es scheint, als ob er die Wahrheit sagt. (Parece que él está diciendo la verdad.)",
+  ejemplo2: "Die Sonne scheint heute sehr hell. (El sol brilla muy fuerte hoy.)",
+  ejemplo3: "Es scheint, als würde es bald regnen. (Parece que va a llover pronto.)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Schließen",
+  significado: "Cerrar, Concluir",
+  ejemplo1: "Die Geschäfte schließen um 20 Uhr. (Las tiendas cierran a las 20 horas.)",
+  ejemplo2: "Wir schließen das Thema für heute ab. (Concluimos el tema por hoy.)",
+  ejemplo3: "Schließen Sie bitte das Fenster. (Por favor, cierre la ventana.)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Überprüfen",
+  significado: "Verificar, Comprobar",
+  ejemplo1: "Kannst du die Rechnung noch einmal überprüfen? (¿Puedes verificar la factura una vez más?)",
+  ejemplo2: "Der Mechaniker überprüft das Auto. (El mecánico está revisando el auto.)",
+  ejemplo3: "Wir müssen die Daten überprüfen. (Tenemos que comprobar los datos.)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Unterbrechen",
+  significado: "Interrumpir",
+  ejemplo1: "Entschuldigung, dass ich dich unterbreche. (Perdón por interrumpirte.)",
+  ejemplo2: "Der Strom wurde plötzlich unterbrochen. (La electricidad se interrumpió de repente.)",
+  ejemplo3: "Er unterbrach seine Arbeit, um ans Telefon zu gehen. (Él interrumpió su trabajo para contestar el teléfono.)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Verbergen",
+  significado: "Esconder, Ocultar",
+  ejemplo1: "Er hat nichts zu verbergen. (Él no tiene nada que esconder.)",
+  ejemplo2: "Sie versucht, ihre Gefühle zu verbergen. (Ella intenta ocultar sus sentimientos.)",
+  ejemplo3: "Er verbirgt das Geschenk hinter dem Sofa. (Él esconde el regalo detrás del sofá.)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Verbessern",
+  significado: "Mejorar, Corregir",
+  ejemplo1: "Ich möchte mein Deutsch verbessern. (Quiero mejorar mi alemán.)",
+  ejemplo2: "Wir müssen das System verbessern. (Debemos mejorar el sistema.)",
+  ejemplo3: "Er hat seine Fehler verbessert. (Él corrigió sus errores.)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Verlangen",
+  significado: "Exigir, Pedir",
+  ejemplo1: "Der Chef verlangt absolute Pünktlichkeit. (El jefe exige absoluta puntualidad.)",
+  ejemplo2: "Sie verlangt, dass wir pünktlich sind. (Ella exige que seamos puntuales.)",
+  ejemplo3: "Das Projekt verlangt viel Arbeit. (El proyecto requiere mucho trabajo.)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Versichern",
+  significado: "Asegurar",
+  ejemplo1: "Er versichert mir, dass alles in Ordnung ist. (Él me asegura que todo está bien.)",
+  ejemplo2: "Wir müssen das Haus gegen Feuer versichern. (Debemos asegurar la casa contra incendios.)",
+  ejemplo3: "Sie versicherte ihm, dass sie kommen würde. (Ella le aseguró que vendría.)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Langweilig",
+  significado: "Aburrido",
+  ejemplo1: "Die Vorlesung war sehr langweilig. (La conferencia fue muy aburrida.)",
+  ejemplo2: "Ich fand den Film langweilig. (Encontré la película aburrida.)",
+  ejemplo3: "Langweilige Aufgaben machen keinen Spaß. (Las tareas aburridas no son divertidas.)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Fröhlich",
+  significado: "Alegre",
+  ejemplo1: "Sie ist immer fröhlich und lächelt. (Ella siempre está alegre y sonriente.)",
+  ejemplo2: "Die fröhliche Musik bringt gute Laune. (La música alegre trae buen humor.)",
+  ejemplo3: "Er hat eine fröhliche Art zu sprechen. (Él tiene una forma alegre de hablar.)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Verdächtig",
+  significado: "Sospechoso",
+  ejemplo1: "Sein Verhalten war sehr verdächtig. (Su comportamiento era muy sospechoso.)",
+  ejemplo2: "Die Nachbarn fanden ihn verdächtig. (Los vecinos lo encontraron sospechoso.)",
+  ejemplo3: "Diese Information klingt verdächtig. (Esta información suena sospechosa.)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Einfühlsam",
+  significado: "Empático",
+  ejemplo1: "Er ist ein einfühlsamer Freund. (Él es un amigo empático.)",
+  ejemplo2: "Empathie ist wichtig in Beziehungen. (La empatía es importante en las relaciones.)",
+  ejemplo3: "Einfühlsame Menschen verstehen die Gefühle anderer. (Las personas empáticas entienden los sentimientos de los demás.)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Aggressiv",
+  significado: "Agresivo",
+  ejemplo1: "Sein aggressives Verhalten ist nicht akzeptabel. (Su comportamiento agresivo no es aceptable.)",
+  ejemplo2: "Manchmal kann er sehr aggressiv sein. (A veces puede ser muy agresivo.)",
+  ejemplo3: "Aggressive Menschen schaffen eine unangenehme Atmosphäre. (Las personas agresivas crean un ambiente incómodo.)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Freundlich",
+  significado: "Amable",
+  ejemplo1: "Sie ist immer freundlich zu allen. (Ella siempre es amable con todos.)",
+  ejemplo2: "Ein freundliches Lächeln kann viel bewirken. (Una sonrisa amable puede hacer mucho.)",
+  ejemplo3: "Die freundliche Bedienung im Restaurant hat mir gefallen. (Me gustó la atención amable en el restaurante.)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Ehrlich",
+  significado: "Honesto",
+  ejemplo1: "Es ist wichtig, ehrlich zu sein. (Es importante ser honesto.)",
+  ejemplo2: "Er gab eine ehrliche Antwort. (Él dio una respuesta honesta.)",
+  ejemplo3: "Ehrliche Menschen sind in der Regel vertrauenswürdig. (Las personas honestas suelen ser de confianza.)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Sympathisch",
+  significado: "Simpático",
+  ejemplo1: "Er ist ein sehr sympathischer Mensch. (Él es una persona muy simpática.)",
+  ejemplo2: "Ich fand die neue Kollegin sehr sympathisch. (Encontré a la nueva colega muy simpática.)",
+  ejemplo3: "Sympathische Menschen haben oft viele Freunde. (Las personas simpáticas suelen tener muchos amigos.)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Intelligent",
+  significado: "Inteligente",
+  ejemplo1: "Sie ist sehr intelligent und talentiert. (Ella es muy inteligente y talentosa.)",
+  ejemplo2: "Intelligente Menschen finden oft kreative Lösungen. (Las personas inteligentes a menudo encuentran soluciones creativas.)",
+  ejemplo3: "Ich bewundere seine intelligente Art zu denken. (Admiro su forma inteligente de pensar.)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Zärtlich",
+  significado: "Tierno",
+  ejemplo1: "Das Kind ist sehr zärtlich zu seinen Freunden. (El niño es muy tierno con sus amigos.)",
+  ejemplo2: "Zärtliche Gesten können viel bedeuten. (Los gestos tiernos pueden significar mucho.)",
+  ejemplo3: "Er hat eine zärtliche Art, seine Liebe zu zeigen. (Él tiene una forma tierna de mostrar su amor.)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Ehrgeizig",
+  significado: "Ambicioso",
+  ejemplo1: "Sie ist eine ehrgeizige Studentin. (Ella es una estudiante ambiciosa.)",
+  ejemplo2: "Ehrgeizige Menschen setzen sich hohe Ziele. (Las personas ambiciosas se establecen altas metas.)",
+  ejemplo3: "Sein ehrgeiziger Plan beeindruckte alle. (Su plan ambicioso impresionó a todos.)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Neugierig",
+  significado: "Curioso",
+  ejemplo1: "Das Kind ist sehr neugierig auf die Welt. (El niño es muy curioso sobre el mundo.)",
+  ejemplo2: "Neugierige Menschen lernen schneller. (Las personas curiosas aprenden más rápido.)",
+  ejemplo3: "Ich bin neugierig, was du denkst. (Tengo curiosidad por saber qué piensas.)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Geduldig",
+  significado: "Paciente",
+  ejemplo1: "Sie ist sehr geduldig mit ihren Schülern. (Ella es muy paciente con sus alumnos.)",
+  ejemplo2: "Geduld ist eine wichtige Tugend. (La paciencia es una virtud importante.)",
+  ejemplo3: "Manchmal muss man geduldig sein. (A veces hay que ser paciente.)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Unabhängig",
+  significado: "Independiente",
+  ejemplo1: "Sie ist eine unabhängige Frau. (Ella es una mujer independiente.)",
+  ejemplo2: "Ich möchte finanziell unabhängig sein. (Quiero ser financieramente independiente.)",
+  ejemplo3: "Unabhängige Entscheidungen zu treffen ist wichtig. (Tomar decisiones independientes es importante.)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Anspruchsvoll",
+  significado: "Exigente",
+  ejemplo1: "Der Lehrer ist sehr anspruchsvoll. (El maestro es muy exigente.)",
+  ejemplo2: "Das Projekt war anspruchsvoll und herausfordernd. (El proyecto fue exigente y desafiante.)",
+  ejemplo3: "Anspruchsvolle Kunden sind schwer zufriedenzustellen. (Los clientes exigentes son difíciles de satisfacer.)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Vorsichtig",
+  significado: "Cuidadoso",
+  ejemplo1: "Sei vorsichtig mit dem Feuer. (Ten cuidado con el fuego.)",
+  ejemplo2: "Er fährt vorsichtig in der Stadt. (Él conduce con cuidado en la ciudad.)",
+  ejemplo3: "Vorsichtige Menschen vermeiden Risiken. (Las personas cuidadosas evitan riesgos.)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Kreativ",
+  significado: "Creativo",
+  ejemplo1: "Kreative Menschen finden oft neue Ideen. (Las personas creativas a menudo encuentran nuevas ideas.)",
+  ejemplo2: "Ich mag kreative Lösungen für Probleme. (Me gustan las soluciones creativas para los problemas.)",
+  ejemplo3: "Er hat eine kreative Art, Dinge zu gestalten. (Él tiene una forma creativa de diseñar cosas.)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Verantwortlich",
+  significado: "Responsable",
+  ejemplo1: "Sie ist verantwortlich für das Projekt. (Ella es responsable del proyecto.)",
+  ejemplo2: "Verantwortliche Menschen nehmen ihre Pflichten ernst. (Las personas responsables se toman en serio sus responsabilidades.)",
+  ejemplo3: "Es ist wichtig, verantwortungsbewusst zu handeln. (Es importante actuar de manera responsable.)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Optimistisch",
+  significado: "Optimista",
+  ejemplo1: "Er ist sehr optimistisch über die Zukunft. (Él es muy optimista sobre el futuro.)",
+  ejemplo2: "Optimistische Menschen sehen das Positive. (Las personas optimistas ven lo positivo.)",
+  ejemplo3: "Ich versuche, in schwierigen Zeiten optimistisch zu bleiben. (Intento mantenerme optimista en tiempos difíciles.)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Traurig",
+  significado: "Triste",
+  ejemplo1: "Sie sieht traurig aus. (Ella parece triste.)",
+  ejemplo2: "Traurige Musik kann berühren. (La música triste puede tocar el corazón.)",
+  ejemplo3: "Es ist normal, manchmal traurig zu sein. (Es normal estar triste a veces.)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Ehrfurchtgebietend",
+  significado: "Impresionante",
+  ejemplo1: "Die Natur kann ehrfurchtgebietend sein. (La naturaleza puede ser impresionante.)",
+  ejemplo2: "Sein Talent ist wirklich ehrfurchtgebietend. (Su talento es realmente impresionante.)",
+  ejemplo3: "Die Ehrfurcht gebietende Landschaft nahm mir den Atem. (El paisaje impresionante me dejó sin aliento.)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Dynamisch",
+  significado: "Dinámico",
+  ejemplo1: "Sie hat einen dynamischen Lebensstil. (Ella tiene un estilo de vida dinámico.)",
+  ejemplo2: "Dynamische Unternehmen passen sich schnell an. (Las empresas dinámicas se adaptan rápidamente.)",
+  ejemplo3: "Der dynamische Vortrag hielt die Aufmerksamkeit der Zuhörer. (La presentación dinámica mantuvo la atención de los oyentes.)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Unabhängig",
+  significado: "Independiente",
+  ejemplo1: "Ich möchte unabhängig sein. (Quiero ser independiente.)",
+  ejemplo2: "Unabhängige Menschen treffen ihre eigenen Entscheidungen. (Las personas independientes toman sus propias decisiones.)",
+  ejemplo3: "Das Land strebt nach unabhängiger Politik. (El país busca una política independiente.)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Motiviert",
+  significado: "Motivado",
+  ejemplo1: "Er ist motiviert, seine Ziele zu erreichen. (Él está motivado para alcanzar sus metas.)",
+  ejemplo2: "Motivierte Mitarbeiter sind produktiver. (Los empleados motivados son más productivos.)",
+  ejemplo3: "Ich fühle mich motiviert, mehr zu lernen. (Me siento motivado para aprender más.)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Flexibel",
+  significado: "Flexible",
+  ejemplo1: "Sie hat einen flexiblen Arbeitszeitplan. (Ella tiene un horario de trabajo flexible.)",
+  ejemplo2: "Flexibles Denken ist wichtig in schwierigen Situationen. (El pensamiento flexible es importante en situaciones difíciles.)",
+  ejemplo3: "Ich bin flexibel mit meinen Plänen. (Soy flexible con mis planes.)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Unhöflich",
+  significado: "maleducado",
+  ejemplo1: "Es ist unhöflich, jemanden zu unterbrechen. (Es maleducado interrumpir a alguien.)",
+  ejemplo2: "Der Kellner war sehr unhöflich zu den Gästen. (El camarero fue muy maleducado con los invitados.)",
+  ejemplo3: "Sein unhöfliches Verhalten hat alle gestört. (Su comportamiento maleducado molestó a todos.)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Unordentlich",
+  significado: "Desordenado",
+  ejemplo1: "Sein Zimmer ist immer unordentlich. (Su habitación siempre está desordenada.)",
+  ejemplo2: "Sie ist eine sehr unordentliche Person. (Ella es una persona muy desordenada.)",
+  ejemplo3: "Ich fühle mich unwohl, wenn mein Schreibtisch unordentlich ist. (Me siento incómodo cuando mi escritorio está desordenado.)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Klug",
+  significado: "Inteligente",
+  ejemplo1: "Er ist ein sehr kluger Junge. (Él es un chico muy inteligente.)",
+  ejemplo2: "Sie hat eine kluge Entscheidung getroffen. (Ella tomó una decisión inteligente.)",
+  ejemplo3: "Klug zu sein hilft, aber es reicht nicht aus. (Ser inteligente ayuda, pero no es suficiente.)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Mutig",
+  significado: "Valiente",
+  ejemplo1: "Der Soldat war sehr mutig im Kampf. (El soldado fue muy valiente en la batalla.)",
+  ejemplo2: "Es war mutig von ihr, die Wahrheit zu sagen. (Fue valiente por su parte decir la verdad.)",
+  ejemplo3: "Manchmal muss man mutig sein, um das Richtige zu tun. (A veces hay que ser valiente para hacer lo correcto.)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Ehrlich",
+  significado: "Honesto",
+  ejemplo1: "Er ist immer ehrlich, auch wenn es schwer ist. (Él siempre es honesto, aunque sea difícil.)",
+  ejemplo2: "Sei ehrlich, hast du das wirklich gemacht? (Sé honesto, ¿realmente lo hiciste?)",
+  ejemplo3: "Ehrliche Menschen sind selten. (Las personas honestas son raras.)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Faul",
+  significado: "Perezoso",
+  ejemplo1: "Er ist zu faul, um seine Hausaufgaben zu machen. (Él es demasiado perezoso para hacer sus deberes.)",
+  ejemplo2: "An einem regnerischen Tag werde ich oft faul. (En un día lluvioso a menudo me vuelvo perezoso.)",
+  ejemplo3: "Faule Menschen erreichen selten ihre Ziele. (Las personas perezosas rara vez alcanzan sus metas.)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Laut",
+  significado: "Ruidoso",
+  ejemplo1: "Das Restaurant ist sehr laut. (El restaurante es muy ruidoso.)",
+  ejemplo2: "Die Musik war zu laut. (La música estaba demasiado alta.)",
+  ejemplo3: "Er redet immer laut am Telefon. (Siempre habla en voz alta por teléfono.)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Ruhig",
+  significado: "Tranquilo",
+  ejemplo1: "Das Meer war heute sehr ruhig. (El mar estaba muy tranquilo hoy.)",
+  ejemplo2: "Er ist eine ruhige Person, die selten wütend wird. (Él es una persona tranquila, que rara vez se enoja.)",
+  ejemplo3: "Der Wald war ruhig und friedlich. (El bosque estaba tranquilo y pacífico.)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Großzügig",
+  significado: "Generoso",
+  ejemplo1: "Sie war immer sehr großzügig zu uns. (Ella siempre fue muy generosa con nosotros.)",
+  ejemplo2: "Es war großzügig von dir, uns zu helfen. (Fue generoso de tu parte ayudarnos.)",
+  ejemplo3: "Großzügige Menschen werden oft respektiert. (Las personas generosas suelen ser respetadas.)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Gierig",
+  significado: "Avaro, Codicioso",
+  ejemplo1: "Er ist gierig nach Macht. (Él es codicioso de poder.)",
+  ejemplo2: "Gierige Menschen sind oft unglücklich. (Las personas codiciosas a menudo son infelices.)",
+  ejemplo3: "Er isst so gierig, als wäre es sein letztes Mahl. (Él come con tanta avidez, como si fuera su última comida.)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Ehrgeizig",
+  significado: "Ambicioso",
+  ejemplo1: "Sie ist eine ehrgeizige Schülerin. (Ella es una estudiante ambiciosa.)",
+  ejemplo2: "Sein Ehrgeiz treibt ihn immer weiter. (Su ambición lo impulsa siempre hacia adelante.)",
+  ejemplo3: "Ehrgeizige Menschen erreichen oft viel. (Las personas ambiciosas a menudo logran mucho.)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Geduldig",
+  significado: "Paciente",
+  ejemplo1: "Man muss geduldig sein, um ein gutes Ergebnis zu erzielen. (Hay que ser paciente para obtener un buen resultado.)",
+  ejemplo2: "Sie war sehr geduldig mit den Kindern. (Ella fue muy paciente con los niños.)",
+  ejemplo3: "Geduld ist eine Tugend. (La paciencia es una virtud.)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Ungeduldig",
+  significado: "Impaciente",
+  ejemplo1: "Er ist immer ungeduldig, wenn er warten muss. (Siempre está impaciente cuando tiene que esperar.)",
+  ejemplo2: "Sie wurde ungeduldig, als das Gespräch länger dauerte. (Se volvió impaciente cuando la conversación se alargó.)",
+  ejemplo3: "Ungeduldige Menschen machen oft Fehler. (Las personas impacientes a menudo cometen errores.)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Zufrieden",
+  significado: "Satisfecho",
+  ejemplo1: "Ich bin mit dem Ergebnis sehr zufrieden. (Estoy muy satisfecho con el resultado.)",
+  ejemplo2: "Bist du mit deinem Leben zufrieden? (¿Estás satisfecho con tu vida?)",
+  ejemplo3: "Sie war zufrieden mit ihrer Entscheidung. (Ella estaba satisfecha con su decisión.)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Wütend",
+  significado: "Furioso",
+  ejemplo1: "Er war wütend, weil sie zu spät kam. (Él estaba furioso porque ella llegó tarde.)",
+  ejemplo2: "Sie wurde wütend, als sie die Nachricht hörte. (Se enfureció cuando escuchó la noticia.)",
+  ejemplo3: "Manchmal wird er sehr schnell wütend. (A veces se enfada muy rápido.)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Stolz",
+  significado: "Orgulloso",
+  ejemplo1: "Er ist stolz auf seinen Erfolg. (Él está orgulloso de su éxito.)",
+  ejemplo2: "Sie war stolz auf ihre Kinder. (Ella estaba orgullosa de sus hijos.)",
+  ejemplo3: "Wir sind stolz auf das, was wir erreicht haben. (Estamos orgullosos de lo que hemos logrado.)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Schüchtern",
+  significado: "Tímido",
+  ejemplo1: "Sie ist zu schüchtern, um mit Fremden zu sprechen. (Ella es demasiado tímida para hablar con extraños.)",
+  ejemplo2: "Er wird oft schüchtern in großen Gruppen. (Él a menudo se pone tímido en grandes grupos.)",
+  ejemplo3: "Schüchterne Menschen brauchen manchmal etwas mehr Zeit. (Las personas tímidas a veces necesitan un poco más de tiempo.)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Arrogant",
+  significado: "arrogante",
+  ejemplo1: "Er verhält sich oft arrogant. (Él a menudo se comporta de manera arrogante.)",
+  ejemplo2: "Seine arrogante Art hat viele Leute verärgert. (Su manera arrogante molestó a muchas personas.)",
+  ejemplo3: "Arrogante Menschen haben oft wenig Freunde. (Las personas arrogantes a menudo tienen pocos amigos.)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Bescheiden",
+  significado: "aodesto",
+  ejemplo1: "Sie ist trotz ihres Erfolgs sehr bescheiden. (A pesar de su éxito, ella es muy modesta.)",
+  ejemplo2: "Er lebt ein bescheidenes Leben. (Él lleva una vida modesta.)",
+  ejemplo3: "Bescheidene Menschen sind oft die erfolgreichsten. (Las personas modestas a menudo son las más exitosas.)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Neugierig",
+  significado: "Curioso",
+  ejemplo1: "Das Kind ist sehr neugierig und stellt viele Fragen. (El niño es muy curioso y hace muchas preguntas.)",
+  ejemplo2: "Neugierige Menschen lernen oft mehr. (Las personas curiosas a menudo aprenden más.)",
+  ejemplo3: "Bist du nicht neugierig, was sie gesagt haben? (¿No tienes curiosidad por saber lo que dijeron?)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Entspannt",
+  significado: "Relajado",
+  ejemplo1: "Er fühlt sich nach dem Urlaub sehr entspannt. (Se siente muy relajado después de las vacaciones.)",
+  ejemplo2: "Das Wochenende war sehr entspannt. (El fin de semana fue muy relajado.)",
+  ejemplo3: "Entspannte Menschen leben gesünder. (Las personas relajadas viven más sanas.)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Anstrengend",
+  significado: "Agotador",
+  ejemplo1: "Die Wanderung war sehr anstrengend. (La caminata fue muy agotadora.)",
+  ejemplo2: "Die Arbeit heute war anstrengend. (El trabajo de hoy fue agotador.)",
+  ejemplo3: "Es war ein anstrengender Tag. (Fue un día agotador.)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Tapfer",
+  significado: "Valeroso",
+  ejemplo1: "Der Hund war tapfer, als er sein Herrchen beschützte. (El perro fue valeroso cuando protegió a su dueño.)",
+  ejemplo2: "Sie ist eine tapfere Frau. (Ella es una mujer valiente.)",
+  ejemplo3: "Tapfere Menschen haben keine Angst vor Gefahren. (Las personas valerosas no tienen miedo a los peligros.)",
+  deleted: false,
+  likes: 0
+},
+{
+  palabra: "Schüchtern",
+  significado: "Tímido",
+  ejemplo1: "Er ist zu schüchtern, um mit Fremden zu sprechen. (Él es demasiado tímido para hablar con extraños.)",
+  ejemplo2: "Das Kind war anfangs schüchtern, aber dann öffnete es sich. (El niño era tímido al principio, pero luego se soltó.)",
+  ejemplo3: "Ich war früher sehr schüchtern. (Solía ser muy tímido.)",
+  deleted: false,
+  likes: 0
+}

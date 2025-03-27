@@ -1,9 +1,9 @@
-const mongoose = require('mongoose');
+import mongoose from 'mongoose';
 
 const commentSchema = new mongoose.Schema({
   text: String,
   createdAt: { type: Date, default: Date.now },
-  likes: { type: Number, default: 0 }, // 💥 Ahora cada comentario tiene likes
+  likes: { type: Number, default: 0 },
   deleted: { type: Boolean, default: false },
 });
 
@@ -12,9 +12,7 @@ const imageSchema = new mongoose.Schema({
   publicId: String,
   likes: { type: Number, default: 0 },
   deleted: { type: Boolean, default: false },
-
-  // 💥 Ahora cada imagen tiene un array de comentarios
-  comments: [commentSchema],
+  comments: [commentSchema]
 }, { timestamps: true });
 
-module.exports = mongoose.model('Image', imageSchema);
+export const Image = mongoose.model('Image', imageSchema);
