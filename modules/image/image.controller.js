@@ -1,28 +1,31 @@
-import { Image } from './image.model.js';
-import cloudinary from '../../config/cloudinary.js';
+const Image = require('./image.model'); // Asegúrate de que tienes un modelo de imagen
+const cloudinary = require('../../config/cloudinary');
 
-// Subir imagen a Cloudinary
-export const uploadImage = async (req, res) => {
+
+
+// SUBIR IMAGEN A CLOUDINARY
+const uploadImage = async (req, res) => {
   try {
     if (!req.file) {
       return res.status(400).json({ message: 'No se ha enviado ninguna imagen' });
     }
 
-    const newImage = new Image({
-      imageUrl: req.file.path,
-      publicId: req.file.filename
-    });
-    
+    // req.file.path YA es la URL segura de Cloudinary
+    const imageUrl = req.file.path;
+    const publicId = req.file.filename; // Guarda el public_id por si luego querés borrarla
+
+    // Guardar en la base de datos
+    const newImage = new Image({ imageUrl, publicId });
     await newImage.save();
+
     res.status(201).json({ message: 'Imagen subida con éxito', image: newImage });
   } catch (error) {
     console.error('Error al subir imagen:', error);
     res.status(500).json({ message: 'Error al subir imagen' });
   }
 };
-
-// Obtener imágenes con URLs optimizadas
-export const getImages = async (req, res) => {
+// OBTENER IMÁGENES
+const getImages = async (req, res) => {
   try {
     const images = await Image.find().sort({ createdAt: -1 });
     
@@ -30,15 +33,20 @@ export const getImages = async (req, res) => {
       return res.status(404).json({ message: "No images found" });
     }
 
-    const optimizedImages = images.map(image => ({
-      ...image._doc,
-      optimizedUrl: cloudinary.url(image.imageUrl, {
+    // Aplicar transformaciones a las imágenes obtenidas
+    const optimizedImages = images.map(image => {
+      const imageUrl = image.imageUrl;
+
+      // Aplicar las transformaciones directamente en la URL
+      const optimizedUrl = cloudinary.url(image.imageUrl, {
         transformation: [
           { quality: 'auto', fetch_format: 'auto' },
           { width: 300, height: 300, crop: 'fill', gravity: 'auto' }
         ]
-      })
-    }));
+      });
+
+      return { ...image._doc, optimizedUrl };
+    });
 
     res.json({ images: optimizedImages });
   } catch (error) {
@@ -47,26 +55,76 @@ export const getImages = async (req, res) => {
   }
 };
 
-// Dar like a imagen
-export const likeImage = async (req, res) => {
+
+// OBTENER IMÁGENES CON PAGINACIÓN
+// const getImages = async (req, res) => {
+//   try {
+//     const page = parseInt(req.query.page) || 1;
+//     const limit = parseInt(req.query.limit) || 12;
+//     const skip = (page - 1) * limit;
+
+//     // Consulta para obtener imágenes paginadas
+//     const images = await Image.find({ deleted: false })
+//       .sort({ createdAt: -1 })
+//       .skip(skip)
+//       .limit(limit);
+
+//     // Contar total de imágenes no eliminadas
+//     const total = await Image.countDocuments({ deleted: false });
+//     const hasMore = total > (page * limit);
+
+//     // Aplicar transformaciones a las imágenes
+//     const optimizedImages = images.map(image => {
+//       const optimizedUrl = cloudinary.url(image.imageUrl, {
+//         transformation: [
+//           { quality: 'auto', fetch_format: 'auto' },
+//           { width: 300, height: 300, crop: 'fill', gravity: 'auto' }
+//         ]
+//       });
+
+//       return { 
+//         ...image.toObject(), 
+//         optimizedUrl,
+//         thumbnailUrl: cloudinary.url(image.imageUrl, {
+//           transformation: [
+//             { quality: 'auto', fetch_format: 'auto' },
+//             { width: 150, height: 150, crop: 'fill', gravity: 'auto' }
+//           ]
+//         })
+//       };
+//     });
+
+//     res.json({ 
+//       images: optimizedImages,
+//       pagination: {
+//         page,
+//         limit,
+//         total,
+//         hasMore
+//       }
+//     });
+//   } catch (error) {
+//     console.error("Error al obtener imágenes:", error);
+//     res.status(500).json({ message: "Error al obtener imágenes" });
+//   }
+// };
+
+// DAR LIKE A UNA IMAGEN
+const likeImage = async (req, res) => {
   try {
-    const image = await Image.findByIdAndUpdate(
-      req.params.id, 
-      { $inc: { likes: 1 } }, 
-      { new: true }
-    );
+    const image = await Image.findByIdAndUpdate(req.params.id, { $inc: { likes: 1 } }, { new: true });
     res.json(image);
   } catch (err) {
     res.status(500).json({ message: 'Error al dar like' });
   }
 };
-
-// Agregar comentario
-export const addComment = async (req, res) => {
+// AGREGAR COMENTARIO A UNA IMAGEN
+const addComment = async (req, res) => {
   try {
+    const { text } = req.body;
     const image = await Image.findByIdAndUpdate(
       req.params.id,
-      { $push: { comments: { text: req.body.text } } },
+      { $push: { comments: { text } } },
       { new: true }
     );
     res.json(image);
@@ -74,9 +132,8 @@ export const addComment = async (req, res) => {
     res.status(500).json({ message: 'Error al agregar comentario' });
   }
 };
-
-// Dar like a comentario
-export const likeComment = async (req, res) => {
+// DAR LIKE A UN COMENTARIO
+const likeComment = async (req, res) => {
   const { imageId, commentId } = req.params;
   try {
     const image = await Image.findById(imageId);
@@ -85,7 +142,7 @@ export const likeComment = async (req, res) => {
     const comment = image.comments.id(commentId);
     if (!comment) return res.status(404).json({ message: 'Comentario no encontrado' });
 
-    comment.likes += 1;
+    comment.likes = (comment.likes || 0) + 1;
     await image.save();
 
     res.status(200).json({ success: true, likes: comment.likes });
@@ -94,17 +151,22 @@ export const likeComment = async (req, res) => {
     res.status(500).json({ success: false, message: 'Error del servidor' });
   }
 };
+// ELIMINAR IMAGEN DE CLOUDINARY Y MONGODB
+const deleteImage = async (req, res) => {
+  const { id } = req.params;
 
-// Eliminar imagen
-export const deleteImage = async (req, res) => {
   try {
-    const image = await Image.findById(req.params.id);
+    // Busca la imagen en MongoDB
+    const image = await Image.findById(id);
     if (!image) {
       return res.status(404).json({ ok: false, message: 'Imagen no encontrada' });
     }
 
+    // Elimina la imagen de Cloudinary usando el public_id
     await cloudinary.uploader.destroy(image.publicId);
-    await Image.findByIdAndDelete(req.params.id);
+
+    // Elimina la imagen de MongoDB
+    await Image.findByIdAndDelete(id);
 
     res.status(200).json({ ok: true, message: 'Imagen eliminada con éxito' });
   } catch (error) {
@@ -112,3 +174,7 @@ export const deleteImage = async (req, res) => {
     res.status(500).json({ ok: false, message: 'Error al eliminar la imagen' });
   }
 };
+
+//Exportar funciones
+module.exports = { uploadImage, getImages, likeImage, addComment, likeComment, deleteImage };
+

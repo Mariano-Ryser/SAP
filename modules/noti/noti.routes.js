@@ -1,27 +1,24 @@
-import express from 'express';
-import { 
-  getNotis, 
-  createNoti, 
-  deleteNoti, 
-  likeNoti 
-} from './noti.controller.js';
-import Noti from './noti.model.js';
-import authAdmin from '../../middleware/authAdmin.js';
+const express = require('express')
+const router = express.Router()
+const notiController = require('./noti.controller')
+const Noti = require('./noti.model')
+const authAdmin = require('../../middleware/authAdmin'); // Asegúrate de tener este middleware
 
-const router = express.Router();
 
-// Rutas públicas
-router.get('/', getNotis);
-router.patch('/:id/like', likeNoti);
 
-// Rutas protegidas (solo admin)
-router.post('/', authAdmin, createNoti);
-router.delete('/:id', authAdmin, deleteNoti);
+router.get('/', notiController.getNotis)//obtener notificaciones
+router.patch('/:id/like', notiController.likeNoti);//dar like a una notificacion
 
-// Ruta especial HTML
+//PROTEGIDAS POR AUTH
+router.post('/', authAdmin, notiController.createNoti)//crear notificacion
+router.delete('/:id', authAdmin, notiController.deleteNoti)//borrar notificacion
+
+module.exports = router
+
+
 router.get('/html', async (req, res) => {
   try {
-    const notis = await Noti.find({});
+    const notis = await Noti.find({}); // Usar el modelo Noti
     let html = '<h1>Notificaciones</h1><ul>';
     notis.forEach(noti => {
       html += `<li><strong>${noti.titulo}</strong>: ${noti.text}</li>`;
@@ -32,5 +29,3 @@ router.get('/html', async (req, res) => {
     res.status(500).send('Error al obtener las notificaciones');
   }
 });
-
-export default router;

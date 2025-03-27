@@ -1,16 +1,13 @@
-import express from 'express';
-import { 
-  getComentars, 
-  createComentar, 
-  deleteComentar, 
-  likeComentar 
-} from './comentar.controller.js';
+const express = require('express')
+const routerr = express.Router()
+const comentarController = require('./comentar.controller')
 
-const router = express.Router();
 
-router.get('/', getComentars);
-router.post('/', createComentar);
-router.delete('/:id', deleteComentar);
-router.patch('/:id/like', likeComentar);
+routerr.get('/', comentarController.getComentars)
+routerr.post('/', comentarController.createComentar)
+routerr.delete('/:id', comentarController.deleteComentar)
 
-export default router;
+// Nueva ruta para incrementar likes
+routerr.patch('/:id/like', comentarController.likeComentar);
+
+module.exports = routerr

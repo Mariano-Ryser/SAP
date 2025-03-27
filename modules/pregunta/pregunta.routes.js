@@ -1,14 +1,8 @@
-import express from 'express';
-import { 
-  getPreguntas, 
-  createPregunta,
-  deletePregunta
-} from './pregunta.controller.js';
-
+const express = require("express");
 const router = express.Router();
+const preguntaController = require("./pregunta.controller");
 
-router.get('/', getPreguntas);
-router.post('/', createPregunta);
-router.delete('/:id', deletePregunta);
+router.get("/", preguntaController.getPreguntas);
+router.post("/", preguntaController.createPregunta);
 
-export default router;
+module.exports = router;

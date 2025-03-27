@@ -1,48 +1,35 @@
-import jwt from 'jsonwebtoken';
+// middleware/authAdmin.js
+const jwt = require('jsonwebtoken');
 
-const authAdmin = (req, res, next) => {
-  // Obtener token de múltiples fuentes
+module.exports = function(req, res, next) {
+  // Obtener token del header
   const token = req.header('x-auth-token') || 
-                req.query.token || 
-                req.body.token;
+  req.query.token || 
+  req.body.token;
   
-  // Validar existencia del token
   if (!token) {
     return res.status(401).json({ 
       ok: false,
-      message: 'Token de autenticación requerido',
-      code: 'MISSING_AUTH_TOKEN'
+      message: 'Token de autenticación requerido' 
     });
   }
 
   try {
-    // Verificar y decodificar el token
     const decoded = jwt.verify(token, process.env.JWT_SECRET);
     
-    // Verificar rol de administrador
     if (decoded.role !== 'admin') {
       return res.status(403).json({ 
         ok: false,
-        message: 'Se requieren privilegios de administrador',
-        code: 'INSUFFICIENT_PRIVILEGES'
+        message: 'Se requieren privilegios de administrador' 
       });
     }
 
-    // Adjuntar usuario decodificado a la solicitud
     req.user = decoded;
     next();
   } catch (err) {
-    // Manejar errores de token
-    const message = err.name === 'TokenExpiredError' 
-      ? 'Token expirado' 
-      : 'Token inválido';
-    
     res.status(401).json({ 
       ok: false,
-      message,
-      code: 'INVALID_TOKEN'
+      message: 'Token inválido o expirado' 
     });
   }
 };
-
-export default authAdmin;

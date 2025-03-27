@@ -1,15 +1,11 @@
-import { v2 as cloudinary } from 'cloudinary';
-import { config } from 'dotenv';
+const cloudinary = require('cloudinary').v2;
+require('dotenv').config(); // Para cargar las variables de entorno
 
-// Cargar variables de entorno
-config();
-
-// Configurar Cloudinary
 cloudinary.config({
   cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
   api_key: process.env.CLOUDINARY_API_KEY,
   api_secret: process.env.CLOUDINARY_API_SECRET,
-  secure: true // Forzar HTTPS
+  secure: true, // Recomendado para usar HTTPS
 });
 
-export default cloudinary;
+module.exports = cloudinary;

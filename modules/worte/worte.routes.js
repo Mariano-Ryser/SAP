@@ -1,16 +1,10 @@
-import express from 'express';
-import { 
-    getWortes, 
-    createWorte, 
-    deleteWorte, 
-    likeWorte 
-} from './worte.controller.js';
-
+const express = require('express');
 const router = express.Router();
+const worteController = require('./worte.controller');
 
-router.get('/', getWortes);
-router.post('/', createWorte);
-router.delete('/:id', deleteWorte);
-router.patch('/:id/like', likeWorte);
+router.get('/', worteController.getWortes);
+router.post('/', worteController.createWorte);
+router.delete('/:id', worteController.deleteWorte);
+router.patch('/:id/like', worteController.likeWorte);
 
-export default router;
+module.exports = router;
