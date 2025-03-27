@@ -8,7 +8,6 @@ import helmet from 'helmet';
 config();
 
 // Inicializar la aplicación
-const app = express();
 
 // Importar conexión a DB y middlewares
 import dbConnect from './db/index.js'; // Nota: extensión .js ahora es necesaria
@@ -25,12 +24,22 @@ import preguntaRouter from './modules/pregunta/pregunta.routes.js';
 import productRouter from './modules/product/product.routes.js';
 import worteRouter from './modules/worte/worte.routes.js';
 
+const app = express();
+
 // Configurar middlewares
-app.options('*', corsMiddleware);
-app.use(helmet());
 app.use(corsMiddleware);
+app.options('*', corsMiddleware);
+app.use(helmet({
+    contentSecurityPolicy: {
+      directives: {
+        ...helmet.contentSecurityPolicy.getDefaultDirectives(),
+        'img-src': ["'self'", 'data:', 'https://*.cloudinary.com'],
+      },
+    },
+    crossOriginResourcePolicy: { policy: "cross-origin" } // Importante para CORS
+  }));
+  app.use(express.json());
 app.use(rateLimitMiddleware);
-app.use(express.json());
 
 // Configurar conexión a la base de datos
 dbConnect(app);
@@ -55,13 +64,18 @@ app.get('/home', (req, res) => {
 });
 
 // Manejo de errores
+// Manejo de errores
 app.use((err, req, res, next) => {
     if (err.message === 'Not allowed by CORS') {
-        res.status(403).json({ error: 'Acceso no permitido' });
+      console.error('CORS error:', err);
+      res.status(403).json({ 
+        error: 'Acceso no permitido',
+        details: 'El origen no está autorizado para acceder a este recurso'
+      });
     } else {
-        next(err);
+      next(err);
     }
-});
+  });
 
 // Última ruta (404)
 app.use((req, res) => {
