@@ -1,4 +1,5 @@
 node_modules/
+administrationDB/
 .env
 .DS_Store
 *.log
