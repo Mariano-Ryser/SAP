@@ -4,6 +4,11 @@ const { body, validationResult } = require('express-validator');
 const authAdmin = require('../../middleware/authAdmin'); // Importar el middleware
 const adminController = require('./admin.controller');
 
+// ✅ Verificar sesión
+router.get('/check-session', adminController.checkSession);
+
+// ✅ Cerrar sesión
+router.post('/logout', adminController.logout);
 
 router.post(
   '/verify-key',
@@ -24,6 +29,8 @@ router.post(
   }
 );
 
+
+// ✅ Protege la ruta con el middleware mejorado
 router.get('/dashboard', authAdmin, adminController.getDashboard);
 
 module.exports = router;
