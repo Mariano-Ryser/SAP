@@ -1,3 +1,4 @@
+//modules/noti/noti.controller.js
 const Noti = require('./noti.model')
 
 
@@ -47,7 +48,7 @@ const deleteNoti = async (req, res) =>{
             deleted: true,
         })
 
-        res.status(200).json({ok:true, message: 'Notiio eliminado con exito!'})
+        res.status(200).json({ok:true, message: 'Notii eliminado con exito!'})
         console.log({ id })
      }
 

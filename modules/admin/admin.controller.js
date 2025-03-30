@@ -35,7 +35,7 @@ const verifyKey = (req, res) => {
       secure: process.env.NODE_ENV === 'production', // Solo seguro en producción
       sameSite: 'Strict',
       maxAge: 60 * 60 * 1000 // 1 hora
-    });
+    }); 
 
     return res.status(200).json({ success: true, message: 'Clave correcta' });
   } else {

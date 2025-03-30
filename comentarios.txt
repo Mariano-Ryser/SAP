@@ -1,0 +1,391 @@
+[{
+  titulo: "GUACHOOOOO!",
+  text: "Graddee guacho alta Weeebbb ",
+  author: "Chaale cbaaa!",
+  likes: 0,
+  deleted: false
+},
+
+{
+  titulo: "asdd",
+  text: "ddd",
+  author: "dd",
+  likes: 5,
+  deleted: true
+},
+
+{
+  titulo: "asdasdasdasdas",
+  text: "asdas",
+  author: "sdas",
+  likes: 0,
+  deleted: true
+},
+
+{
+  titulo: "d",
+  text: "d",
+  author: "d",
+  likes: 0,
+  deleted: true
+},
+
+{
+  titulo: "asdd",
+  text: "asd",
+  author: "dddd",
+  likes: 0,
+  deleted: true
+},
+
+{
+  titulo: "Masd jasd",
+  text: "asdasdas ",
+  author: "asdasd asd ",
+  likes: 0,
+  deleted: true
+},
+
+{
+  titulo: "Guala",
+  text: "Sacala",
+  author: "tene",
+  likes: 1,
+  deleted: true
+},
+
+{
+  titulo: "ad",
+  text: "sda",
+  author: "d",
+  likes: 2,
+  deleted: true
+},
+
+{
+  titulo: "guacho",
+  text: "da",
+  author: "as",
+  likes: 0,
+  deleted: true
+},
+
+{
+  titulo: "das",
+  text: "das",
+  author: "da",
+  likes: 2,
+  deleted: true
+},
+
+{
+  titulo: "fsd",
+  text: "fsd",
+  author: "fs",
+  likes: 8,
+  deleted: true
+},
+
+{
+  titulo: "hola",
+  text: "guacho",
+  author: "q tal",
+  likes: 4,
+  deleted: true
+},
+
+{
+  titulo: "guacho",
+  text: "eee",
+  author: "mariano",
+  likes: 6,
+  deleted: true
+},
+
+{
+  titulo: "Exelente Optimizacion",
+  text: "Me encanto la optimizacion y tus nuevos avanzes, sigue asi!",
+  author: "Yo mismo",
+  likes: 2,
+  deleted: true
+},
+
+{
+  titulo: "Excelente trabajo",
+  text: "Cada día demuestras que lo mejor está por venir. ¡Sigue así!",
+  author: "Héctor",
+  likes: 10,
+  deleted: true
+},
+
+{
+  titulo: "Impresionante lo que haces",
+  text: "La dedicación que pones en cada detalle es admirable. ¡Sigue así!",
+  author: "Nuria",
+  likes: 9,
+  deleted: true
+},
+
+{
+  titulo: "Te admiro mucho",
+  text: "Tienes una actitud positiva que inspira a todos. ¡Sigue brillando!",
+  author: "Fernando",
+  likes: 6,
+  deleted: true
+},
+
+{
+  titulo: "Gran trabajo",
+  text: "Todo lo que haces se ve reflejado en tu éxito. ¡A seguir luchando!",
+  author: "Marta",
+  likes: 5,
+  deleted: true
+},
+
+{
+  titulo: "Muy buen trabajo",
+  text: "Tu enfoque y dedicación son ejemplos a seguir. ¡Felicidades!",
+  author: "Samuel",
+  likes: 7,
+  deleted: true
+},
+
+{
+  titulo: "Sigue adelante",
+  text: "Lo estás haciendo genial, no dejes que nada te detenga. ¡Ánimo!",
+  author: "Gloria",
+  likes: 19,
+  deleted: true
+},
+
+{
+  titulo: "¡Espectacular!",
+  text: "No hay duda de que tienes un futuro brillante por delante. ¡Sigue trabajando duro!",
+  author: "Ricardo",
+  likes: 12,
+  deleted: true
+},
+
+{
+  titulo: "¡Qué grande eres!",
+  text: "Todo lo que logras es solo una muestra de lo que eres capaz de hacer. ¡Sigue así!",
+  author: "Juliana",
+  likes: 11,
+  deleted: true
+},
+
+{
+  titulo: "Buen trabajo siempre",
+  text: "Lo que haces siempre tiene un toque especial. ¡Excelente trabajo!",
+  author: "Lorena",
+  likes: 11,
+  deleted: true
+},
+
+{
+  titulo: "Inspirador",
+  text: "Tu esfuerzo no pasa desapercibido. ¡Adelante siempre!",
+  author: "Antonio",
+  likes: 27,
+  deleted: true
+},
+
+{
+  titulo: "¡Sigue brillando!",
+  text: "Tu trabajo y dedicación se ven reflejados en todo lo que haces. ¡Felicidades!",
+  author: "Isabel",
+  likes: 18,
+  deleted: true
+},
+
+{
+  titulo: "Impresionante dedicación",
+  text: "Lo que has logrado hasta ahora es digno de admiración. ¡Sigue así!",
+  author: "Raúl",
+  likes: 14,
+  deleted: true
+},
+
+{
+  titulo: "Te felicito",
+  text: "Tienes un gran futuro por delante, continúa con la misma pasión.",
+  author: "Carmen",
+  likes: 9,
+  deleted: false
+},
+
+{
+  titulo: "¡Increíble!",
+  text: "Es impresionante ver cómo todo lo que haces lo haces con excelencia. ¡Enhorabuena!",
+  author: "Pablo",
+  likes: 12,
+  deleted: true
+},
+
+{
+  titulo: "Felicidades por tu progreso",
+  text: "Todo el esfuerzo que pones se ve reflejado en tus resultados. ¡Qué bien hecho!",
+  author: "Mariana",
+  likes: 9,
+  deleted: false
+},
+
+{
+  titulo: "Trabajo excepcional",
+  text: "Tu dedicación se nota, sigue adelante con la misma pasión.",
+  author: "Diego",
+  likes: 11,
+  deleted: false
+},
+
+{
+  titulo: "Muy inspirador",
+  text: "Tu esfuerzo es un modelo a seguir para muchos. ¡Adelante!",
+  author: "Patricia",
+  likes: 6,
+  deleted: false
+},
+
+{
+  titulo: "¡Qué gran ejemplo!",
+  text: "Es un placer ver a alguien tan comprometido con sus metas. ¡Enhorabuena!",
+  author: "Mario",
+  likes: 7,
+  deleted: false
+},
+
+{
+  titulo: "Bien hecho",
+  text: "Sigue apostando por tus sueños, ¡lo conseguirás!",
+  author: "Raquel",
+  likes: 5,
+  deleted: false
+},
+
+{
+  titulo: "Estás en el camino correcto",
+  text: "Sigue luchando y no te detengas, todo llegará.",
+  author: "Felipe",
+  likes: 8,
+  deleted: false
+},
+
+{
+  titulo: "Gran actitud",
+  text: "Tu energía positiva es algo que contagia a todos, ¡muy bien!",
+  author: "Laura",
+  likes: 9,
+  deleted: true
+},
+
+{
+  titulo: "Increíble progreso",
+  text: "Cada día mejoras, sigue así y lograrás lo que te propongas.",
+  author: "Alberto",
+  likes: 11,
+  deleted: true
+},
+
+{
+  titulo: "¡Qué orgullo!",
+  text: "Es un placer ver cómo te superas a ti mismo cada día. ¡Adelante!",
+  author: "Elena",
+  likes: 13,
+  deleted: true
+},
+
+{
+  titulo: "Gran trabajo",
+  text: "Has dado un paso gigante. ¡Lo mejor está por venir!",
+  author: "Javier",
+  likes: 6,
+  deleted: false
+},
+
+{
+  titulo: "Excelente esfuerzo",
+  text: "Tu dedicación es algo que todos deberíamos imitar. ¡Sigue brillando!",
+  author: "Andrés",
+  likes: 10,
+  deleted: false
+},
+
+{
+  titulo: "¡Qué impresionante!",
+  text: "Tu pasión por lo que haces es evidente, sigue cosechando éxitos.",
+  author: "Eva",
+  likes: 7,
+  deleted: false
+},
+
+{
+  titulo: "Siempre mejorando",
+  text: "Es increíble ver cómo creces cada día. ¡Te felicito!",
+  author: "Carlos",
+  likes: 8,
+  deleted: false
+},
+
+{
+  titulo: "Muy bien hecho",
+  text: "Tu esfuerzo y dedicación son dignos de admirar. ¡Continúa así!",
+  author: "Lucía",
+  likes: 4,
+  deleted: false
+},
+
+{
+  titulo: "Buen trabajo",
+  text: "Te felicito por todo lo que has logrado. ¡Sigue así!",
+  author: "Pedro",
+  likes: 7,
+  deleted: true
+},
+
+{
+  titulo: "¡Vamos por más!",
+  text: "Esto es solo el comienzo de lo que está por venir. ¡Ánimo!",
+  author: "Sofía",
+  likes: 5,
+  deleted: false
+},
+
+{
+  titulo: "Un gran ejemplo",
+  text: "Tu constancia inspira a todos a seguir adelante. ¡Gracias!",
+  author: "José",
+  likes: 7,
+  deleted: false
+},
+
+{
+  titulo: "Excelente trabajo",
+  text: "Te mereces todo el éxito que está por venir. ¡A por más!",
+  author: "María",
+  likes: 9,
+  deleted: false
+},
+
+{
+  titulo: "Sigue brillando",
+  text: "Cada paso que das es una muestra de tu esfuerzo. ¡No pares!",
+  author: "Luis",
+  likes: 12,
+  deleted: false
+},
+
+{
+  titulo: "Impresionante",
+  text: "El nivel de dedicación es admirable, sigue adelante.",
+  author: "Ana",
+  likes: 10,
+  deleted: true
+},
+
+{
+  titulo: "Increíble trabajo",
+  text: "¡Felicidades por todo el esfuerzo que has puesto! Sigue así.",
+  author: "Carlos",
+  likes: 8,
+  deleted: true
+}]

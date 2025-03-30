@@ -1,8 +1,9 @@
+//modules/noti/noti.routes.js
 const express = require('express')
 const router = express.Router()
 const notiController = require('./noti.controller')
 const Noti = require('./noti.model')
-const authAdmin = require('../../middleware/authAdmin'); // Asegúrate de tener este middleware
+// const authAdmin = require('../../middleware/authAdmin'); // Asegúrate de tener este middleware
 
 
 
@@ -10,8 +11,8 @@ router.get('/', notiController.getNotis)//obtener notificaciones
 router.patch('/:id/like', notiController.likeNoti);//dar like a una notificacion
 
 //PROTEGIDAS POR AUTH
-router.post('/', authAdmin, notiController.createNoti)//crear notificacion
-router.delete('/:id', authAdmin, notiController.deleteNoti)//borrar notificacion
+router.post('/',  notiController.createNoti)//crear notificacion
+router.delete('/:id', notiController.deleteNoti)//borrar notificacion
 
 module.exports = router
 

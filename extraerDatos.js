@@ -1,7 +1,7 @@
 require('dotenv').config(); // Cargar variables de entorno
 const mongoose = require('mongoose');
 const fs = require('fs');
-const Comentar = require('../models/comentar'); // Asegúrate de que el path sea correcto
+const Comentar = require('./modules/comentar/comentar.model'); // Asegúrate de que el path sea correcto
 
 // Configuración de la conexión a MongoDB
 const mongoURI = `mongodb+srv://MR-2291:${process.env.MONGO_DB_PASS}@cluster0.brhpx.mongodb.net/stock-app?retryWrites=true&w=majority`;
@@ -20,7 +20,7 @@ mongoose.connect(mongoURI, {
 async function exportarComentarios() {
   try {
     // Obtener todos los comentarios de la base de datos y excluir el _id
-    const comentarios = await Comentar.find({}, { _id: 0, __v: 0 });
+    const comentarios = (await Comentar.find({}, { _id: 0, __v: 0 })).reverse();
 
     // Función para formatear los objetos sin comillas en las claves
     const formatoPersonalizado = comentarios.map(comentario => {

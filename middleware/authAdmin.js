@@ -2,30 +2,31 @@
 
 
 
-
 const jwt = require('jsonwebtoken');
 
 const authAdmin = (req, res, next) => {
-  const token = req.cookies?.adminToken; // ✅ Leer el token desde las cookies
-
-  if (!token) {
+  if (!req.cookies || !req.cookies.adminToken) {
     return res.status(401).json({ message: 'Acceso denegado. No hay token.' });
   }
 
+  const token = req.cookies.adminToken; // ✅ Obtener el token
+
   try {
     const decoded = jwt.verify(token, process.env.JWT_SECRET);
-    req.user = decoded; // ✅ Guardar datos decodificados en `req.user`
-    next();
+    req.admin = decoded; // ✅ Guardar los datos decodificados en `req.admin`
+    next(); // ✅ Continuar con la siguiente función en la ruta protegida
   } catch (error) {
-    return res.status(403).json({ message: 'Token inválido o expirado.' });
+    if (error.name === 'TokenExpiredError') {
+      return res.status(403).json({ message: 'Token expirado. Inicia sesión de nuevo.' });
+    } else if (error.name === 'JsonWebTokenError') {
+      return res.status(403).json({ message: 'Token inválido.' });
+    } else {
+      return res.status(403).json({ message: 'Error de autenticación.' });
+    }
   }
 };
 
 module.exports = authAdmin;
-
-
-
-
 
 
 
