@@ -48,6 +48,7 @@ const likeComentar = async (req, res) => {
     res.status(500).json({ ok: false, message: 'Error al agregar like' });
   }
 };
+
 module.exports = {
         getComentars,
         createComentar,

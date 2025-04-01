@@ -19,8 +19,7 @@ const preguntaRouter = require('./modules/pregunta/pregunta.routes')
 const productRouter = require('./modules/product/product.routes')
 const worteRouter = require('./modules/worte/worte.routes')
 const palabrasRouter = require("./modules/palabra/palabra.routes");
-
-
+const noticiasRouter = require("./modules/noticia/noticia.routes")
 
 // Los Cors se maneja desde Azure App Service
 const corsMiddleware = require('./middleware/corsMiddleware'); 
@@ -46,7 +45,8 @@ app.use('/api/v1/wortes', worteRouter)
 app.use('/api/v1/comentars', comentarRouter)
 app.use('/api/v1/personajes', personajeRouter)
 app.use("/api/v1/palabras", palabrasRouter);
- 
+app.use('/api/v1/noticias', noticiasRouter); 
+
 app.get('/', (req,res) => {
     res.sendFile(path.join(__dirname, '/public/index.html'));
   })

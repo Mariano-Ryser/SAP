@@ -2,7 +2,6 @@ const Image = require('./image.model'); // Asegúrate de que tienes un modelo de
 const cloudinary = require('../../config/cloudinary');
 
 
-
 // SUBIR IMAGEN A CLOUDINARY
 const uploadImage = async (req, res) => {
   try {
@@ -24,6 +23,7 @@ const uploadImage = async (req, res) => {
     res.status(500).json({ message: 'Error al subir imagen' });
   }
 };
+
 // OBTENER IMÁGENES
 const getImages = async (req, res) => {
   try {
@@ -54,60 +54,6 @@ const getImages = async (req, res) => {
     res.status(500).json({ message: "Error al obtener imágenes" });
   }
 };
-
-
-// OBTENER IMÁGENES CON PAGINACIÓN
-// const getImages = async (req, res) => {
-//   try {
-//     const page = parseInt(req.query.page) || 1;
-//     const limit = parseInt(req.query.limit) || 12;
-//     const skip = (page - 1) * limit;
-
-//     // Consulta para obtener imágenes paginadas
-//     const images = await Image.find({ deleted: false })
-//       .sort({ createdAt: -1 })
-//       .skip(skip)
-//       .limit(limit);
-
-//     // Contar total de imágenes no eliminadas
-//     const total = await Image.countDocuments({ deleted: false });
-//     const hasMore = total > (page * limit);
-
-//     // Aplicar transformaciones a las imágenes
-//     const optimizedImages = images.map(image => {
-//       const optimizedUrl = cloudinary.url(image.imageUrl, {
-//         transformation: [
-//           { quality: 'auto', fetch_format: 'auto' },
-//           { width: 300, height: 300, crop: 'fill', gravity: 'auto' }
-//         ]
-//       });
-
-//       return { 
-//         ...image.toObject(), 
-//         optimizedUrl,
-//         thumbnailUrl: cloudinary.url(image.imageUrl, {
-//           transformation: [
-//             { quality: 'auto', fetch_format: 'auto' },
-//             { width: 150, height: 150, crop: 'fill', gravity: 'auto' }
-//           ]
-//         })
-//       };
-//     });
-
-//     res.json({ 
-//       images: optimizedImages,
-//       pagination: {
-//         page,
-//         limit,
-//         total,
-//         hasMore
-//       }
-//     });
-//   } catch (error) {
-//     console.error("Error al obtener imágenes:", error);
-//     res.status(500).json({ message: "Error al obtener imágenes" });
-//   }
-// };
 
 // DAR LIKE A UNA IMAGEN
 const likeImage = async (req, res) => {
@@ -178,3 +124,4 @@ const deleteImage = async (req, res) => {
 //Exportar funciones
 module.exports = { uploadImage, getImages, likeImage, addComment, likeComment, deleteImage };
 
+ 

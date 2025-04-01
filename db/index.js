@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
-
 mongoose.set('strictQuery', true)
+
 const dbConnect = (app) => {
     // // // CONECCION CON LA BASE DE DATOS, MONGO DB MONGOSE!
     mongoose.connect(
@@ -27,7 +27,6 @@ const dbConnect = (app) => {
                 },100);
 
     
-        
         //Agregamos a products o Comentarios la propiedad (deleted:false) con mongoo-
         //Comentar.updateMany({}, {$set:{deleted: false}}).then(res => console.log({res}))
         
