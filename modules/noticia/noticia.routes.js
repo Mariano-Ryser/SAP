@@ -1,3 +1,4 @@
+
 const express = require('express');
 const router = express.Router();
 const noticiaController = require('./noticia.controller');
@@ -8,7 +9,8 @@ router.post('/',
   noticiaController.crearNoticia
 );
 
-router.get('/', noticiaController.obtenerNoticias);
+router.get('/', noticiaController.obtenerNoticiasResumen);
+router.get('/:id', noticiaController.obtenerNoticiaCompleta);
 router.delete('/:id', noticiaController.eliminarNoticia);
 
 module.exports = router;
