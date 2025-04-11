@@ -118,6 +118,7 @@ exports.eliminarNoticia = async function(req, res) {
         });
       }
       
+      
       // 3. Eliminar la noticia de MongoDB
       await Noticia.findByIdAndDelete(id);
       

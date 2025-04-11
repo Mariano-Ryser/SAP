@@ -116,22 +116,117 @@ const createProduct = async (req, res) => {
     }
 };
 
-const deleteProduct = async (req, res) =>{
-    const { id } = req.params
-
-    await Product.findByIdAndUpdate(id, {
-        deleted: true,
-    })
-    res.status(200).json({ok: true, message: 'Producto eliminado con exito!'})
-    console.log({ id }, 'Producto eliminado con exito!')
-}
+const deleteProduct = async (req, res) => {
+    const { id } = req.params;
+    
+    try {
+      // 1. Buscar el producto en MongoDB
+      const product = await Product.findById(id);
+      
+      if (!product) {
+        return res.status(404).json({ 
+          ok: false, 
+          message: 'Producto no encontrado' 
+        });
+      }
+      
+      // 2. Eliminar la imagen de Cloudinary si existe
+      if (product.publicId) {
+        await cloudinary.uploader.destroy(product.publicId)
+          .catch(error => {
+            console.warn('Advertencia: No se pudo eliminar la imagen de Cloudinary', error);
+            // Continuamos aunque falle la eliminación en Cloudinary
+          });
+      }
+      
+      // 3. Eliminar el producto de MongoDB completamente
+      await Product.findByIdAndDelete(id);
+      
+      res.status(200).json({ 
+        ok: true, 
+        message: 'Producto y su imagen asociada eliminados con éxito' 
+      });
+      
+      console.log({ id }, 'Producto eliminado completamente');
+      
+    } catch (error) {
+      console.error('Error al eliminar producto:', error);
+      res.status(500).json({ 
+        ok: false, 
+        error: error.message,
+        message: 'Error al eliminar el producto' 
+      });
+    }
+  };
+// product.controller.js
+const updateProduct = async (req, res) => {
+    try {
+      uploadImage(req, res, async (err) => {
+        if (err) {
+          return res.status(400).json({
+            ok: false,
+            message: err.message
+          });
+        }
+  
+        const { id } = req.params;
+        const product = await Product.findById(id);
+        
+        if (!product) {
+          return res.status(404).json({
+            ok: false,
+            message: 'Producto no encontrado'
+          });
+        }
+  
+        let imageUrl = product.imagen;
+        let publicId = product.publicId;
+  
+        // Si se subió una nueva imagen
+        if (req.file) {
+          // Eliminar la imagen anterior si existe
+          if (publicId) {
+            await cloudinary.uploader.destroy(publicId)
+              .catch(error => console.warn('Error al eliminar imagen anterior:', error));
+          }
+  
+          // Subir la nueva imagen
+          const result = await cloudinary.uploader.upload(req.file.path, {
+            folder: 'products'
+          });
+          imageUrl = result.secure_url;
+          publicId = result.public_id;
+        }
+  
+        // Actualizar el producto
+        const updatedProduct = await Product.findByIdAndUpdate(id, {
+          ...req.body,
+          imagen: imageUrl,
+          publicId: publicId
+        }, { new: true });
+  
+        res.status(200).json({
+          ok: true,
+          product: updatedProduct
+        });
+      });
+    } catch (error) {
+      console.error('Error en updateProduct:', error);
+      res.status(500).json({
+        ok: false,
+        message: 'Error al actualizar producto',
+        error: error.message
+      });
+    }
+  };
 
 exports.uploadMiddleware = upload.single('imagen');
 
      module.exports = {
         getProducts,
         createProduct,
-        deleteProduct
+        deleteProduct,
+        updateProduct
      }
 
      
