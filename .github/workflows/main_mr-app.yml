@@ -48,7 +48,7 @@ jobs:
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
         with:
-          app-name: 'mr-app'
+          app-name: mr-app-bya3dmg0bwfxdmcd
           slot-name: 'production' # Debe ser "production" en minúsculas
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_711763FDD8894F33B4AFA1AD1732C2EA }}
           package: .
