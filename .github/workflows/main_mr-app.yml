@@ -24,7 +24,6 @@ jobs:
           npm install
           npm run build --if-present
           npm run test --if-present
-
       - name: Subir artefacto para despliegue
         uses: actions/upload-artifact@v4 # Actualizado a v4
         with:
@@ -52,3 +51,4 @@ jobs:
           slot-name: 'production' # Debe ser "production" en minúsculas
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_711763FDD8894F33B4AFA1AD1732C2EA }}
           package: .
+          
